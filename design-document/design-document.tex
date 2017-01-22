@@ -1,0 +1,361 @@
+\documentclass[12pt,titlepage]{article}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{graphicx}
+\usepackage[pdftex]{hyperref}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage{titling}
+\usepackage{titlesec}
+
+\MakeOuterQuote{"}
+
+% http://tex.stackexchange.com/a/50186/100230
+\newcommand{\subtitle}[1]{
+    \posttitle{
+    \par\end{center}
+\begin{center}\large#1\end{center}
+    \vskip0.5em
+}
+}
+
+% http://tex.stackexchange.com/a/60212/100230
+\titleclass{\subsubsubsection}{straight}[\subsection]
+
+\newcounter{subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
+
+\titleformat{\subsubsubsection}
+{\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
+\titlespacing*{\subsubsubsection}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{5}{\z@}%
+    {3.25ex \@plus1ex \@minus.2ex}%
+    {-1em}%
+{\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{6}{\parindent}%
+    {3.25ex \@plus1ex \@minus .2ex}%
+    {-1em}%
+{\normalfont\normalsize\bfseries}}
+\def\toclevel@subsubsubsection{4}
+\def\toclevel@paragraph{5}
+\def\toclevel@paragraph{6}
+\def\l@subsubsubsection{\@dottedtocline{4}{7em}{4em}}
+\def\l@paragraph{\@dottedtocline{5}{10em}{5em}}
+\def\l@subparagraph{\@dottedtocline{6}{14em}{6em}}
+\makeatother
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+% http://tex.stackexchange.com/a/56558/100230
+\AtBeginDocument{\renewcommand\contentsname{Table of Contents}}
+
+\title{GAME NAME}
+\subtitle{SUBTITLE?}
+\author{Team Epsilon}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+% NOTES:
+% - There are some places where I have commented out a list of items that are suggested to be
+%   included in the document. Make them subsections as necessary.
+% - I basically copy pasta-d from Baldwin's template.
+
+\section{Design History}
+% This is a change listing quickly describing each major version and changes.
+
+\section{Game Overview}
+
+\subsection{Game Concept}
+
+\subsection{Feature Set}
+
+\subsection{Genre}
+
+\subsection{Target Audience}
+
+\subsection{Game Flow Summary}
+% How does the player move through the game. Both framing interface and the game itself.
+
+\subsection{Look and Feel}
+% What is the basic look and feel of the game? What is the visual style?
+
+\subsection{Project Scope}
+% A summary of the scope of the game
+%
+% - Number of Locations
+% - Number of Levels
+% - Number of NPC's
+% - Number of Weapons
+% - etc.
+
+\section{Gameplay and Mechanics}
+
+\subsection{Gameplay}
+
+\subsubsection{Game Progression}
+
+\subsubsection{Mission/Challenge Structure}
+
+\subsubsection{Puzzle Structure}
+
+\subsubsection{Objectives}
+% What are the objectives of the game?
+
+\subsubsection{Play Flow}
+% How does the game flow for the game player?
+
+\subsection{Mechanics}
+% What are the rules to the game, both implicit and explicit.  This is
+% the model of the universe that the game works under.  Think of it as a simulation of a world, how
+% do all the pieces interact?  This actually can be a very large section.
+
+\subsubsection{Physics}
+% How does the physical universe work?
+
+\subsubsection{Movement}
+% - General Movement
+% - Other movement
+
+\subsubsection{Objects}
+% - Picking up objects
+% - Moving objects
+
+\subsubsection{Actions}
+% - Switches and Buttons
+% - Picking up, Carrying and Dropping
+% - Talking
+% - Reading
+
+\subsubsection{Combat}
+% If there is a combat or even conflict, how is this specifically modeled?
+
+\subsubsection{Economy}
+% What is the economy of the game? How does it work?
+
+\subsection{Screen Flow}
+
+\subsubsection{Screen Flow Chart}
+% A graphical description of how each screen is related to every other
+
+\subsubsection{Screen Descriptions}
+% What is the purpose of each screen?
+%
+% - Main menu screen
+% - Options screen
+% - etc.
+
+\subsection{Game Options}
+% What are the options and how do they affect gameplay and mechanics?
+
+\subsection{Replaying and Saving}
+
+\subsection{Cheats and Easter Eggs}
+
+\section{Story, Setting, and Character}
+
+\subsection{Story and Narrative}
+% Specific details like scripts and cut scenes may not be in this document but be in the Story Bible
+
+\subsubsection{Back Story}
+
+\subsubsection{Plot Elements}
+
+\subsubsection{Game Progression}
+
+\subsubsection{License Considerations}
+
+\subsubsection{Cut Scenes}
+
+\subsubsubsection{Cut Scene \#1}
+% - Actors
+% - Description
+% - Storyboard
+% - Script
+
+\subsubsubsection{Cut Scene \#2}
+
+% more cut scenes as necessary
+
+\subsection{Game World}
+
+\subsubsection{General Look and Feel}
+
+\subsubsection{Area \#1}
+% - General description
+% - Physical Characteristics
+% - Levels that use area
+% - Connections to other areas
+
+% more areas as necessary
+
+\subsection{Characters}
+
+\subsubsection{Character \#1}
+% - Back story
+% - Personality
+% - Look
+%       - Physical Characteristics
+%       - Animation
+% - Special Abilities
+% - Relevance to game story
+% - Relationship to other characters
+% - Statistics
+
+% more characters as necessary
+
+\section{Levels}
+
+\subsection{Level \#1}
+
+\subsubsection{Synopsis}
+
+\subsubsection{Introductory Material}
+% Cut scene?  Mission briefing?
+
+\subsubsection{Objectives}
+
+\subsubsection{Physical Description}
+
+\subsubsection{Map}
+
+\subsubsection{Critical Path}
+
+\subsubsection{Encounters}
+
+\subsubsection{Level Walkthrough}
+
+\subsubsection{Closing Material}
+
+% more levels as necessary
+
+\section{Interface}
+
+\subsection{Visual System}
+
+\subsubsection{HUD}
+% What controls?
+
+\subsubsection{Menus}
+
+\subsubsection{Rendering System}
+
+\subsubsection{Camera}
+
+\subsubsection{Lighting Models}
+
+\subsection{Control System}
+% How does the game player control the game? What are the specific commands?
+
+\subsection{Audio}
+
+\subsection{Music}
+
+\subsection{Sound Effects}
+
+\subsection{Help System}
+
+\section{Artificial Intelligence}
+
+\subsection{Opponent AI}
+% The active opponent that plays against the game player and therefore requires strategic decision
+% making (example, Civilization or Chess, how is it to be designed?)
+
+\subsection{Enemy AI}
+% Villains and Monsters
+
+\subsection{Non-combat Characters}
+
+\subsection{Friendly Characters}
+
+\subsection{Support AI}
+
+\subsubsection{Player and Collision Detection}
+
+\subsubsection{Pathfinding}
+
+\section{Technical}
+% This may be an abbreviated of most of the Technical Bible
+%
+% - Target Hardware
+% - Development hardware and software
+% - Development procedures and standards
+% - Game Engine
+% - Network
+% - Scripting Language
+% - etc.
+
+\section{Game Art}
+% This may be abbreviated with most of the content in an Art Bible
+%
+% - Concept Art
+% - Style Guides
+% - Characters
+% - Environments
+% - Equipment
+% - Cut scenes
+% - Miscellaneous
+
+\section{Secondary Software}
+% Editor, Installer, Update Software
+
+\section{Management}
+
+\subsection{Detailed Schedule}
+
+\subsection{Budget}
+
+\subsection{Risk Analysis}
+
+\subsection{Localization Plan}
+
+\subsection{Test Plan}
+
+\section{Appendices}
+
+\subsection{Asset list}
+
+\subsubsection{Art}
+
+\subsubsubsection{Model and Texture List}
+
+\subsubsubsection{Animation List}
+
+\subsubsubsection{Effects List}
+
+\subsubsubsection{Interface Art List}
+
+\subsubsubsection{Cut scene List}
+
+\subsubsection{Sound}
+
+\subsubsubsection{Environmental Sounds}
+
+\subsubsubsection{Weapon Sounds}
+
+\subsubsubsection{Interface Sounds}
+
+\subsubsection{Music}
+
+\subsubsubsection{Ambient}
+
+\subsubsubsection{"Action"}
+
+\subsubsubsection{Victory}
+
+\subsubsubsection{Defeat}
+
+\subsubsection{Voice}
+
+\subsubsubsection{Actor \#1 lines}
+
+\subsubsubsection{Actor \#2 lines}
+% Etc.
+
+\end{document}
