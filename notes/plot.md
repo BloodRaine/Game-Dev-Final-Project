@@ -52,3 +52,5 @@ The girls asks her father what happened, assuming that he'd been maliciously
 knocked unconscious by an antagonistic Corporation employee. Her father, slowly
 coming-to, begins to explain.
 
+[will add more later -- David]
+
