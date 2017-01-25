@@ -9,7 +9,7 @@ much.
 Her parents are inventors, a skill which the girl always felt had not been
 passed down the genetic line. Their inventing skills were used to supply the
 town with creative solutions to minor problems: [insert fun examples here]. They
-had not been particulary successful in breaking into a larger industry; their
+had not been particularly successful in breaking into a larger industry; their
 ideals against intellectual property kept them out of the larger corporations.
 Besides, they were perfectly content in their small town with their friends and
 a seemingly interminable stream of minor problems for them to solve.
@@ -55,3 +55,6 @@ coming-to, begins to explain.
 [will add more later -- David]
 
 [flippin cliffhangers! -- Jacob]
+
+[I like this! -- Sumner]
+[Are we seriously using a md file in Git for communication? -- Sumner]
