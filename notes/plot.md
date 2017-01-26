@@ -1,3 +1,10 @@
+Details
+=======
+
+(Temporary, these can be changed.)
+
+Protagonist's name: Emmaleia (Nickname 'Emma')
+
 Background
 ==========
 
@@ -51,6 +58,10 @@ smile on his face.
 The girls asks her father what happened, assuming that he'd been maliciously
 knocked unconscious by an antagonistic Corporation employee. Her father, slowly
 coming-to, begins to explain.
+
+Father: "Emmeleia...heh...what are you doing here?" *coughs*
+Emma:   "Father, who did this to you?"
+Emma:   "Heh, what do you mean? I feel fine, Emma."
 
 [will add more later -- David]
 
