@@ -1,9 +1,8 @@
 Details
 =======
 
-(Temporary, these can be changed.)
-
 Protagonist's name: Emmaleia (Nickname 'Emma')
+Father's name: Harrison
 
 Background
 ==========
@@ -59,9 +58,17 @@ The girls asks her father what happened, assuming that he'd been maliciously
 knocked unconscious by an antagonistic Corporation employee. Her father, slowly
 coming-to, begins to explain.
 
-Father: "Emmeleia...heh...what are you doing here?" *coughs*
-Emma:   "Father, who did this to you?"
-Emma:   "Heh, what do you mean? I feel fine, Emma."
+Harrison: "Emmeleia...heh...what are you doing here?" *coughs*
+Emma:     "Harrison, who did this to you?"
+Harrison: "Heh, don't worry about me. How are you? Have you been hurt?"
+Emma:     "Father, you were lying unconscious on the floor!"
+Harrison: "Heh, I suppose I was, wasn't I?"
+Harrison: *shakes head vigorously*
+Harrison: "Whew, sorry about that. Have you seen your mother?"
+Emma:     "Not yet...is she safe?"
+Harrison: "I'm sure she's fine, but you should go find her to be sure."
+
+Emma's father rolls over, revealing a black triangle-shaped patch.
 
 [will add more later -- David]
 
@@ -70,3 +77,6 @@ Emma:   "Heh, what do you mean? I feel fine, Emma."
 [I like this! -- Sumner]
 [Are we seriously using a md file in Git for communication? -- Sumner]
 [Maaaayyyyybbbeeeee :P]
+
+[y'know, in `kakoune` multiple users can edit the same file at once ;) -- David]
+
