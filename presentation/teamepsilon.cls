@@ -13,16 +13,22 @@
 \RequirePackage{minted}
 \RequirePackage{xcolor}
 \RequirePackage{hyperref}
+\RequirePackage[overlay,absolute]{textpos}
 
 \renewcommand*\footnoterule{}
 \setminted{autogobble,python3,mathescape}
-%\usemintedstyle{emacs}
 
 \beamertemplatenavigationsymbolsempty%
+\def\logoimage{../logo/team-epsilon-light}
 
 \setlength\parindent{0pt}
 
 \AtBeginDocument{%
+    \begin{textblock*}{50mm}%
+(\paperwidth-60mm,\paperheight-50mm)
+        \includegraphics[width=50mm]{\logoimage}
+    \end{textblock*}
+
     \maketitle
 }
 
