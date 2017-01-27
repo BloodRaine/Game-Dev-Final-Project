@@ -19,7 +19,7 @@
 \setminted{autogobble,python3,mathescape}
 
 \beamertemplatenavigationsymbolsempty%
-\def\logoimage{../logo/team-epsilon-light}
+\def\logoimage{../graphics/logo/team-epsilon-light}
 
 \setlength\parindent{0pt}
 
