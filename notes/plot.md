@@ -77,6 +77,7 @@ Emma's father rolls over, revealing a black triangle-shaped patch.
 [I like this! -- Sumner]
 [Are we seriously using a md file in Git for communication? -- Sumner]
 [Maaaayyyyybbbeeeee :P]
+[:þ]
 
 [y'know, in `kakoune` multiple users can edit the same file at once ;) -- David]
 
