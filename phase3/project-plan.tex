@@ -12,6 +12,8 @@
 % -   Define the process specifying and controlling the design requirements
 
 
+
+
 \documentclass[12pt,titlepage]{article}
 \usepackage[margin=1.0in]{geometry}
 \usepackage{graphicx}
@@ -21,6 +23,11 @@
 \usepackage{titling}
 \usepackage{titlesec}
 \usepackage{xspace}
+
+\usepackage{enumitem,amssymb}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+
 
 \newcommand\tab[1][.5in]{\hspace*{#1}}
 
@@ -32,6 +39,41 @@
 \section{Tasks}
 
 \subsection{Milestone Deliveries}
+    \begin{todolist}
+        \item \textbf{Milestone I:} Overworld
+            \begin{todolist}
+                \item Character Movement
+                \item NPC interaction
+                \item Combat Hooks
+                \item Menu UI Systems
+            \end{todolist}
+        \item \textbf{Milestone II:} Combat System
+            \begin{todolist}
+                \item Deck Randomization
+                \item Turn Based System
+                \item Combat Animations
+                \item End of combat (apply damage)
+            \end{todolist}    
+        \item \textbf{Milestone III:} Alpha Release
+            \begin{todolist}
+                \item Integrate Overworld and combat
+                \item Story flushed out
+                \item A working location
+            \end{todolist}
+        \item \textbf{Milestone IV:} Beta Release
+            \begin{todolist}
+                \item All regions of world
+                \item Asset Integration
+                \item Pool of appx. 30 cards per character
+                \item 30 non-character specific cards
+                \item Minimum of 4 elemental status types
+            \end{todolist}
+        \item \textbf{Milestone V:} Final Release
+            \begin{todolist}
+                \item bug fixes
+                \item stretch goals
+            \end{todolist}
+    \end{todolist}
 
 \subsection{Dependencies \& Resources}
 
