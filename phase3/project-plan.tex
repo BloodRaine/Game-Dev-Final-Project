@@ -20,14 +20,22 @@
 \usepackage{csquotes}
 \usepackage{titling}
 \usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{float}
 \usepackage{xspace}
 
 \newcommand\tab[1][.5in]{\hspace*{#1}}
+\newcommand\gametitle{\textit{\AE on Chronicles}}
 
 
 \begin{document}
 
 \section{Introduction}
+
+This document outlines the project management guidelines for Team Epsilon's
+development of \gametitle, an adventure RPG video game.
+
+The rest of the document is organized as follows. TODO
 
 \section{Tasks}
 
@@ -41,9 +49,61 @@
 
 \section{Development}
 
+\subsection{Documents}
+
+The following is a list of documents relevant to maintaining the project.
+
+\begin{table}[H]
+\centering
+\caption{Development Documents}
+\begin{tabularx}{\linewidth}{|l|X|}
+\hline
+{\bf Document}         & {\bf Purpose} \\ \hline
+{\it Design Document}  & \\ \hline
+{\it Bugs \& Features} & Documents all upcoming and completed features, as well
+                         as descriptions and discovery-dates of all bugs for a
+                         particular feature. A status is provided for each
+                         feature which indicates whether the feature has been
+                         tested by the Test Lead for further bugs. Each bug
+                         includes a Resolution field that indicates whether the
+                         bug has been resolved, as well as a description as to
+                         how the bug was resolved. \\ \hline
+\end{tabularx}
+\end{table}
+
+
 \subsection{Risk Analysis}
 
 \subsection{Test Plan}
+
+In general, periodic plays and replays of sections of the game should be done to
+provide a loose redundant check on the game's stability. A more formal testing
+structure is defined next.
+
+Testing of the game will take place in incremental steps throughout development
+of the game. While automated testing would present a robust and consistent
+testing method, the time constraints of the project and its nature as a video
+game make this an infeasible testing strategy. Therefore, the team will rely on
+a system of collaborative manual testing that works as follows:
+
+\begin{enumerate}
+\item When adding a new feature to the game, the developer(s) adding the feature
+      will test it and ensure that all directly affected aspects of the game
+      perform in the expected manner. The feature will then be documented in the
+      {\it Bugs \& Features} document. Any remaining bugs that the developer is
+      unable to resolve should also be documented in the {\it Bugs \& Fixtures}
+      document.
+\item It is then up to the Test Lead to monitor the {\it Bugs \& Features}
+      document for new features that they should test for completeness and bugs.
+      If the Test Lead is unable to resolve all bugs for any reason, they may
+      delegate specific bug resolutions to other members of the team.
+
+      {\it Caveat}: In the case that the Test Lead has added a particular
+      feature themselves, they must act in accordance with step 1. The task of
+      further testing (step 2) then falls on the Team Leader by default, though
+      the Test Lead may assign this to another team member at their own
+      discretion on a case-by-case basis.
+\end{enumerate}
 
 \subsection{Configuration Management}
 
