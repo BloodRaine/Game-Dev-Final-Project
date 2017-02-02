@@ -1,7 +1,12 @@
 % Be sure to address the following items:
 % -   Introduction
 % -   Define sequence of tasks to be performed
-% -   Identify all deliverables (Milestone Deliveries)  - IMPORTANT:  This is a critical item in that your future deliveries will be evaluated based on this.   It needs to be clear, detailed, and objective (can I go through your milestone description like a check list to see if your delivery is complete?).   Note, as the project goes forward this can change, and that is perfectly OK.
+% -   Identify all deliverables (Milestone Deliveries)  - IMPORTANT:  This is a
+%     critical item in that your future deliveries will be evaluated based on
+%     this.   It needs to be clear, detailed, and objective (can I go through
+%     your milestone description like a check list to see if your delivery is
+%     complete?).   Note, as the project goes forward this can change, and that
+%     is perfectly OK.
 % -   Define the dependency relationship between each task
 % -   Estimate resources required to perform each task
 % -   Schedule all tasks to be performed
@@ -21,23 +26,68 @@
 \usepackage{titling}
 \usepackage{titlesec}
 \usepackage{xspace}
+\usepackage{float}
+\usepackage{tabularx}
 
 \newcommand\tab[1][.5in]{\hspace*{#1}}
 
+\title{Project Plan}
+\author{Team Epsilon}
+\date{\today}
 
 \begin{document}
+\maketitle
 
 \section{Introduction}
 
 \section{Tasks}
 
+\begin{itemize}
+    \item Overworld design
+    \item Overworld artwork
+    \item Character background development
+    \item Character artwork
+    \item Combat scene artwork
+    \item General GUI design
+    \item Story development
+    \item World layout development
+    \item Code overworld
+    \item Code combat
+    \item Code the HUD
+\end{itemize}
+
 \subsection{Milestone Deliveries}
 
 \subsection{Dependencies \& Resources}
+Table~\ref{tab:dependencies} outlines the major dependencies between the tasks
+in our project.
+\begin{table}[H]
+    \caption{Dependencies}
+    \label{tab:dependencies}
+    \centering
+    \begin{tabularx}{\linewidth}{|l|X|}
+        \hline
+        \textbf{Task} & \textbf{Dependent Tasks} \\
+        \hline
+        Overworld design & Overworld artwork, Code overworld \\
+        General GUI design & Code the HUD \\
+        World layout development & Code overworld \\
+        \hline
+    \end{tabularx}
+\end{table}
 
 \subsection{Task Schedule}
 
 \section{Organization}
+Each team member has a specific set of tasks described below. All team members
+will contribute to the coding effort.
+\begin{itemize}
+    \item \textbf{Caleb:} Recorder and scheduler, programming, test lead
+    \item \textbf{David:} Programming, story creation
+    \item \textbf{Jacob:} Programming, sound \& music
+    \item \textbf{Robbie:} Team lead, concept art, programming
+    \item \textbf{Sumner:} Programming, document maintenance
+\end{itemize}
 
 \section{Development}
 
