@@ -36,6 +36,8 @@
 \usepackage{enumitem,amssymb}
 \newlist{todolist}{itemize}{2}
 \setlist[todolist]{label=$\square$}
+\setlength\parskip{1em}
+\setlength\parindent{0em}
 
 
 \newcommand\tab[1][.5in]{\hspace*{#1}}
@@ -53,9 +55,15 @@
 This document outlines the project management guidelines for Team Epsilon's
 development of \gametitle, an adventure RPG video game.
 
-The rest of the document is organized as follows. TODO
+The rest of the document is organized as follows. Section~\ref{sec:tasks}
+outlines the tasks that will be performed at each milestone, what dependencies
+exist between the tasks, and what the task schedule will be.
+Section~\ref{sec:org} explains the organization of the team.
+Section~\ref{sec:dev} outlines the development process including what documents
+will be maintained and a test plan to ensure game quality.
 
 \section{Tasks}
+\label{sec:tasks}
 
 \begin{itemize}
     \item Overworld design
@@ -80,6 +88,7 @@ The rest of the document is organized as follows. TODO
                 \item Combat Hooks
                 \item Menu UI Systems
             \end{todolist}
+
         \item \textbf{Milestone II:} Combat System
             \begin{todolist}
                 \item Deck Randomization
@@ -87,12 +96,14 @@ The rest of the document is organized as follows. TODO
                 \item Combat Animations
                 \item End of combat (apply damage)
             \end{todolist}
+
         \item \textbf{Milestone III:} Alpha Release
             \begin{todolist}
                 \item Integrate Overworld and combat
                 \item Story flushed out
                 \item A working location
             \end{todolist}
+
         \item \textbf{Milestone IV:} Beta Release
             \begin{todolist}
                 \item All regions of world
@@ -101,6 +112,7 @@ The rest of the document is organized as follows. TODO
                 \item 30 non-character specific cards
                 \item Minimum of 4 elemental status types
             \end{todolist}
+
         \item \textbf{Milestone V:} Final Release
             \begin{todolist}
                 \item bug fixes
@@ -134,8 +146,9 @@ in our project.
 \subsection{Task Schedule}
 
 \section{Organization}
-Each team member has a specific set of tasks described below. All team members
-will contribute to the coding effort.
+\label{sec:org}
+Each team member has a specific set of tasks described below. In addition to
+their individual tasks, all team members will contribute to the coding effort.
 \begin{itemize}
     \item \textbf{Caleb:} Recorder and scheduler, programming, test lead
     \item \textbf{David:} Programming, story creation
@@ -145,6 +158,7 @@ will contribute to the coding effort.
 \end{itemize}
 
 \section{Development}
+\label{sec:dev}
 
 \subsection{Documents}
 
