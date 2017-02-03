@@ -193,6 +193,50 @@ The following is a list of documents relevant to maintaining the project.
 
 \subsection{Risk Analysis}
 
+Table~\ref{tab:dependencies} lists all possible major risks of the project and
+our contingency plans to avoid each issue and what we will do in the case that
+it occurs.
+
+\begin{table}[H]
+    \caption{Risk Analysis}
+    \label{tab:dependencies}
+    \centering
+    \begin{tabularx}{\linewidth}{|l|X|}
+        \hline
+        \textbf{Possible Risk} & \textbf{Contingency Plan} \\
+        \hline
+        Non-competitive enemy AI & If it proves too difficult to create
+		different AIs for various enemies and bosses, we can opt to create
+		only one enemy AI to use with every combat encounter. We can also
+		make this more simple than we'd like to save time. \\
+        \hline
+        Overambitious project scope & We believe that we have allocated our
+		milestone goals in a way that we will be able to implement the core
+		gameplay and assets that are necessary for the game to function;
+		however, it is possible that we have been overambitious in our
+		allocations. If that is the case we will have to cut back on
+		functionalities and assets starting with in depth art and music assets
+		followed by unique cards and encounters in tandem with overworld
+		locations and interactions. This could also limit story development.  \\
+        \hline
+        Meeting deadlines & This risk has many similarities to the risk of an
+		overambitious project scope. If we are unable to integrate a desired
+		functionality before a milestone delivery, we will table the
+		functionality until we have extra time to complete it in addition to
+		all other parts of the next delivery. This could result in it being
+		tabled indefinitely in which case we will refer to the order of
+		functionalities to drop described above. \\
+        \hline
+        Large number of dependencies between tasks & We believe we have
+		allocated our milestone goals in a way that we will be able to
+		implement the necessary functionalities prior to when we plan to
+		implement the functionalities that depend on them. If that is not the
+		case, similarly to the case of not meeting deadlines, we will drop
+		functinalities in the order described above. \\
+        \hline
+    \end{tabularx}
+\end{table}
+
 \subsection{Test Plan}
 
 In general, periodic plays and replays of sections of the game should be done to
