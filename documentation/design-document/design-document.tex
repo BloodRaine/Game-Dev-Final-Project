@@ -7,6 +7,8 @@
 \usepackage{titling}
 \usepackage{titlesec}
 \usepackage{xspace}
+\usepackage{tabularx}
+\usepackage{float}
 
 % Variables
 % =========
@@ -19,7 +21,7 @@
 \newcommand{\hometown}{TOWNSVILLE\xspace}
 \newcommand{\evilCorp}{BADCORP\xspace}
 \newcommand{\world}{KANTO\xspace}
-
+\newcommand\gametitle{\textit{\AE on Chronicles}\xspace}
 
 \MakeOuterQuote{"}
 
@@ -66,7 +68,7 @@
 % http://tex.stackexchange.com/a/56558/100230
 \AtBeginDocument{\renewcommand\contentsname{Table of Contents}}
 
-\title{\AE on Chronicles}
+\title{\gametitle}
 \subtitle{SUBTITLE?}
 \author{Team Epsilon}
 \date{\today}
@@ -84,6 +86,18 @@
 \newpage
 \section{Design History}
 % This is a change listing quickly describing each major version and changes.
+\begin{table}[H]
+    \caption{Version History}
+    \label{tbl:version_history}
+    \centering
+    \begin{tabularx}{\linewidth}{| l | l || X |}
+        \hline
+        \textbf{Version Number} & \textbf{Date} & \textbf{Change Description} \\
+        \hline\hline
+        1.0 & 2017-02-03 & First Draft \\
+        \hline
+    \end{tabularx}
+\end{table}
 
 \newpage
 \section{Game Overview}
