@@ -32,11 +32,11 @@
 \usepackage{xspace}
 \usepackage{float}
 \usepackage{tabularx}
+\usepackage{parskip}
 
 \usepackage{enumitem,amssymb}
 \newlist{todolist}{itemize}{2}
 \setlist[todolist]{label=$\square$}
-\setlength\parskip{1em}
 \setlength\parindent{0em}
 
 
@@ -64,61 +64,49 @@ will be maintained and a test plan to ensure game quality.
 
 \section{Tasks}
 \label{sec:tasks}
-
-\begin{itemize}
-    \item Overworld design
-    \item Overworld artwork
-    \item Character background development
-    \item Character artwork
-    \item Combat scene artwork
-    \item General GUI design
-    \item Story development
-    \item World layout development
-    \item Code overworld
-    \item Code combat
-    \item Code the HUD
-\end{itemize}
+This section outlines the tasks that must be completed to ensure that the
+development of \gametitle is successful.
 
 \subsection{Milestone Deliveries}
-    \begin{todolist}
-        \item \textbf{Milestone I:} Overworld
-            \begin{todolist}
-                \item Character Movement
-                \item NPC interaction
-                \item Combat Hooks
-                \item Menu UI Systems
-            \end{todolist}
+\begin{todolist}
+    \item \textbf{Milestone I:} Overworld
+        \begin{todolist}
+            \item Character Movement
+            \item NPC interaction
+            \item Combat Hooks
+            \item Menu UI Systems
+        \end{todolist}
 
-        \item \textbf{Milestone II:} Combat System
-            \begin{todolist}
-                \item Deck Randomization
-                \item Turn Based System
-                \item Combat Animations
-                \item End of combat (apply damage)
-            \end{todolist}
+    \item \textbf{Milestone II:} Combat System
+        \begin{todolist}
+            \item Deck Randomization
+            \item Turn Based System
+            \item Combat Animations
+            \item End of combat (apply damage)
+        \end{todolist}
 
-        \item \textbf{Milestone III:} Alpha Release
-            \begin{todolist}
-                \item Integrate Overworld and combat
-                \item Story flushed out
-                \item A working location
-            \end{todolist}
+    \item \textbf{Milestone III:} Alpha Release
+        \begin{todolist}
+            \item Integrate Overworld and combat
+            \item Story flushed out
+            \item A working location
+        \end{todolist}
 
-        \item \textbf{Milestone IV:} Beta Release
-            \begin{todolist}
-                \item All regions of world
-                \item Asset Integration
-                \item Pool of approximately 30 cards per character
-                \item 30 non-character specific cards
-                \item Minimum of 4 elemental status types
-            \end{todolist}
+    \item \textbf{Milestone IV:} Beta Release
+        \begin{todolist}
+            \item All regions of world
+            \item Asset Integration
+            \item Pool of approximately 30 cards per character
+            \item 30 non-character specific cards
+            \item Minimum of 4 elemental status types
+        \end{todolist}
 
-        \item \textbf{Milestone V:} Final Release
-            \begin{todolist}
-                \item bug fixes
-                \item stretch goals
-            \end{todolist}
-    \end{todolist}
+    \item \textbf{Milestone V:} Final Release
+        \begin{todolist}
+            \item bug fixes
+            \item stretch goals
+        \end{todolist}
+\end{todolist}
 
 \subsection{Dependencies \& Resources}
 Table~\ref{tab:dependencies} outlines the major dependencies between the tasks
@@ -144,6 +132,27 @@ in our project.
 \end{table}
 
 \subsection{Task Schedule}
+The following table shows the timetable for milestone completion.
+\begin{table}[H]
+    \caption{Milestone Delivery Schedule}
+    \label{tab:schedule}
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Milestone} & \textbf{Date} \\
+        \hline
+        Milestone I: Overworld & 2017/02/27 \\
+        \hline
+        Milestone II: Combat & 2017/03/13 \\
+        \hline
+        Milestone III: Alpha & 2017/03/24 \\
+        \hline
+        Milestone IV: Beta & 2017/04/14 \\
+        \hline
+        Milestone V: Final & 2017/04/26 \\
+        \hline
+    \end{tabular}
+\end{table}
 
 \section{Organization}
 \label{sec:org}
