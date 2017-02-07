@@ -26,6 +26,8 @@
 
 \MakeOuterQuote{"}
 
+\newcommand\tab[1][.5in]{\hspace*{#1}}
+
 % http://tex.stackexchange.com/a/50186/100230
 \newcommand{\subtitle}[1]{
     \posttitle{
@@ -78,6 +80,8 @@
 \maketitle
 
 \tableofcontents
+\listoffigures
+\listoftables
 
 % NOTES:
 % - There are some places where I have commented out a list of items that are suggested to be
@@ -114,7 +118,8 @@ game's theme is Aether punk. Blah blah blah.
 \subsection{Target Audience}
 
 \subsection{Game Flow Summary}
-% How does the player move through the game. Both framing interface and the game itself.
+% How does the player move through the game. Both framing interface and the game
+% itself.
 
 \subsection{Look and Feel}
 % What is the basic look and feel of the game? What is the visual style?
@@ -147,9 +152,10 @@ IN PROGRESS: Aether Punk
 % How does the game flow for the game player?
 
 \subsection{Mechanics}
-% What are the rules to the game, both implicit and explicit.  This is
-% the model of the universe that the game works under.  Think of it as a simulation of a world, how
-% do all the pieces interact?  This actually can be a very large section.
+% What are the rules to the game, both implicit and explicit.  This is the model
+% of the universe that the game works under.  Think of it as a simulation of a
+% world, how do all the pieces interact?  This actually can be a very large
+% section.
 
 \subsubsection{Physics}
 % How does the physical universe work?
@@ -261,7 +267,7 @@ citizens with even less hope than they thought possible.
 One day, the girl's house is set on fire. She rushes to find her parents, who
 are nowhere to be found. The final place she looks is her parents' workshop, but
 still no sign. As she leaves the workshop, she makes the quick decision to grab
-one of her parents' inventions before the fire destroyes them all and her old
+one of her parents' inventions before the fire destroys them all and her old
 life.
 
 A bit of thought and investigation leads the girl to believe that her parents
@@ -370,8 +376,9 @@ Finally, she reaches the corporations' HQ and fights the final battle...
 \section{Artificial Intelligence}
 
 \subsection{Opponent AI}
-% The active opponent that plays against the game player and therefore requires strategic decision
-% making (example, Civilization or Chess, how is it to be designed?)
+% The active opponent that plays against the game player and therefore requires
+% strategic decision making (example, Civilization or Chess, how is it to be
+% designed?)
 
 \subsection{Enemy AI}
 % Villains and Monsters
@@ -447,8 +454,69 @@ Finally, she reaches the corporations' HQ and fights the final battle...
 \section{Management}
 
 \subsection{Detailed Schedule}
+Table~\ref{tab:milestones} shows the five major milestones and their due dates.
+\begin{table}[H]
+    \caption{Milestone Delivery Schedule}
+    \label{tab:milestones}
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Milestone} & \textbf{Date} \\
+        \hline\hline
+        Milestone I: Overworld & 2017/02/27 \\
+        \hline
+        Milestone II: Combat & 2017/03/13 \\
+        \hline
+        Milestone III: Alpha & 2017/03/24 \\
+        \hline
+        Milestone IV: Beta & 2017/04/14 \\
+        \hline
+        Milestone V: Final & 2017/04/26 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+% TODO: More details
 
 \subsection{Budget}
+\begin{table}[H]
+    \caption{Expenses}
+    \label{tab:expenses}
+    \centering
+    \begin{tabular}{|l|r|}
+        \hline
+        \textbf{Item} & Amount \\
+        \hline\hline
+        \textbf{Labour} & \textbf{\$500,000} \\
+        \tab Caleb & \$100,000 \\
+        \tab David & \$100,000 \\
+        \tab Jacob & \$100,000 \\
+        \tab Robbie & \$100,000 \\
+        \tab Sumner & \$100,000 \\
+                    &\\
+        \textbf{Equipment} & \textbf{\$6,193} \\
+        \tab FL Studio 12 & \$99 \\
+        \tab MSDN Standard Subscriptions (5) & \$5,995 \\
+        \tab Adobe Creative Cloud & \$99 \\
+                                  & \\
+        \textbf{Travel} & \textbf{\$9,245} \\
+        \tab San Francisco Game Developers Conference Tickets (5) & \$8,495 \\
+        \tab Denver $\leftrightarrow$ San Francisco Plane Fare (5) & \$750 \\
+                                                                   & \\
+        \textbf{Marketing} & \textbf{\$5,212,000} \\
+        \tab Ad Production & \$200,000 \\
+        \tab Super Bowl Ad & \$5,000,000 \\
+        \tab YouTube Ads & \$2,000 \\
+        \tab Promotional Website & \$10,000 \\
+        \hline\hline
+        \textbf{TOTAL} & \textbf{\$5,727,438} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+Given the expenses from Table~\ref{tab:expenses} and including a small buffer
+for unforeseen expenses, production and marketing of \gametitle will cost \$6
+million.
 
 \subsection{Risk Analysis}
 
