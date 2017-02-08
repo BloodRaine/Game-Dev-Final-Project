@@ -80,7 +80,9 @@
 \maketitle
 
 \tableofcontents
+\newpage
 \listoffigures
+\newpage
 \listoftables
 
 % NOTES:
@@ -100,6 +102,8 @@
         \textbf{Version Number} & \textbf{Date} & \textbf{Change Description} \\
         \hline\hline
         1.0 & 2017-02-03 & First Draft \\
+        \hline
+        2.0 & 2017-02-10 & Initial Design Completed \\
         \hline
     \end{tabularx}
 \end{table}
@@ -479,6 +483,10 @@ Table~\ref{tab:milestones} shows the five major milestones and their due dates.
 % TODO: More details
 
 \subsection{Budget}
+Given the expenses from Table~\ref{tab:expenses} and including a small buffer
+for unforeseen expenses, production and marketing of \gametitle will cost \$6
+million.
+
 \begin{table}[H]
     \caption{Expenses}
     \label{tab:expenses}
@@ -514,15 +522,82 @@ Table~\ref{tab:milestones} shows the five major milestones and their due dates.
     \end{tabular}
 \end{table}
 
-Given the expenses from Table~\ref{tab:expenses} and including a small buffer
-for unforeseen expenses, production and marketing of \gametitle will cost \$6
-million.
-
 \subsection{Risk Analysis}
 
-\subsection{Localization Plan}
+Table~\ref{tab:risks} lists all possible major risks of the project and
+our contingency plans to avoid each issue and what we will do in the case that
+it occurs.
+
+\begin{table}[H]
+    \caption{Risk Analysis}
+    \label{tab:risks}
+    \centering
+    \begin{tabularx}{\linewidth}{|l|X|}
+        \hline
+        \textbf{Possible Risk} & \textbf{Contingency Plan} \\
+        \hline
+        Non-competitive enemy AI & If it proves too difficult to create
+        different AIs for various enemies and bosses, we can opt to create
+        only one enemy AI to use with every combat encounter. We can also
+        make this more simple than we'd like to save time. \\
+        \hline
+        Overambitious project scope & We believe that we have allocated our
+        milestone goals in a way that we will be able to implement the core
+        gameplay and assets that are necessary for the game to function;
+        however, it is possible that we have been overambitious in our
+        allocations. If that is the case we will have to cut back on
+        functionalities and assets starting with in depth art and music assets
+        followed by unique cards and encounters in tandem with overworld
+        locations and interactions. This could also limit story development.  \\
+        \hline
+        Meeting deadlines & This risk has many similarities to the risk of an
+        overambitious project scope. If we are unable to integrate a desired
+        functionality before a milestone delivery, we will table the
+        functionality until we have extra time to complete it in addition to
+        all other parts of the next delivery. This could result in it being
+        tabled indefinitely in which case we will refer to the order of
+        functionalities to drop described above. \\
+        \hline
+        Large number of dependencies between tasks & We believe we have
+        allocated our milestone goals in a way that we will be able to
+        implement the necessary functionalities prior to when we plan to
+        implement the functionalities that depend on them. If that is not the
+        case, similarly to the case of not meeting deadlines, we will drop
+        functionalities in the order described above. \\
+        \hline
+    \end{tabularx}
+\end{table}
 
 \subsection{Test Plan}
+
+In general, periodic plays and replays of sections of the game should be done to
+provide a loose redundant check on the game's stability. A more formal testing
+structure is defined next.
+
+Testing of the game will take place in incremental steps throughout development
+of the game. While automated testing would present a robust and consistent
+testing method, the time constraints of the project and its nature as a video
+game make this an infeasible testing strategy. Therefore, the team will rely on
+a system of collaborative manual testing that works as follows:
+
+\begin{enumerate}
+\item When adding a new feature to the game, the developer(s) adding the feature
+      will test it and ensure that all directly affected aspects of the game
+      perform in the expected manner. The feature will then be documented in the
+      {\it Bugs \& Features} document. Any remaining bugs that the developer is
+      unable to resolve should also be documented in the {\it Bugs \& Features}
+      document.
+\item It is then up to the Test Lead to monitor the {\it Bugs \& Features}
+      document for new features that they should test for completeness and bugs.
+      If the Test Lead is unable to resolve all bugs for any reason, they may
+      delegate specific bug resolutions to other members of the team.
+
+      {\it Caveat}: In the case that the Test Lead has added a particular
+      feature themselves, they must act in accordance with step 1. The task of
+      further testing (step 2) then falls on the Team Leader by default, though
+      the Test Lead may assign this to another team member at their own
+      discretion on a case-by-case basis.
+\end{enumerate}
 
 \newpage
 \section{Appendices}
