@@ -11,18 +11,27 @@
 \usepackage{float}
 \usepackage{parskip}
 
-% Variables
-% =========
+% Commands
+% ========
 
-% Story
-% -----
-\newcommand{\protagonist}{Vivian\xspace}
-\newcommand{\dad}{Harrison\xspace}
-\newcommand{\mom}{MOM\xspace}
-\newcommand{\hometown}{TOWNSVILLE\xspace}
-\newcommand{\evilCorp}{BADCORP\xspace}
-\newcommand{\world}{KANTO\xspace}
+% Names of things
+% ---------------
+\newcommand\protagonist{Vivian\xspace}
+\newcommand\dad{Harrison\xspace}
+\newcommand\mom{MOM\xspace}
+\newcommand\hometown{TOWNSVILLE\xspace}
+\newcommand\evilcorp{BADCORP\xspace}
+\newcommand\world{KANTO\xspace}
+\newcommand\cardgame{CARDGAME\xspace}
+
 \newcommand\gametitle{\textit{\AE on Chronicles}\xspace}
+
+% Useful things
+% -------------
+
+\newcommand\sep{\rule{2.5in}{0.1mm}}
+\newcommand\tss{\textsuperscript}
+
 
 \MakeOuterQuote{"}
 
@@ -110,8 +119,8 @@
 
 \newpage
 \section{Game Overview}
-\gametitle is a story-based, adventure RPG inspired by \{INSPIRATION\}. The
-game's theme is Aether punk. Blah blah blah.
+\gametitle is a story-based, adventure RPG inspired by [TODO: INSPIRATION AND
+REFERENCE]. The game's theme is Aether punk. Blah blah blah.
 
 \subsection{Game Concept}
 
@@ -125,6 +134,25 @@ game's theme is Aether punk. Blah blah blah.
 % How does the player move through the game. Both framing interface and the game
 % itself.
 
+During gameplay, the player will experience two primary views. The first is the
+{\it overworld view}, where the player navigates the land of \world. In this
+view, isometric projection of the game world centers on the playable character
+as the player travels \world. The player can interact with the world's NPCs via
+their sprites, enter buildings, and pick up items. Interactions with the NPCs
+will often lead to \cardgame battles , which then switches the game interface to
+the {\it combat view}.
+
+The combat view is where \cardgame battles take place; the design is shown in
+Figure \ref{fig:combat} of Section \ref{sec:concept_art}. This view consists of
+a battle scene, which displays animations of the cards currently in play, with
+the player's card animations on the left and enemy NPC's on the right.
+Information about the game is communicated to the user through the surrounding
+combat interface. This interface includes the HP of the player and opponent
+(top-right), the player's card (bottom-center), stats for the currently selected
+card (bottom-left), deck and remaining card count (bottom-right), and [TODO: NOT
+SURE WHAT THAT IS ON THE TOP-LEFT] (top-left). Once the battle is over, the
+player returns to the overworld view.
+
 \subsection{Look and Feel}
 % What is the basic look and feel of the game? What is the visual style?
 IN PROGRESS: Aether Punk
@@ -137,6 +165,30 @@ IN PROGRESS: Aether Punk
 % - Number of NPC's
 % - Number of Weapons
 % - etc.
+
+There will be three cities outside of the main character's hometown, as well as
+three themed non-city areas: a cave, a jungle, and a desolate wasteland. The
+game will progress through the locations in the order:
+
+\begin{enumerate}
+    \item Hometown
+    \item Cave
+    \item City \#1
+    \item Jungle
+    \item City \#2
+    \item Desolate Wasteland
+    \item City \#3
+\end{enumerate}
+
+The final area is where the player confronts \evilcorp and faces their final
+three opponents during the climax of the story. In each of the first two cities,
+the player will have to defeat a single NPC to move on to the next section. In
+each of the non-city areas, the player will have to complete three card battles
+against NPCs, which will tend to be easier than the city battles. Further, each
+city battle and one of each trio of non-city battles will reward the player with
+one or more additional cards.
+
+[TODO: NUMBER OF UNIQUE CARDS IN THE GAME]
 
 \newpage
 \section{Gameplay and Mechanics}
@@ -208,8 +260,8 @@ IN PROGRESS: Aether Punk
 
 The story is centered around a single character, \protagonist, who embarks on an
 adventure to save her parents, \dad and \mom, from the evil clutches of
-\evilCorp. Join \protagonist as she makes her way across the land of \world to
-face \evilCorp head-on and save her parents!
+\evilcorp. Join \protagonist as she makes her way across the land of \world to
+face \evilcorp head-on and save her parents!
 
 \subsection{Story and Narrative}
 
@@ -234,7 +286,10 @@ content in their small town with their friends and a seemingly interminable
 stream of minor problems for them to solve.
 
 They do, however, have one major project that they collaborate with
-inventors-of-similar-ideals on: the very first free brain augmentation platform.
+inventors-of-similar-ideals on: the very first free and open-source brain
+augmentation platform.
+
+\sep
 
 Brain augmentation was not a new technology. The first feasible attempts at its
 implementation had begun 150 years prior to the present day, with success
@@ -421,7 +476,8 @@ Finally, she reaches the corporations' HQ and fights the final battle...
 % - Cut scenes
 % - Miscellaneous
 
-\subsection{Concept Artwork}
+\subsection{Concept Artwork}\label{sec:concept_art}
+
 \begin{figure}[H]
     \caption{Overworld View}
     \label{fig:overview}
