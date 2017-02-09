@@ -49,8 +49,6 @@ general population had an astounding effect: the already-unprecedented
 socioeconomic gap shot open, a wound that left the already poor and starving
 citizens with even less hope than they thought possible.
 
-\[x years before,
-reserved for rich, created an unprecedented gap in social hierarchies, ...\]
 
 Intro
 =====
