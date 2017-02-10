@@ -7,13 +7,10 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
-    <sprite>sprites\sprite1</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\veneer_char.gml</script>
-    <script>scripts\veneer_octal.gml</script>
     <script>scripts\veneer_script.gml</script>
     <script>scripts\base_convert.gml</script>
   </scripts>
