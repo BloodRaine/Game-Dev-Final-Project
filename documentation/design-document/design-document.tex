@@ -80,7 +80,7 @@
 % http://tex.stackexchange.com/a/56558/100230
 \AtBeginDocument{\renewcommand\contentsname{Table of Contents}}
 
-\title{\gametitle}
+\title{\gametitle Design Document}
 \subtitle{SUBTITLE?}
 \author{Team Epsilon}
 \date{\today}
@@ -240,6 +240,14 @@ one or more additional cards.
 
 \subsubsection{Screen Flow Chart}
 % A graphical description of how each screen is related to every other
+Figure~\ref{fig:screen_flow_chart} gives a very high level overview of how the
+various screens fit together.
+\begin{figure}[H]
+    \centering
+    \caption{Screen Flow Diagram}
+    \label{fig:screen_flow_chart}
+    \includegraphics[width=0.9\textwidth]{../../graphics/screen-flow-diagram}
+\end{figure}
 
 \subsubsection{Screen Descriptions}
 % What is the purpose of each screen?
@@ -247,6 +255,45 @@ one or more additional cards.
 % - Main menu screen
 % - Options screen
 % - etc.
+Table~\ref{tab:screen_purpose} describes the purpose of each game screen.
+\begin{table}[H]
+    \centering
+    \caption{Screen Purpose}
+    \label{tab:screen_purpose}
+    \begin{tabularx}{0.8\textwidth}{|l | X |}
+        \hline
+        \textbf{Screen} & \textbf{Description} \\
+        \hline\hline
+        \textbf{Load Screen} & Displayed while the game is loading \\
+        \hline
+        \textbf{Main Menu} & Provides game options such as TODO: FINISH \\
+        \hline
+        \textbf{Overworld} & View where player can move character around in the
+        world. Figure~\ref{fig:overview} shows a wireframe of the Overworld
+        view. \\
+        \hline
+        \textbf{Combat View} & Entered from the overworld when the player goes
+        over an enemy hitbox. Figure~\ref{fig:combat} shows a wireframe of the
+        combat view. \\
+        \hline
+        \textbf{Victory Screen} & If the player wins a battle, they will go to
+        the victory screen. If the battle rewards a card or item, they will be
+        shown it at this point. Additionally they will be shown statistics about
+        the game. \\
+        \hline
+        \textbf{Defeat Screen} & If the player looses a battle, they will go to
+        the defeat screen where they will be shown statistics on their loss \\
+        \hline
+        \textbf{Gameplay Menu} &  \\
+        \hline
+        \textbf{Card Deck Editor} & \\
+        \hline
+        \textbf{Item Editor} & \\
+        \hline
+        \textbf{Pause Screen} & \\
+        \hline
+    \end{tabularx}
+\end{table}
 
 \subsection{Game Options}
 % What are the options and how do they affect gameplay and mechanics?
@@ -379,17 +426,17 @@ Finally, she reaches the corporations' HQ and fights the final battle...
 % more characters as necessary
 
 \subsubsection{Rosalind}
-\tab Rosalind was born into a wealthy family. She is about the same age as Vivian, but because 
-they grew up in such different environments, they see the world from opposite ends of the 
-spectrum. Her parents are quite strict and often away, which has made Rosalind into a very 
-independent and slightly socially isolated person. Her disconnect with her family has led 
-her to crave something more, so she decides to experiment with brain augmentation 
-technology. The technology improves upon some of her already developed personal 
-strengths. She is very good at problem-solving, and the brain augmentation heightens her 
-senses, most noticeably her hearing. Her personality is reserved. She manages herself 
-well and knows how to get her way, but what she really craves is someone who she can 
-talk to and spend time with. She doesn't pity the poor, but she feels some guilt about 
-having access to the brain augmentation technology while others do not. Rosalind is 
+\tab Rosalind was born into a wealthy family. She is about the same age as Vivian, but because
+they grew up in such different environments, they see the world from opposite ends of the
+spectrum. Her parents are quite strict and often away, which has made Rosalind into a very
+independent and slightly socially isolated person. Her disconnect with her family has led
+her to crave something more, so she decides to experiment with brain augmentation
+technology. The technology improves upon some of her already developed personal
+strengths. She is very good at problem-solving, and the brain augmentation heightens her
+senses, most noticeably her hearing. Her personality is reserved. She manages herself
+well and knows how to get her way, but what she really craves is someone who she can
+talk to and spend time with. She doesn't pity the poor, but she feels some guilt about
+having access to the brain augmentation technology while others do not. Rosalind is
 blonde with long, wavy hair and steely grey eyes. Due to the augmentation, Rosalind has become more attuned with the Aether in the world, allowing her to use psionic like abilities. Etc..... more to come
 
 
