@@ -471,18 +471,110 @@ others thoughts
 \subsection{Visual System}
 
 \subsubsection{HUD}
-% What controls?
+
+The overworld HUD will display a method to navigate menus through clicks.
+
+The battle HUD will display player's current cards, player's discard pile size, 
+player's remaining deck size, player's remaining lives, opponent's remaining 
+lives, and whose turn it is.
 
 \subsubsection{Menus}
 
-\subsubsection{Rendering System}
+\gametitle will use a menu system similar to many other RPGs where each major 
+menu element is accessible through a clickable menu icon in the HUD usually in 
+a drop down menu and also available through hotkeys. This menu system is a 
+tried and true method for easy menuing in an RPG.
+
+Table~\ref{tab:menus} shows the contents of each menu.
+
+\begin{table}[H]
+    \caption{Menu Contents}
+    \label{tab:menus}
+    \centering
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Menu} & \textbf{Contents} \\
+        \hline\hline
+        Map & 
+            \begin{itemize}
+                \item Individual level maps
+                \item Change map button
+                \item Legend
+            \end{itemize} \\
+        \hline
+        Inventory & 
+            \begin{itemize}
+                \item Equips 
+                    \begin{itemize}
+                        \item Equip and unequip
+                        \item View item details on hover
+                    \end{itemize}
+                \item Cards 
+                    \begin{itemize}
+                        \item Card combining or breaking down for components
+                        \item View card details on hover
+                    \end{itemize}
+            \end{itemize} \\
+        \hline
+        Decks & 
+            \begin{itemize}
+                \item Create new deck
+                \item Deck customization 
+                    \begin{itemize}
+                        \item Deck contents
+                        \item Number of cards in deck
+                        \item Card inventory
+                        \item Sort cards
+                        \item View card details on hover
+                    \end{itemize}
+            \end{itemize} \\
+        \hline
+        Settings & 
+            \begin{itemize}
+                \item Volume options
+                \item Keybinding customizations
+                \item Reset to defaults
+                \item Help
+            \end{itemize} \\
+        \hline
+    \end{tabularx}
+\end{table}
 
 \subsubsection{Camera}
 
+The camera will display a top down view focused on the player character as she 
+moves around the overworld and a fixed view during battles and cut scenes.
+
 \subsubsection{Lighting Models}
+
+We will use a uniform ambient light throughout a level.
 
 \subsection{Control System}
 % How does the game player control the game? What are the specific commands?
+
+We want the player to have full customization ability for the controls and 
+keybindings, but the defaults are listed in Table~\ref{tab:keybindings}.
+
+\begin{table}[H]
+    \caption{Keybindings}
+    \label{tab:keybindings}
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Key} & \textbf{Binding} \\
+        \hline\hline
+        W or Up & Move up \\
+        A or Left & Move left \\
+        S or Down &  Move down \\
+        D or Right & Move right \\
+        Escape & Settings Menu \\
+        M & Map \\
+        I & Inventory \\
+        D & Deck Customization \\
+        Number Keys & Quick select card in combat \\
+        \hline
+    \end{tabular}
+\end{table}
 
 \subsection{Audio}
 
@@ -501,9 +593,13 @@ Sound effects will be used that give meaning to notable events that happen
 throughout the game. This helps the player remain engaged in everything from 
 walking around the overworld to dealing damage in combat.
 
-\subsection{Sound Effects}
-
 \subsection{Help System}
+
+The help system will show an example image of important aspects of the game. 
+One image will be a battle detailing what each HUD element tells the player and 
+how to complete a battle. One image will detail how to initiate combat or 
+speech in the overworld. One image will detail how to customize and create 
+decks and what each element of a card means.
 
 \newpage
 \section{Artificial Intelligence}
@@ -775,54 +871,54 @@ a system of collaborative manual testing that works as follows:
 
 \subsubsubsection{Overworld Sounds}
 \begin{itemize}
-	\item NPC Speech (multiple different variations)
-	\item Walking (unique per surface)
-	\item Object Interactions (e.g. doors, shops, ladders, etc.)
+    \item NPC Speech (multiple different variations)
+    \item Walking (unique per surface)
+    \item Object Interactions (e.g. doors, shops, ladders, etc.)
 \end{itemize}
 
 \subsubsubsection{Combat Sounds}
 \begin{itemize}
-	\item Enemy Battle Cry (unique for each enemy type)
-	\item Card Select In Combat (same for all cards)
-	\item Take Damage
-	\item Deal Damage
-	\item Victory Jingle
-	\item Defeat Jingle
+    \item Enemy Battle Cry (unique for each enemy type)
+    \item Card Select In Combat (same for all cards)
+    \item Take Damage
+    \item Deal Damage
+    \item Victory Jingle
+    \item Defeat Jingle
 \end{itemize}
 
 \subsubsubsection{Miscellaneous Sounds}
 \begin{itemize}
-	\item Card Creation Jingle
+    \item Card Creation Jingle
 \end{itemize}
 
 \subsubsection{Music}
 
 \subsubsubsection{Overworld Ambient Scores}
 \begin{itemize}
-	\item Home Town
-	\item First City
-	\item Second City
-	\item Third City
-	\item Cave
-	\item Jungle
-	\item Wasteland
+    \item Home Town
+    \item First City
+    \item Second City
+    \item Third City
+    \item Cave
+    \item Jungle
+    \item Wasteland
 \end{itemize}
 
 \subsubsubsection{Encounter Action Scores}
 \begin{itemize}
-	\item Home Town
-	\item First City
-	\item Second City
-	\item Third City
-	\item Cave
-	\item Jungle
-	\item Wasteland
-	\item Story Encounters
+    \item Home Town
+    \item First City
+    \item Second City
+    \item Third City
+    \item Cave
+    \item Jungle
+    \item Wasteland
+    \item Story Encounters
 \end{itemize}
 
 \subsubsubsection{Cut Scene Scores}
 \begin{itemize}
-	\item One Score for All Cut Scenes
+    \item One Score for All Cut Scenes
 \end{itemize}
 
 \end{document}
