@@ -441,6 +441,7 @@ Finally, she reaches the corporations' HQ and fights the final battle...
 TODO
 
 \subsubsection{Rosalind}
+
 \tab Rosalind was born into a wealthy family. She is about the same age as Vivian, 
 but because they grew up in such different environments, they see the world from 
 opposite ends of the spectrum. Her parents are quite strict and often away, which 
@@ -499,16 +500,127 @@ thoughts
 \subsubsection{HUD}
 % What controls?
 
+The overworld HUD will display a method to navigate menus through clicks.
+
+The battle HUD will display player's current cards, player's discard pile size, 
+player's remaining deck size, player's remaining lives, opponent's remaining 
+lives, and whose turn it is.
+
 \subsubsection{Menus}
+
+\gametitle will use a menu system similar to many other RPGs where each major 
+menu element is accessible through a clickable menu icon in the HUD usually in 
+a drop down menu and also available through hotkeys. This menu system is a 
+tried and true method for easy menuing in an RPG.
+
+Table~\ref{tab:menus} shows the contents of each menu.
+
+\begin{table}[H]
+	\caption{Menu Contents}
+	\label{tab:menus}
+	\centering
+	\begin{tabularx}{\textwidth}{|l|X|}
+		\hline
+		\textbf{Menu} & \textbf{Contents} \\
+		\hline\hline
+		Map & \begin{itemize}
+			\item Individual level maps
+			\item Change map button
+			\item Legend
+		\end{itemize} \\
+		\hline
+		Inventory & \begin{itemize}
+			\item Equips \begin{itemize}
+				\item Equip and unequip
+				\item View item details on hover
+			\end{itemize}
+			\item Cards \begin{itemize}
+				\item Card combining or breaking down for components
+				\item View card details on hover
+			\end{itemize}
+		\end{itemize} \\
+	\hline
+		Decks & \begin{itemize}
+			\item Create new deck
+			\item Deck customization \begin{itemize}
+				\item Deck contents
+				\item Number of cards in deck
+				\item Card inventory
+				\item Sort cards
+				\item View card details on hover
+			\end{itemize}
+		\end{itemize} \\
+		\hline
+		Settings & \begin{itemize}
+			\item Volume options
+			\item Keybinding customizations
+			\item Reset to defaults
+			\item Help
+		\end{itemize} \\
+		\hline
+	\end{tabularx}
+\end{table}
+
+\subsubsection{Camera}
+
+The camera will display a top down view focused on the player character as she 
+moves around the overworld and a fixed view during battles and cut scenes.
+
+\subsubsection{Lighting Models}
+
+Our lighting will be uniform throughout a level.
 
 \subsection{Control System}
 % How does the game player control the game? What are the specific commands?
 
-\subsection{Music}
+We want the player to have full customization ability for the controls and 
+keybindings, but the defaults are listed in Table~\ref{tab:keybindings}.
 
-\subsection{Sound Effects}
+\begin{table}[H]
+	\caption{Keybindings}
+	\label{tab:keybindings}
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		\textbf{Key} & \textbf{Binding} \\
+		\hline\hline
+		W or Up & Move up \\
+		A or Left & Move left \\
+		S or Down &  Move down \\
+		D or Right & Move right \\
+		Escape & Settings Menu \\
+		M & Map \\
+		I & Inventory \\
+		D & Deck Customization \\
+		Number Keys & Quick select card in combat \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{Audio}
+
+\subsubsection{Music}
+
+Each level will have unique overworld and battle music which is thematically 
+appropriate to the setting and mood of the level. Story encounters will also 
+have a unique music score shared between all story encounters. Any cut scenes 
+will also have unique music scores.
+
+\subsubsection{Sound Effects}
+
+Sound effects will be used that give meaning to notable events that happen 
+throughout the game. This helps the player remain engaged in everything from 
+walking around the overworld to dealing damage in combat.
+
+Specific sound effects are listed later in the asset list.
 
 \subsection{Help System}
+
+The help system will show an example image of important aspects of the game. 
+One image will be a battle detailing what each HUD element tells the player and 
+how to complete a battle. One image will detail how to initiate combat or 
+speech in the overworld. One image will detail how to customize and create 
+decks and what each element of a card means.
 
 \newpage
 %\section{Artificial Intelligence}
@@ -610,14 +722,12 @@ specifications:
 \end{figure}
 
 \newpage
-\section{Secondary Software}
-% Editor, Installer, Update Software
-
-\newpage
 \section{Management}
 
 \subsection{Detailed Schedule}
+
 Table~\ref{tab:milestones} shows the five major milestones and their due dates.
+
 \begin{table}[H]
     \caption{Milestone Delivery Schedule}
     \label{tab:milestones}
@@ -642,6 +752,7 @@ Table~\ref{tab:milestones} shows the five major milestones and their due dates.
 % TODO: More details
 
 \subsection{Budget}
+
 Given the expenses from Table~\ref{tab:expenses} and including a small buffer
 for unforeseen expenses, production and marketing of \gametitle will cost \$6
 million.
@@ -694,7 +805,7 @@ it occurs.
     \begin{tabularx}{\linewidth}{|l|X|}
         \hline
         \textbf{Possible Risk} & \textbf{Contingency Plan} \\
-        \hline
+        \hline\hline
         Non-competitive enemy AI & If it proves too difficult to create
         different AIs for various enemies and bosses, we can opt to create
         only one enemy AI to use with every combat encounter. We can also
