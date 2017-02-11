@@ -133,6 +133,7 @@ It will also likely appeal to players who played games such as the original
 many ways.
 
 \subsection{Game Flow Summary}
+\label{sec:game_flow_summary}
 % How does the player move through the game. Both framing interface and the game
 % itself.
 
@@ -208,18 +209,11 @@ include aether vials, health potions, and status effects.
 \section{Gameplay and Mechanics}
 
 \subsection{Gameplay}
-
-\subsubsection{Game Progression}
-
-\subsubsection{Mission/Challenge Structure}
-
-\subsubsection{Puzzle Structure}
-
-\subsubsection{Objectives}
-% What are the objectives of the game?
-
-\subsubsection{Play Flow}
-% How does the game flow for the game player?
+\gametitle has two main gameplay modes: Overworld and Combat. The Overworld is a
+top down (or possibly isometric) view of the world. The player is guided through
+a story through a variety of locations in the world encountering enemies along
+the way. When an enemy is encountered, the Combat mode is activated where the
+player fights the enemy.
 
 \subsection{Mechanics}
 % What are the rules to the game, both implicit and explicit.  This is the model
@@ -227,27 +221,11 @@ include aether vials, health potions, and status effects.
 % world, how do all the pieces interact?  This actually can be a very large
 % section.
 
-\subsubsection{Physics}
-% How does the physical universe work?
+The player will move around the Overworld using the arrow keys or WASD keys (or
+a custom configuration). When they run over an enemy hitbox, they will enter the
+card-based combat system as described in Section~\ref{sec:game_flow_summary}.
 
-\subsubsection{Movement}
-% - General Movement
-% - Other movement
-
-\subsubsection{Objects}
-% - Picking up objects
-% - Moving objects
-
-\subsubsection{Actions}
-% - Switches and Buttons
-% - Picking up, Carrying and Dropping
-% - Talking
-% - Reading
-
-\subsubsection{Combat}
-% If there is a combat or even conflict, how is this specifically modeled?
-
-\subsubsection{Economy}
+%\subsubsection{Economy}
 % What is the economy of the game? How does it work?
 
 \subsection{Screen Flow}
@@ -261,13 +239,53 @@ include aether vials, health potions, and status effects.
 % - Main menu screen
 % - Options screen
 % - etc.
-
-\subsection{Game Options}
-% What are the options and how do they affect gameplay and mechanics?
-
-\subsection{Replaying and Saving}
-
-\subsection{Cheats and Easter Eggs}
+Table~\ref{tab:screen_purpose} describes the purpose of each game screen.
+Section~\ref{sec:menus} includes more information about the various game menus.
+\begin{table}[H]
+    \centering
+    \caption{Screen Descriptions}
+    \label{tab:screen_purpose}
+    \begin{tabularx}{\textwidth}{|l | X |}
+        \hline
+        \textbf{Screen} & \textbf{Description} \\
+        \hline\hline
+        \textbf{Load Screen} & Displayed while the game is loading. \\
+        \hline
+        \textbf{Main Menu} & Provides game options as explained in
+        Section~\ref{sec:game_options}. \\
+        \hline
+        \textbf{Overworld} & View where player can move character around in the
+        world. Figure~\ref{fig:overview} shows a wireframe of the Overworld
+        view. \\
+        \hline
+        \textbf{Combat View} & Entered from the overworld when the player goes
+        over an enemy hitbox. Figure~\ref{fig:combat} shows a wireframe of the
+        combat view. \\
+        \hline
+        \textbf{Victory Screen} & If the player wins a battle, they will go to
+        the victory screen. If the battle rewards a card or item, they will be
+        shown it at this point. Additionally they will be shown statistics about
+        the game. \\
+        \hline
+        \textbf{Defeat Screen} & If the player looses a battle, they will go to
+        the defeat screen where they will be shown statistics on their loss. \\
+        \hline
+        \textbf{Gameplay Menu} & Allows the player to return to the main menu,
+        enter the \textit{Deck Editor} view, or enter the \textit{Item Editor}
+        view. \\
+        \hline
+        \textbf{Card Deck Editor} & Allows the player to edit their decks,
+        moving cards between decks. \\
+        \hline
+        \textbf{Item Editor} & Allows the player to use expendable cards out of
+        combat. \\
+        \hline
+        \textbf{Pause Screen} & Allows the game to pause combat and provides an
+        option to return to the main menu. This screen may also display some
+        stats about the battle. \\
+        \hline
+    \end{tabularx}
+\end{table}
 
 \newpage
 \section{Story, Setting, and Character}
@@ -476,6 +494,7 @@ player's remaining deck size, player's remaining lives, opponent's remaining
 lives, and whose turn it is.
 
 \subsubsection{Menus}
+\label{sec:menus}
 
 \gametitle will use a menu system similar to many other RPGs where each major 
 menu element is accessible through a clickable menu icon in the HUD usually in 
