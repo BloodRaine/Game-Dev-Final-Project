@@ -18,7 +18,7 @@
 % ---------------
 \newcommand\protagonist{Vivian\xspace}
 \newcommand\dad{Harrison\xspace}
-\newcommand\mom{MOM\xspace}
+\newcommand\mom{\xspace}
 \newcommand\hometown{TOWNSVILLE\xspace}
 \newcommand\evilcorp{Iskandar\xspace}
 \newcommand\world{KANTO\xspace}
@@ -85,8 +85,9 @@
 \date{\today}
 
 \begin{document}
-\maketitle
 
+\maketitle
+\includegraphics[width=0.75\textheight]{../../graphics/SteampunkCity}
 \tableofcontents
 \newpage
 \listoffigures
@@ -177,17 +178,19 @@ each card.
 % - etc.
 
 There will be three cities outside of the main character's hometown, as well as
-three themed non-city areas: a cave, a forest, and a desolate wasteland. The
+three themed non-city areas: a forest, a mountain range, and a desolate 
+wasteland. Additionally, the final locale will be \evilcorp .
 game will progress through the locations in the order:
 
 \begin{enumerate}
     \item Hometown
-    \item Forest
+    \item Aether Wilds (Forest Region)
     \item City \#1
-    \item TODOOOOO!!!!!!!!!!!
+    \item Mountains
     \item City \#2
     \item Desolate Wasteland
     \item City \#3
+    \item \evilcorp
 \end{enumerate}
 
 The final area is where the player confronts \evilcorp and faces their final
@@ -703,8 +706,6 @@ specifications:
 % - Cut scenes
 % - Miscellaneous
 
-\subsection{Concept Artwork}\label{sec:concept_art}
-
 \begin{figure}[H]
     \caption{Overworld View}
     \label{fig:city_overworld}
@@ -712,12 +713,12 @@ specifications:
     \includegraphics[width=0.7\textwidth]{../../graphics/city_overworld}
 \end{figure}
 
-%\begin{figure}[H]
-%\caption{Wilderness Overworld View}
-%\label{fig:forest}
-%\centering
-%\includegraphics[width=0.7\textwidth]{../../graphics/forest_overview}
-%\end{figure}
+\begin{figure}[H]
+\caption{Wilderness Overworld View}
+\label{fig:forest}
+\centering
+\includegraphics[width=0.7\textwidth]{../../graphics/forest_overview}
+\end{figure}
 
 \begin{figure}[H]
     \caption{Combat View}
