@@ -249,7 +249,7 @@ various screens fit together.
     \centering
     \caption{Screen Flow Diagram}
     \label{fig:screen_flow_chart}
-    \includegraphics[width=0.9\textwidth]{../../graphics/screen-flow-diagram}
+    \includegraphics[width=\textwidth]{../../graphics/screen-flow-diagram}
 \end{figure}
 
 \subsubsection{Screen Descriptions}
@@ -261,13 +261,13 @@ various screens fit together.
 Table~\ref{tab:screen_purpose} describes the purpose of each game screen.
 \begin{table}[H]
     \centering
-    \caption{Screen Purpose}
+    \caption{Screen Descriptions}
     \label{tab:screen_purpose}
-    \begin{tabularx}{0.8\textwidth}{|l | X |}
+    \begin{tabularx}{\textwidth}{|l | X |}
         \hline
         \textbf{Screen} & \textbf{Description} \\
         \hline\hline
-        \textbf{Load Screen} & Displayed while the game is loading \\
+        \textbf{Load Screen} & Displayed while the game is loading. \\
         \hline
         \textbf{Main Menu} & Provides game options such as TODO: FINISH \\
         \hline
@@ -285,15 +285,21 @@ Table~\ref{tab:screen_purpose} describes the purpose of each game screen.
         the game. \\
         \hline
         \textbf{Defeat Screen} & If the player looses a battle, they will go to
-        the defeat screen where they will be shown statistics on their loss \\
+        the defeat screen where they will be shown statistics on their loss. \\
         \hline
-        \textbf{Gameplay Menu} &  \\
+        \textbf{Gameplay Menu} & Allows the player to return to the main menu,
+        enter the \textit{Deck Editor} view, or enter the \textit{Item Editor}
+        view. \\
         \hline
-        \textbf{Card Deck Editor} & \\
+        \textbf{Card Deck Editor} & Allows the player to edit their decks,
+        moving cards between decks. \\
         \hline
-        \textbf{Item Editor} & \\
+        \textbf{Item Editor} & Allows the player to use expendable cards out of
+        combat. \\
         \hline
-        \textbf{Pause Screen} & \\
+        \textbf{Pause Screen} & Allows the game to pause combat and provides an
+        option to return to the main menu. This screen may also display some
+        stats about the battle. \\
         \hline
     \end{tabularx}
 \end{table}
