@@ -606,19 +606,32 @@ decks and what each element of a card means.
 % strategic decision making (example, Civilization or Chess, how is it to be
 % designed?)
 
+In battle, opponents will have to logically choose what cards to play based on 
+what card is immediately most effective. This means that the AI does not need 
+to consider what cards the player might have or what cards the opponent might 
+draw in the future. This simplifies the AI immensely to simply calculating the 
+card that has the greatest immediate effect.
+
 \subsection{Enemy AI}
 % Villains and Monsters
 
+Enemies will move randomly around the overworld or on fixed paths.
+
 \subsection{Non-combat Characters}
 
+NPCs will move randomly around the overworld or on fixed paths.
 
 \subsection{Friendly Characters}
 
-\subsection{Support AI}
-
 \subsubsection{Player and Collision Detection}
 
+Because the overworld movement is on a grid, collision detection will be very 
+easy to implement by not allowing the player or any other moving entity on the 
+overworld onto an occupied grid space.
+
 \subsubsection{Pathfinding}
+
+No pathfinding AI will be needed.
 
 \newpage
 \section{Technical}
