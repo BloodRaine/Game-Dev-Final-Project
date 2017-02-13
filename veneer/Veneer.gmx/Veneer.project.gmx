@@ -14,6 +14,7 @@
     <script>scripts\veneer_script.gml</script>
     <script>scripts\base_convert.gml</script>
   </scripts>
+  <fonts name="fonts"/>
   <objects name="objects">
     <object>objects\object0</object>
   </objects>

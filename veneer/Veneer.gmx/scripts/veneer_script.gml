@@ -193,7 +193,8 @@ vs_dx = 3 * vs_scale;
 vs_dy = vs_y + vs_scale * (3 * vs_end_row + 1) - vs_ry;
 
 draw_sprite_ext(vs_sprite, vs_subimg, vs_rx, vs_ry, vs_scale, vs_scale, 0, c_white, 1);
-repeat (9) {
+repeat (9)
+{
     vs_rx += vs_dx / 9;
     vs_ry += vs_dy / 9;
     draw_sprite_ext(vs_sprite, vs_subimg, vs_rx, vs_ry, vs_scale, vs_scale, 0, c_white, 1);
@@ -204,7 +205,8 @@ vs_end_row = (vs_row + argument1) % 3;
 vs_dx = 0;
 vs_dy = vs_y + vs_scale * (3 * vs_end_row + 1) - vs_ry;
 
-repeat (9) {
+repeat (9)
+{
     vs_rx += vs_dx / 9;
     vs_ry += vs_dy / 9;
     draw_sprite_ext(vs_sprite, vs_subimg, vs_rx, vs_ry, vs_scale, vs_scale, 0, c_white, 1);
@@ -215,7 +217,8 @@ vs_end_row = (vs_row + argument2) % 3;
 vs_dx = 3 * vs_scale;
 vs_dy = vs_y + vs_scale * (3 * vs_end_row + 1) - vs_ry;
 
-repeat (9) {
+repeat (9)
+{
     vs_rx += vs_dx / 9;
     vs_ry += vs_dy / 9;
     draw_sprite_ext(vs_sprite, vs_subimg, vs_rx, vs_ry, vs_scale, vs_scale, 0, c_white, 1);
@@ -234,23 +237,30 @@ vs_x += vs_scale * 6;
 vs_rx = vs_x + vs_scale;
 vs_ry = vs_y + vs_scale;
 
-if (argument0 & 4) > 0 {
+if (argument0 & 4) > 0
+{
     draw_sprite_ext(vs_sprite, vs_subimg, vs_rx, vs_ry, vs_scale, vs_scale, 0, c_white, 1);
 }
 
 vs_ry += vs_scale * 3;
 
-if (argument0 & 2) > 0 {
+if (argument0 & 2) > 0
+{
     draw_sprite_ext(vs_sprite, vs_subimg, vs_rx, vs_ry, vs_scale, vs_scale, 0, c_white, 1);
 }
 
 vs_ry += vs_scale * 3;
 
-if (argument0 & 1) > 0 {
+if (argument0 & 1) > 0
+{
     draw_sprite_ext(vs_sprite, vs_subimg, vs_rx, vs_ry, vs_scale, vs_scale, 0, c_white, 1);
 }
+
+vs_ry += vs_scale * 2;
+draw_sprite_ext(vs_sprite, vs_subimg, vs_rx, vs_ry - 1, vs_scale, 1, 0, c_white, 1);
 
 vs_x += vs_scale * 3;
+
 
 #define veneer_script_fast
 ///veneer_script_fast(string, top_left_x, top_left_y, line_thickness, brush_sprite, sprite_frame)
