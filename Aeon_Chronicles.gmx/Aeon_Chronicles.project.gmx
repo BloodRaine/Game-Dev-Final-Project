@@ -6,17 +6,30 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\spr_Vivian</sprite>
+    <sprite>sprites\spr_Rosalind</sprite>
     <sprite>sprites\spr_sedian</sprite>
     <sprite>sprites\spr_desert_sedian</sprite>
-    <sprite>sprites\spr_sm_rock</sprite>
+    <sprite>sprites\spr_spider_mech</sprite>
+    <sprite>sprites\spr_sm_rock1</sprite>
+    <sprite>sprites\spr_large_rock1</sprite>
     <sprite>sprites\spr_tree_one</sprite>
+    <sprite>sprites\spr_tree_two</sprite>
+    <sprite>sprites\spr_npc_villager1</sprite>
+    <sprite>sprites\spr_npc_villager2</sprite>
+    <sprite>sprites\spr_old_crazy_guy</sprite>
+    <sprite>sprites\spr_Iskandar_Unit1</sprite>
+    <sprite>sprites\spr_Boss</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bkg_grass</background>
-    <background>background\background3</background>
+    <background>background\bk_dark_green_patch</background>
+    <background>background\bk_light_green_patch</background>
     <background>background\bkg_dark_grass_patch</background>
     <background>background\bk_dark_grass</background>
     <background>background\bk_desert_grass</background>
+    <background>background\bk_light_dirt_patch</background>
+    <background>background\bk_dark_dirt_patch</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
