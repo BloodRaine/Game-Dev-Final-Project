@@ -55,7 +55,7 @@
     <instance objName="obj_small_rock" x="740" y="284" name="inst_11CD6236" locked="0" code="" scaleX="0.765957474708557" scaleY="0.638297855854034" colour="4294967295" rotation="0"/>
     <instance objName="obj_small_rock" x="400" y="152" name="inst_49112C48" locked="0" code="" scaleX="-0.723404228687286" scaleY="0.604166686534882" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_one" x="400" y="84" name="inst_951E8F77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tree_one" x="344" y="76" name="inst_FA4F92F0" locked="0" code="" scaleX="1.25" scaleY="1.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_one" x="352" y="88" name="inst_FA4F92F0" locked="0" code="" scaleX="0.914893627166748" scaleY="0.936507940292358" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_one" x="372" y="80" name="inst_B4693303" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_one" x="68" y="392" name="inst_B502C374" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_one" x="332" y="108" name="inst_C0CED48D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -73,6 +73,7 @@
     <instance objName="obj_tree_one" x="320" y="80" name="inst_2AB4403C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_one" x="336" y="140" name="inst_057AF62F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sedian" x="528" y="388" name="inst_858F230A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_one" x="344" y="76" name="inst_BBF18E8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="192" y="128" w="16" h="16" xo="0" yo="0" id="10000001" name="inst_540CBD6D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

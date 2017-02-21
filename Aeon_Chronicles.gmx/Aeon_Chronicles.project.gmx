@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_sedian</sprite>
+    <sprite>sprites\spr_desert_sedian</sprite>
     <sprite>sprites\spr_sm_rock</sprite>
     <sprite>sprites\spr_tree_one</sprite>
   </sprites>
@@ -22,6 +23,7 @@
     <object>objects\obj_sedian</object>
     <object>objects\obj_small_rock</object>
     <object>objects\obj_tree_one</object>
+    <object>objects\obj_desert_sedian</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_forest</room>
