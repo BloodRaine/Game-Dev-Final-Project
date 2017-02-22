@@ -76,6 +76,7 @@
     <instance objName="obj_tree_one" x="344" y="76" name="inst_BBF18E8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_one" x="732" y="224" name="inst_77F11E05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_desert_sedian" x="296" y="304" name="inst_7187AD9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_vivian" x="396" y="480" name="inst_DEB2B4BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="192" y="128" w="16" h="16" xo="0" yo="0" id="10000001" name="inst_540CBD6D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
