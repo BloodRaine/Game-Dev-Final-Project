@@ -38,6 +38,7 @@
     <object>objects\obj_tree_one</object>
     <object>objects\obj_desert_sedian</object>
     <object>objects\obj_vivian</object>
+    <object>objects\obj_rosalind</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_forest</room>

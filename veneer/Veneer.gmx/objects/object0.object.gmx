@@ -28,6 +28,7 @@
             <string>can_delete = true;
 
 veneer_message = "Type your message !#";
+
 veneer_size = 9;
 </string>
           </argument>
@@ -129,7 +130,7 @@ if keyboard_check_pressed(vk_enter) || (keyboard_check_pressed(ord("3")) &amp;&a
 if keyboard_check(vk_lshift) || keyboard_check(vk_rshift) add_char = string_upper(add_char);
 
 // delete
-if (keyboard_check_pressed(vk_backspace) &amp;&amp; can_delete)
+if (keyboard_check_pressed(vk_backspace))
 {
     veneer_message = string_copy(veneer_message, 1, string_length(veneer_message)-1);
     can_delete = false;
@@ -144,7 +145,7 @@ if (keyboard_check(vk_backspace) &amp;&amp; can_delete) {
 // change text size
 if keyboard_check_pressed(vk_subtract)
 {
-    if (veneer_size &gt;= 3) veneer_size /= 3;
+    if (veneer_size &gt; 3) veneer_size /= 3;
 }
 if keyboard_check_pressed(vk_add) veneer_size *= 3;
 
