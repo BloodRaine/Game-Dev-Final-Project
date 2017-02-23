@@ -32,19 +32,19 @@ key_left = keyboard_check(ord('A'))
 key_up = keyboard_check(ord('W'))
 key_down = keyboard_check(ord('S'))
 
-if (key_right &amp;&amp; !place_meeting(x+2, y, obj_small_rock) &amp;&amp; !place_meeting(x+2, y, obj_tree_one)) {
+if (key_right) {
     x += 3
 }
 
-if (key_up &amp;&amp; !place_meeting(x, y-2, obj_small_rock) &amp;&amp; !place_meeting(x, y-2, obj_tree_one)) {
+if (key_up) {
     y -= 3
 }
 
-if (key_left &amp;&amp; !place_meeting(x-2, y, obj_small_rock)&amp;&amp; !place_meeting(x-2, y, obj_tree_one)) {
+if (key_left) {
     x -= 3
 }
 
-if (key_down &amp;&amp; !place_meeting(x, y+2, obj_small_rock)&amp;&amp; !place_meeting(x, y+2, obj_tree_one)) {
+if (key_down) {
     y += 3
 }
 </string>
@@ -72,6 +72,32 @@ if (key_down &amp;&amp; !place_meeting(x, y+2, obj_small_rock)&amp;&amp; !place_
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_rosalind">
+      <action>
+        <libid>1</libid>
+        <id>115</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_bounce</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_desert_sedian">
       <action>
         <libid>1</libid>
@@ -91,6 +117,58 @@ if (key_down &amp;&amp; !place_meeting(x, y+2, obj_small_rock)&amp;&amp; !place_
             <kind>1</kind>
             <string>room_goto(rm_combat_forest)
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_tree_one">
+      <action>
+        <libid>1</libid>
+        <id>115</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_bounce</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_small_rock">
+      <action>
+        <libid>1</libid>
+        <id>115</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_bounce</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
