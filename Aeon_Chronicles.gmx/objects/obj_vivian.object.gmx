@@ -147,7 +147,7 @@ if (key_down) {
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_small_rock">
+    <event eventtype="4" ename="obj_boulder">
       <action>
         <libid>1</libid>
         <id>115</id>
