@@ -179,6 +179,7 @@ for (vs_i = 1; vs_i <= string_length(vs_string); vs_i++)
 /* END */
 
 
+
 #define veneer_char
 ///veneer_char(dy1, dy2, dy3)
 
@@ -227,6 +228,7 @@ repeat (9)
 vs_row = vs_end_row;
 vs_x += vs_scale * 6;
 
+
 #define veneer_octal
 ///veneer_octal(digit)
 
@@ -260,6 +262,7 @@ vs_ry += vs_scale * 2;
 draw_sprite_ext(vs_sprite, vs_subimg, vs_rx, vs_ry - 1, vs_scale, 1, 0, c_white, 1);
 
 vs_x += vs_scale * 3;
+
 
 
 #define veneer_script_fast

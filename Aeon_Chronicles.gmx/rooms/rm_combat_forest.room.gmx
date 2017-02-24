@@ -59,6 +59,7 @@
     <instance objName="obj_tree_one" x="32" y="416" name="inst_8C468E2B" locked="0" code="" scaleX="4" scaleY="3.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_vivian" x="224" y="480" name="inst_F22B5EC4" locked="0" code="" scaleX="6" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_sedian_battle" x="512" y="448" name="inst_395B7FE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_battle_control" x="288" y="160" name="inst_8060C4CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
