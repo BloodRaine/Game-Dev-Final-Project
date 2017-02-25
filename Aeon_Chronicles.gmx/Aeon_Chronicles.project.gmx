@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\spr_button</sprite>
     <sprite>sprites\spr_Vivian</sprite>
     <sprite>sprites\spr_Rosalind</sprite>
     <sprite>sprites\spr_old_crazy_guy</sprite>
@@ -42,19 +43,30 @@
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\base_convert.gml</script>
+    <script>scripts\veneer_script.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\font_title</font>
+  </fonts>
   <objects name="objects">
-    <object>objects\obj_sedian</object>
-    <object>objects\obj_boulder</object>
-    <object>objects\obj_tree_one</object>
-    <object>objects\obj_desert_sedian</object>
-    <object>objects\obj_vivian</object>
-    <object>objects\obj_rosalind</object>
     <objects name="Battle">
       <object>objects\obj_sedian_battle</object>
     </objects>
+    <object>objects\obj_button</object>
+    <object>objects\obj_boulder</object>
+    <object>objects\obj_tree_one</object>
+    <object>objects\obj_sedian</object>
+    <object>objects\obj_desert_sedian</object>
+    <object>objects\obj_rosalind</object>
+    <object>objects\obj_vivian</object>
     <object>objects\dialogue</object>
+    <object>objects\obj_battle_control</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_initialization</room>
+    <room>rooms\rm_title</room>
     <room>rooms\rm_forest</room>
     <room>rooms\rm_combat_forest</room>
     <room>rooms\rm_combat_ruin_city</room>
