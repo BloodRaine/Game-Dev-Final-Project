@@ -52,6 +52,7 @@
     <objects name="Battle">
       <object>objects\obj_sedian_battle</object>
     </objects>
+    <object>objects\dialogue</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_forest</room>

@@ -8,6 +8,29 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>talking = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -27,25 +50,44 @@
             <kind>1</kind>
             <string>if (room == rm_combat_forest) { exit; }
 
-key_right = keyboard_check(ord('D'))
-key_left = keyboard_check(ord('A'))
-key_up = keyboard_check(ord('W'))
-key_down = keyboard_check(ord('S'))
+/* keys */
+key_right = keyboard_check(ord('D'));
+key_left = keyboard_check(ord('A'));
+key_up = keyboard_check(ord('W'));
+key_down = keyboard_check(ord('S'));
+key_interact = keyboard_check_pressed(vk_enter);
 
-if (key_right) {
-    x += 3
+if (not talking) {
+
+    if (key_right) {
+        x += 3;
+    }
+
+    if (key_up) {
+        y -= 3;
+    }
+
+    if (key_left) {
+        x -= 3;
+    }
+
+    if (key_down) {
+        y += 3;
+    }
 }
 
-if (key_up) {
-    y -= 3
-}
-
-if (key_left) {
-    x -= 3
-}
-
-if (key_down) {
-    y += 3
+if (key_interact) {
+    if (collision_circle(x, y, 50, obj_rosalind, false, true)) {
+        with (obj_rosalind){
+            if (not other.talking) {
+                talking = true;
+                other.talking = true;
+            } else {
+                other.talking = false;
+                stop_talking = true;
+            }
+        }
+    }
 }
 </string>
           </argument>
