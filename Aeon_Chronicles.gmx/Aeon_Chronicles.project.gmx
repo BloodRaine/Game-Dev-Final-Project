@@ -49,6 +49,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_title</font>
+    <font>fonts\font_dialogue</font>
   </fonts>
   <objects name="objects">
     <objects name="Battle">

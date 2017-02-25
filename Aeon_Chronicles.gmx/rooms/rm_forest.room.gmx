@@ -53,7 +53,7 @@
   <instances>
     <instance objName="self" x="520" y="16" name="inst_D7376C86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_boulder" x="740" y="284" name="inst_11CD6236" locked="0" code="" scaleX="0.765957474708557" scaleY="0.638297855854034" colour="4294967295" rotation="0"/>
-    <instance objName="obj_boulder" x="408" y="144" name="inst_49112C48" locked="0" code="" scaleX="-0.531914889812469" scaleY="0.479166656732559" colour="4294967295" rotation="0"/>
+    <instance objName="obj_boulder" x="408" y="144" name="inst_49112C48" locked="0" code="" scaleX="-0.53191488981247" scaleY="0.479166656732559" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_one" x="400" y="84" name="inst_951E8F77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_one" x="352" y="88" name="inst_FA4F92F0" locked="0" code="" scaleX="0.914893627166748" scaleY="0.936507940292358" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_one" x="372" y="80" name="inst_B4693303" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
