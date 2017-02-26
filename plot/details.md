@@ -2,4 +2,6 @@ Details
 =======
 
 Protagonist's Name: Vivian
-Fathers Name: Harrison
+Father: Harrison
+Best friend: Ildico
+Town with EvilCorp: Zardico
