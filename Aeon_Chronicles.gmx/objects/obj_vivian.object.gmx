@@ -227,7 +227,7 @@ if (key_interact)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_desert_sedian">
+    <event eventtype="4" ename="obj_sedian">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -250,7 +250,7 @@ if (key_interact)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_sedian">
+    <event eventtype="4" ename="obj_desert_sedian">
       <action>
         <libid>1</libid>
         <id>603</id>
