@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vivian_health = 10;
-monster_health = 10;
+            <string>monster_health = 10;
 
 current_player = 0; // Start with Vivian
 </string>
@@ -101,7 +100,7 @@ current_player = 0; // Start with Vivian
 // Vivian
 draw_set_halign(fa_left);
 draw_text(40, 30, "Vivian");
-draw_text(40, 70, "Health: " + string(vivian_health));
+draw_text(40, 70, "Health: " + string(global.vivian_health));
 
 // Monster
 draw_set_halign(fa_right);
