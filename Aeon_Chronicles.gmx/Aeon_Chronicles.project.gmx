@@ -13,6 +13,9 @@
       <sprite>sprites\spr_tree_one</sprite>
       <sprite>sprites\spr_tree_two</sprite>
     </sprites>
+    <sprites name="Menu">
+      <sprite>sprites\spr_menu_tab</sprite>
+    </sprites>
     <sprites name="Monsters">
       <sprite>sprites\spr_desert_sedian</sprite>
       <sprite>sprites\spr_iskandar_unit_1</sprite>
@@ -39,8 +42,8 @@
     <background>background\bk_forest</background>
     <background>background\bk_light_dirt_patch</background>
     <backgrounds name="CombatBackgrounds">
-      <background>background\bk_ruin_city</background>
       <background>background\bk_forest_combat</background>
+      <background>background\bk_ruin_city</background>
     </backgrounds>
     <backgrounds name="Forest">
       <background>background\bk_dark_grass</background>
@@ -68,15 +71,21 @@
       <object>objects\obj_sedian</object>
       <object>objects\obj_desert_sedian</object>
     </objects>
-    <object>objects\dialogue</object>
     <objects name="Forest">
       <object>objects\obj_forest_boulder</object>
       <object>objects\obj_tree_one</object>
       <object>objects\obj_tree_two</object>
     </objects>
+    <objects name="Menu">
+      <object>objects\obj_menu_init</object>
+      <object>objects\obj_menu_keybinds</object>
+      <object>objects\obj_menu_tabs</object>
+      <object>objects\obj_menu_tab</object>
+    </objects>
     <object>objects\obj_battle_control</object>
     <object>objects\obj_boulder</object>
     <object>objects\obj_button</object>
+    <object>objects\obj_dialogue</object>
     <object>objects\obj_rosalind</object>
     <object>objects\obj_vivian</object>
   </objects>
