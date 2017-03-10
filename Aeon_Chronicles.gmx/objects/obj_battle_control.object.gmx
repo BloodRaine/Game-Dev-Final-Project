@@ -98,13 +98,15 @@ current_player = 0; // Start with Vivian
             <kind>1</kind>
             <string>// Draw HUD
 
-// Names
-draw_text(110, 30, "Vivian");
-draw_text(900, 30, "Monster");
+// Vivian
+draw_set_halign(fa_left);
+draw_text(40, 30, "Vivian");
+draw_text(40, 70, "Health: " + string(vivian_health));
 
-// Health
-draw_text(110, 70, "Health: " + string(vivian_health));
-draw_text(900, 70, "Health: " + string(monster_health));
+// Monster
+draw_set_halign(fa_right);
+draw_text(room_width - 40, 30, "Monster");
+draw_text(room_width - 40, 70, "Health: " + string(monster_health));
 </string>
           </argument>
         </arguments>
