@@ -38,6 +38,7 @@
     <background>background\bk_dark_dirt_patch</background>
     <backgrounds name="combatBackgrounds">
       <background>background\bk_ruin_city</background>
+      <background>background\bk_forest_combat</background>
     </backgrounds>
     <background>background\bk_forest</background>
     <background>background\bkg_dark_grass_patch</background>
