@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>switch (button_text)
 {
-    case PLAY_GAME_TEXT:
+    case TEXT_PLAY_GAME:
         room_goto(rm_forest);
         break;
     default:

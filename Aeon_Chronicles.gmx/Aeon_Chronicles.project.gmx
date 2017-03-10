@@ -6,49 +6,49 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_button</sprite>
-    <sprite>sprites\spr_Vivian</sprite>
-    <sprite>sprites\spr_Rosalind</sprite>
-    <sprite>sprites\spr_old_crazy_guy</sprite>
-    <sprite>sprites\spr_Boss</sprite>
+    <sprites name="Forest">
+      <sprite>sprites\spr_boulder</sprite>
+      <sprite>sprites\spr_forest_boulder</sprite>
+      <sprite>sprites\spr_large_rock_1</sprite>
+      <sprite>sprites\spr_tree_one</sprite>
+      <sprite>sprites\spr_tree_two</sprite>
+    </sprites>
     <sprites name="Monsters">
-      <sprite>sprites\spr_sedian</sprite>
-      <sprite>sprites\sp_sedian_battle</sprite>
       <sprite>sprites\spr_desert_sedian</sprite>
+      <sprite>sprites\spr_iskandar_unit_1</sprite>
+      <sprite>sprites\spr_sedian</sprite>
+      <sprite>sprites\spr_sedian_battle</sprite>
       <sprite>sprites\spr_spider_mech</sprite>
-      <sprite>sprites\spr_Iskandar_Unit1</sprite>
     </sprites>
     <sprites name="NPC">
       <sprite>sprites\spr_npc_villager1</sprite>
       <sprite>sprites\spr_npc_villager2</sprite>
     </sprites>
-    <sprites name="Forest">
-      <sprite>sprites\spr_tree_one</sprite>
-      <sprite>sprites\spr_boulder</sprite>
-      <sprite>sprites\spr_forest_boulder</sprite>
-      <sprite>sprites\spr_large_rock1</sprite>
-      <sprite>sprites\spr_tree_two</sprite>
-    </sprites>
+    <sprite>sprites\spr_boss</sprite>
+    <sprite>sprites\spr_button</sprite>
+    <sprite>sprites\spr_old_crazy_guy</sprite>
     <sprite>sprites\spr_reference</sprite>
     <sprite>sprites\spr_reference_2</sprite>
+    <sprite>sprites\spr_rosalind</sprite>
+    <sprite>sprites\spr_vivian</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\bk_desert_grass</background>
-    <background>background\bk_light_dirt_patch</background>
     <background>background\bk_dark_dirt_patch</background>
-    <backgrounds name="combatBackgrounds">
+    <background>background\bk_dark_grass_patch</background>
+    <background>background\bk_desert_grass</background>
+    <background>background\bk_forest</background>
+    <background>background\bk_light_dirt_patch</background>
+    <backgrounds name="CombatBackgrounds">
       <background>background\bk_ruin_city</background>
       <background>background\bk_forest_combat</background>
     </backgrounds>
-    <background>background\bk_forest</background>
-    <background>background\bkg_dark_grass_patch</background>
-    <backgrounds name="forest">
-      <background>background\bkg_grass</background>
-      <background>background\bk_dark_green_patch</background>
-      <background>background\bk_dirt_patch</background>
-      <background>background\bk_light_green_patch</background>
+    <backgrounds name="Forest">
       <background>background\bk_dark_grass</background>
+      <background>background\bk_dark_green_patch</background>
       <background>background\bk_dark_tall_graass</background>
+      <background>background\bk_dirt_patch</background>
+      <background>background\bk_grass</background>
+      <background>background\bk_light_green_patch</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -57,28 +57,28 @@
     <script>scripts\veneer_script.gml</script>
   </scripts>
   <fonts name="fonts">
-    <font>fonts\font_title</font>
     <font>fonts\font_dialogue</font>
+    <font>fonts\font_title</font>
   </fonts>
   <objects name="objects">
     <objects name="Battle">
       <object>objects\obj_sedian_battle</object>
     </objects>
-    <object>objects\obj_button</object>
-    <object>objects\obj_rosalind</object>
-    <object>objects\obj_vivian</object>
+    <objects name="Creatures">
+      <object>objects\obj_sedian</object>
+      <object>objects\obj_desert_sedian</object>
+    </objects>
     <object>objects\dialogue</object>
-    <object>objects\obj_battle_control</object>
-    <object>objects\obj_boulder</object>
-    <objects name="forest">
+    <objects name="Forest">
       <object>objects\obj_forest_boulder</object>
       <object>objects\obj_tree_one</object>
       <object>objects\obj_tree_two</object>
     </objects>
-    <objects name="creatures">
-      <object>objects\obj_sedian</object>
-      <object>objects\obj_desert_sedian</object>
-    </objects>
+    <object>objects\obj_battle_control</object>
+    <object>objects\obj_boulder</object>
+    <object>objects\obj_button</object>
+    <object>objects\obj_rosalind</object>
+    <object>objects\obj_vivian</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
