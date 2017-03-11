@@ -14,7 +14,7 @@
       <sprite>sprites\spr_tree_two</sprite>
     </sprites>
     <sprites name="Menu">
-      <sprite>sprites\spr_menu_tab</sprite>
+      <sprite>sprites\spr_menu_main</sprite>
     </sprites>
     <sprites name="Monsters">
       <sprite>sprites\spr_desert_sedian</sprite>
@@ -27,6 +27,7 @@
       <sprite>sprites\spr_npc_villager1</sprite>
       <sprite>sprites\spr_npc_villager2</sprite>
     </sprites>
+    <sprite>sprites\spr_blank</sprite>
     <sprite>sprites\spr_boss</sprite>
     <sprite>sprites\spr_button</sprite>
     <sprite>sprites\spr_old_crazy_guy</sprite>
@@ -56,11 +57,17 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\array.gml</script>
     <script>scripts\base_convert.gml</script>
     <script>scripts\veneer_script.gml</script>
   </scripts>
   <fonts name="fonts">
-    <font>fonts\font_dialogue</font>
+    <font>fonts\font_dialogue_1</font>
+    <font>fonts\font_dialogue_2</font>
+    <font>fonts\font_dialogue_3</font>
+    <font>fonts\font_menu_big</font>
+    <font>fonts\font_menu_med</font>
+    <font>fonts\font_menu_small</font>
     <font>fonts\font_title</font>
   </fonts>
   <objects name="objects">
@@ -77,10 +84,10 @@
       <object>objects\obj_tree_two</object>
     </objects>
     <objects name="Menu">
-      <object>objects\obj_menu_init</object>
+      <object>objects\obj_menu_button</object>
       <object>objects\obj_menu_keybinds</object>
+      <object>objects\obj_menu_main</object>
       <object>objects\obj_menu_tab</object>
-      <object>objects\obj_menu_tabs</object>
     </objects>
     <object>objects\obj_battle_control</object>
     <object>objects\obj_boulder</object>
