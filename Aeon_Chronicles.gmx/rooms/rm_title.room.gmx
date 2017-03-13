@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>global.menu_tabs = array("System", "Map", "Inventory", "Decks");
+  <code>global.menu_tabs = array("Manage Decks", "Card Collection", "Quest Journal", "System");
 global.current_menu_tab = 0;
 global.vivian_health = 10;</code>
   <enableViews>0</enableViews>

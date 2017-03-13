@@ -6,15 +6,16 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="Cards">
+      <sprite>sprites\spr_basic_card</sprite>
+      <sprite>sprites\spr_deck</sprite>
+    </sprites>
     <sprites name="Forest">
       <sprite>sprites\spr_boulder</sprite>
       <sprite>sprites\spr_forest_boulder</sprite>
       <sprite>sprites\spr_large_rock_1</sprite>
       <sprite>sprites\spr_tree_one</sprite>
       <sprite>sprites\spr_tree_two</sprite>
-    </sprites>
-    <sprites name="Menu">
-      <sprite>sprites\spr_menu_main</sprite>
     </sprites>
     <sprites name="Monsters">
       <sprite>sprites\spr_desert_sedian</sprite>
@@ -32,16 +33,12 @@
     <sprite>sprites\spr_blank_1x1</sprite>
     <sprite>sprites\spr_boss</sprite>
     <sprite>sprites\spr_button</sprite>
+    <sprite>sprites\spr_monster_ref</sprite>
     <sprite>sprites\spr_old_crazy_guy</sprite>
     <sprite>sprites\spr_reference</sprite>
     <sprite>sprites\spr_reference_2</sprite>
     <sprite>sprites\spr_rosalind</sprite>
     <sprite>sprites\spr_vivian</sprite>
-    <sprites name="Cards">
-      <sprite>sprites\spr_basic_card</sprite>
-      <sprite>sprites\spr_deck</sprite>
-    </sprites>
-    <sprite>sprites\spr_monster_ref</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_dark_dirt_patch</background>
@@ -49,6 +46,7 @@
     <background>background\bk_desert_grass</background>
     <background>background\bk_forest</background>
     <background>background\bk_light_dirt_patch</background>
+    <background>background\bk_menu</background>
     <backgrounds name="CombatBackgrounds">
       <background>background\bk_forest_combat</background>
       <background>background\bk_ruin_city</background>
@@ -81,6 +79,10 @@
     <objects name="Battle">
       <object>objects\obj_sedian_battle</object>
     </objects>
+    <objects name="Cards">
+      <object>objects\obj_basic_card</object>
+      <object>objects\obj_deck</object>
+    </objects>
     <objects name="Creatures">
       <object>objects\obj_desert_sedian</object>
       <object>objects\obj_sedian</object>
@@ -103,10 +105,6 @@
     <object>objects\obj_dialogue</object>
     <object>objects\obj_rosalind</object>
     <object>objects\obj_vivian</object>
-    <objects name="Cards">
-      <object>objects\obj_basic_card</object>
-      <object>objects\obj_deck</object>
-    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
