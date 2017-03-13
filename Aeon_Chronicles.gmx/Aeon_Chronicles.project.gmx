@@ -22,6 +22,7 @@
       <sprite>sprites\spr_sedian</sprite>
       <sprite>sprites\spr_sedian_battle</sprite>
       <sprite>sprites\spr_spider_mech</sprite>
+      <sprite>sprites\spr_unnamed</sprite>
     </sprites>
     <sprites name="NPC">
       <sprite>sprites\spr_npc_villager1</sprite>
@@ -36,6 +37,11 @@
     <sprite>sprites\spr_reference_2</sprite>
     <sprite>sprites\spr_rosalind</sprite>
     <sprite>sprites\spr_vivian</sprite>
+    <sprites name="Cards">
+      <sprite>sprites\spr_basic_card</sprite>
+      <sprite>sprites\spr_deck</sprite>
+    </sprites>
+    <sprite>sprites\spr_monster_ref</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_dark_dirt_patch</background>
@@ -78,6 +84,7 @@
     <objects name="Creatures">
       <object>objects\obj_desert_sedian</object>
       <object>objects\obj_sedian</object>
+      <object>objects\obj_unnamed</object>
     </objects>
     <objects name="Forest">
       <object>objects\obj_forest_boulder</object>
@@ -96,6 +103,10 @@
     <object>objects\obj_dialogue</object>
     <object>objects\obj_rosalind</object>
     <object>objects\obj_vivian</object>
+    <objects name="Cards">
+      <object>objects\obj_basic_card</object>
+      <object>objects\obj_deck</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
