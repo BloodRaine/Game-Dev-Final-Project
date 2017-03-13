@@ -58,11 +58,11 @@ drawtext = global.menu_tabs[tab_number];
 
 if (tab_number == global.current_menu_tab)
 {
-    draw_set_colour(c_lime);
+    draw_set_colour(c_green);
 }
 else
 {
-    draw_set_colour(c_white);
+    draw_set_colour(c_black);
 }
 
 draw_text(drawx, drawy, drawtext);

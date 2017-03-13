@@ -42,11 +42,11 @@ for (i = 0; i &lt; array_length_1d(global.menu_tabs); i++)
     with (tab_instances[i])
     {
         tab_number = other.i;
-        image_xscale = 256;
-        image_yscale = string_height_ext(global.menu_tabs[other.i], -1, -1);
+        image_xscale = 320 - 32;
+        image_yscale = string_height(global.menu_tabs[other.i]);
         instance_deactivate_object(self);
     }
-    dy += string_height_ext(global.menu_tabs[i], -1, -1) + 16;
+    dy += string_height(global.menu_tabs[i]) + 16;
 }
 </string>
           </argument>
@@ -117,12 +117,12 @@ if (invoke_menu)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_colour(c_white);
-draw_set_halign(fa_left);
+            <string>draw_set_colour(c_black);
+draw_set_halign(fa_center);
 draw_set_valign(fa_center);
 draw_set_font(font_menu_big);
 
-drawx = 256 + 32;
+drawx = 1024 - 320;
 drawy = 32;
 //drawtext = global.menu_tabs[global.current_menu_tab];
 drawtext = "Menu"
