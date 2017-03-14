@@ -29,8 +29,19 @@
 
 current_player = 0; // Start with Vivian
 
+vivian_attacking = false;
+vivian_attack_time = 0;
+monster_attacking = false;
+monster_attack_time = 0;
+attack_dx = 5;
+damage_inflicted = false;
+
+// Store initial positions
+vivian_start_x = obj_vivian.x;
+monster_start_x = obj_sedian_battle.x;
+
 /* time to pause after attack */
-post_attack_pause = 10;
+post_attack_pause = 60;
 </string>
           </argument>
         </arguments>
@@ -55,6 +66,13 @@ post_attack_pause = 10;
             <kind>1</kind>
             <string>// change whose turn it is
 current_player = (current_player + 1) % 2;
+
+// Stop attacking
+vivian_attacking = false;
+vivian_attack_time = 0;
+monster_attacking = false;
+monster_attack_time = 0;
+damage_inflicted = false;
 
 /* show the button if player's turn */
 if (current_player == 0) {
@@ -85,22 +103,56 @@ if (current_player == 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (monster_health &lt;= 0) {
+            <string>// Exit if someone dies
+if (monster_health &lt;= 0) {
     room_goto(rm_forest);
 } else if (global.vivian_health &lt;= 0) {
     room_goto(rm_forest);
 }
 
+// Animate the attack
+if (vivian_attacking) {
+    if (vivian_attack_time &lt; post_attack_pause / 2) {
+        obj_vivian.x += attack_dx;
+    } else if (obj_vivian.x &gt; vivian_start_x) {
+        // Inflict damage
+        if (!damage_inflicted) {
+            monster_health -= 1;
+            damage_inflicted = true;
+        }
+        
+        // Move back to start position
+        obj_vivian.x -= attack_dx;
+    }
+    vivian_attack_time++;
+}
+
+if (monster_attacking) {
+    if (monster_attack_time &lt; post_attack_pause / 2) {
+        obj_sedian_battle.x -= attack_dx;
+    } else if (obj_sedian_battle.x &lt; monster_start_x) {
+        // Inflict damage
+        if (!damage_inflicted) {
+            global.vivian_health -= 1;
+            damage_inflicted = true;
+        }
+        
+        // Move back to start position
+        obj_sedian_battle.x += attack_dx;
+    }
+    monster_attack_time++;
+}
+
 if (alarm[0] &gt; 0) {
     // pass
 } else if (current_player == 0) {
-        if (obj_button.clicked) {
-            monster_health -= 1;
-            alarm[0] = post_attack_pause;
-        }
+    if (obj_button.clicked) {
+        alarm[0] = post_attack_pause;
+        vivian_attacking = true;
+    }
 } else if (current_player == 1) {
     alarm[0] = post_attack_pause;
-    global.vivian_health -= 1;
+    monster_attacking = true;
 }
 </string>
           </argument>
