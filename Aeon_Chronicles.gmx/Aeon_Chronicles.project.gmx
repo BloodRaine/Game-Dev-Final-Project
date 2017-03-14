@@ -109,9 +109,12 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
-    <room>rooms\rm_forest</room>
     <room>rooms\rm_combat_forest</room>
     <room>rooms\rm_combat_ruin_city</room>
+    <rooms name="forest">
+      <room>rooms\rm_forest</room>
+      <room>rooms\rm_forest_two</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
