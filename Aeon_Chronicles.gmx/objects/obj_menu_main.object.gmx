@@ -25,17 +25,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>depth = -10000;
-visible = false;
+            <string>visible = false;
+
+// init menu background in room
 background_index[7] = bk_menu;
 background_visible[7] = false;
 background_foreground[7] = true;
-tab_instances = array(0);
-system_instances = array(0);
 
+left_page_width = 320;
+right_page_width = room_width - left_page_width;
+
+// make menu tabs
+tab_instances = array(0);
+draw_set_font(font_menu_med);
 dx = 0;
 dy = 150;
-
 for (i = 0; i &lt; array_length_1d(global.menu_tabs); i++)
 {
     tab_instances[i] = instance_create(dx, dy, obj_menu_tab);
@@ -47,6 +51,27 @@ for (i = 0; i &lt; array_length_1d(global.menu_tabs); i++)
         instance_deactivate_object(self);
     }
     dy += string_height(global.menu_tabs[i]) + 16;
+}
+
+// make system tab buttons and stuff
+system_instances = array(0);
+draw_set_font(font_menu_med);
+dx = right_page_width / 2 + left_page_width;
+dy = 256;
+system_instances[0] = instance_create(dx, dy, obj_button);
+with (system_instances[0])
+{
+    button_text = TEXT_SAVE_GAME;
+    button_font = font_menu_med;
+    other.dy += string_height(button_text) + 48;
+    instance_deactivate_object(self);
+}
+system_instances[1] = instance_create(dx, dy, obj_button);
+with (system_instances[1])
+{
+    button_text = TEXT_EXIT_GAME;
+    button_font = font_menu_med;
+    instance_deactivate_object(self);
 }
 </string>
           </argument>
@@ -83,6 +108,10 @@ if (invoke_menu)
         {
             instance_activate_object(tab_instances[i]);
         }
+        for (i = 0; i &lt; array_length_1d(system_instances); i++)
+        {
+            instance_activate_object(system_instances[i]);
+        }
         background_visible[7] = true;
     }
     else
@@ -91,6 +120,10 @@ if (invoke_menu)
         for (i = 0; i &lt; array_length_1d(tab_instances); i++)
         {
             instance_deactivate_object(tab_instances[i]);
+        }
+        for (i = 0; i &lt; array_length_1d(system_instances); i++)
+        {
+            instance_deactivate_object(system_instances[i]);
         }
         background_visible[7] = false;
     }
@@ -122,11 +155,11 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_center);
 draw_set_font(font_menu_big);
 
-drawx = (1024 - 320) / 2 + 320;
-drawy = 32;
+dx = right_page_width / 2 + left_page_width;
+dy = 32;
 //drawtext = global.menu_tabs[global.current_menu_tab];
 drawtext = "Menu"
-draw_text(drawx, drawy, drawtext);
+draw_text(dx, dy, drawtext);
 
 </string>
           </argument>
