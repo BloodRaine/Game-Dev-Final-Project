@@ -28,6 +28,41 @@
             <string>monster_health = 10;
 
 current_player = 0; // Start with Vivian
+
+/* time to pause after attack */
+post_attack_pause = 60;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// change whose turn it is
+current_player = (current_player + 1) % 2;
+
+/* show the button if player's turn */
+if (current_player == 0) {
+    with (obj_attack_button) {
+        clicked = false;
+        image_alpha = 100;
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -50,7 +85,18 @@ current_player = 0; // Start with Vivian
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>if (alarm[0] &gt; 0) {
+    // pass
+} else if (current_player == 0) {
+        if (obj_attack_button.clicked) {
+            monster_health -= 1;
+            alarm[0] = post_attack_pause;
+        }
+} else if (current_player == 1) {
+    alarm[0] = post_attack_pause;
+    global.vivian_health -= 1;
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -110,6 +156,7 @@ x = room_width - x;
 draw_set_halign(fa_right);
 draw_text(x, y, "Monster");
 draw_text(x, y + dy, "Health: " + string(monster_health));
+
 </string>
           </argument>
         </arguments>
