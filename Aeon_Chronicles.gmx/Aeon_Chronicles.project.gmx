@@ -11,6 +11,7 @@
     </sprites>
     <sprites name="Cards">
       <sprite>sprites\spr_basic_card</sprite>
+      <sprite>sprites\spr_card_two</sprite>
       <sprite>sprites\spr_deck</sprite>
     </sprites>
     <sprites name="Forest">
