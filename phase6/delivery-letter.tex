@@ -1,0 +1,76 @@
+
+%Generally, the cover letter should include the following:
+% - Introduction
+% - Description of work done since last delivery (i.e. progress report).
+% - List of items in current delivery.
+% - Standard business letter format
+%   (https://owl.english.purdue.edu/owl/resource/653/01/
+
+\documentclass[12pt]{article}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{graphicx}
+\usepackage[pdftex]{hyperref}
+\usepackage[english]{babel}
+\usepackage{parskip}
+\usepackage{xspace}
+
+\newcommand\aeon{\textit{\AE on Chronicles}\xspace}
+\newcommand\tab[1][.5in]{\hspace*{#1}}
+\newcommand\phasenum{VI\xspace}
+\newcommand\te{Team Epsilon\xspace}
+
+\begin{document}
+
+\hfill\includegraphics[width=4cm]{../graphics/logo/team-epsilon-light-cropped}
+
+\hfill Phase \phasenum
+
+\hfill \today
+
+Mark Baldwin,
+
+Since our last delivery, \te has made significant progress on \aeon. Our goal is
+to continue rapidly iterating on \aeon to ensure that our ambitious milestone
+schedule will be met.
+
+In Phase \phasenum we have implemented many crucial gameplay mechanics and
+fleshed out much of the general game functionality. At a high level, the three
+major changes are improved graphics, a menu system, and a turn-based card combat
+system. The following list outlines the major changes made in each of the above
+categories.
+
+\begin{itemize}
+    \item \textbf{Graphics}
+        \begin{itemize}
+            \item new grass, ground, and tree sprites
+            \item new creatures and reference sprites
+        \end{itemize}
+
+    \item \textbf{Menu System}
+        \begin{itemize}
+            \item accessed by pressing \texttt{ESC} from the forest
+        \end{itemize}
+
+    \item \textbf{Card Combat System}
+        \begin{itemize}
+            \item a HUD showing the health of the player and opponent
+            \item deck animations and display
+            \item attack animations for both the player and the opponent
+            \item temporary "Attack" button for testing attack mechanics
+        \end{itemize}
+\end{itemize}
+
+The above list is not comprehensive. We have worked very hard to improve the
+overall look and feel of \aeon in this release and we look forward to continuing
+our swift development of our game.
+
+Sincerely,
+
+\tab Jacob Davis \\
+\tab Caleb Jhones \\
+\tab Robbie Merillat \\
+\tab Jonathan Sumner Evans \\
+\tab David Grisham \\
+
+\end{document}
+
