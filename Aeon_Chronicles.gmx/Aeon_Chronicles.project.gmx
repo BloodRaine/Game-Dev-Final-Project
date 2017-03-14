@@ -6,9 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprites name="Battle">
-      <sprite>sprites\spr_attack_button</sprite>
-    </sprites>
     <sprites name="Cards">
       <sprite>sprites\spr_basic_card</sprite>
       <sprite>sprites\spr_deck</sprite>
@@ -74,13 +71,14 @@
     <font>fonts\font_dialogue_3</font>
     <font>fonts\font_menu_big</font>
     <font>fonts\font_menu_med</font>
+    <font>fonts\font_battle</font>
+    <font>fonts\font_default</font>
     <font>fonts\font_menu_small</font>
     <font>fonts\font_title</font>
   </fonts>
   <objects name="objects">
     <objects name="Battle">
       <object>objects\obj_sedian_battle</object>
-      <object>objects\obj_attack_button</object>
       <object>objects\obj_battle_control</object>
     </objects>
     <objects name="Cards">
