@@ -6,6 +6,9 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="Buttons">
+      <sprite>sprites\spr_button_default</sprite>
+    </sprites>
     <sprites name="Cards">
       <sprite>sprites\spr_basic_card</sprite>
       <sprite>sprites\spr_deck</sprite>
@@ -23,7 +26,7 @@
       <sprite>sprites\spr_sedian</sprite>
       <sprite>sprites\spr_sedian_battle</sprite>
       <sprite>sprites\spr_spider_mech</sprite>
-      <sprite>sprites\spr_unnamed</sprite>
+      <sprite>sprites\spr_groot</sprite>
     </sprites>
     <sprites name="NPC">
       <sprite>sprites\spr_npc_villager1</sprite>
@@ -31,7 +34,6 @@
     </sprites>
     <sprite>sprites\spr_blank_1x1</sprite>
     <sprite>sprites\spr_boss</sprite>
-    <sprite>sprites\spr_button</sprite>
     <sprite>sprites\spr_monster_ref</sprite>
     <sprite>sprites\spr_old_crazy_guy</sprite>
     <sprite>sprites\spr_reference</sprite>
@@ -41,9 +43,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bk_dark_dirt_patch</background>
-    <background>background\bk_dark_grass_patch</background>
     <background>background\bk_desert_grass</background>
-    <background>background\bk_forest</background>
     <background>background\bk_light_dirt_patch</background>
     <background>background\bk_menu</background>
     <backgrounds name="CombatBackgrounds">
@@ -57,6 +57,8 @@
       <background>background\bk_dirt_patch</background>
       <background>background\bk_grass</background>
       <background>background\bk_light_green_patch</background>
+      <background>background\bk_dark_grass_patch</background>
+      <background>background\bk_forest</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -96,7 +98,6 @@
       <object>objects\obj_tree_two</object>
     </objects>
     <objects name="Menu">
-      <object>objects\obj_menu_button</object>
       <object>objects\obj_menu_keybinds</object>
       <object>objects\obj_menu_main</object>
       <object>objects\obj_menu_tab</object>
