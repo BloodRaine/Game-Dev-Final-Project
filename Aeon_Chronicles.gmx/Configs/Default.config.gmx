@@ -651,7 +651,7 @@
     <option_xbone_title_id>1234ABCD</option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="11">
+    <constants number="12">
       <constant name="OPTION_AUDIO_VOLUME">10</constant>
       <constant name="OPTION_KEYBIND_DOWN">ord('S')</constant>
       <constant name="OPTION_KEYBIND_INTERACT">vk_enter</constant>
@@ -663,6 +663,7 @@
       <constant name="OPTION_RESOLUTION_HEIGHT">768</constant>
       <constant name="OPTION_RESOLUTION_WIDTH">1024</constant>
       <constant name="TEXT_PLAY_GAME">"Play Game"</constant>
+      <constant name="TEXT_ATTACK">"Attack"</constant>
     </constants>
   </ConfigConstants>
 </Config>

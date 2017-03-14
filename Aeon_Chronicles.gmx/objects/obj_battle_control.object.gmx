@@ -58,9 +58,9 @@ current_player = (current_player + 1) % 2;
 
 /* show the button if player's turn */
 if (current_player == 0) {
-    with (obj_attack_button) {
+    with (obj_button) {
         clicked = false;
-        image_alpha = 100;
+        visible = true;
     }
 }
 </string>
@@ -88,7 +88,7 @@ if (current_player == 0) {
             <string>if (alarm[0] &gt; 0) {
     // pass
 } else if (current_player == 0) {
-        if (obj_attack_button.clicked) {
+        if (obj_button.clicked) {
             monster_health -= 1;
             alarm[0] = post_attack_pause;
         }
