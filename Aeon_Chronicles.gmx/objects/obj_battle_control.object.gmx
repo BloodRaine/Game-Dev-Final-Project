@@ -30,7 +30,7 @@
 current_player = 0; // Start with Vivian
 
 /* time to pause after attack */
-post_attack_pause = 60;
+post_attack_pause = 10;
 </string>
           </argument>
         </arguments>
@@ -85,7 +85,13 @@ if (current_player == 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (alarm[0] &gt; 0) {
+            <string>if (monster_health &lt;= 0) {
+    room_goto(rm_forest);
+} else if (global.vivian_health &lt;= 0) {
+    room_goto(rm_forest);
+}
+
+if (alarm[0] &gt; 0) {
     // pass
 } else if (current_player == 0) {
         if (obj_button.clicked) {
