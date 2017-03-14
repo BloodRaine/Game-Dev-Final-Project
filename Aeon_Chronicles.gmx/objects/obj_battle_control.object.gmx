@@ -34,6 +34,7 @@ vivian_attack_time = 0;
 monster_attacking = false;
 monster_attack_time = 0;
 attack_dx = 5;
+damage_inflicted = false;
 
 // Store initial positions
 vivian_start_x = obj_vivian.x;
@@ -71,6 +72,7 @@ vivian_attacking = false;
 vivian_attack_time = 0;
 monster_attacking = false;
 monster_attack_time = 0;
+damage_inflicted = false;
 
 /* show the button if player's turn */
 if (current_player == 0) {
@@ -113,6 +115,12 @@ if (vivian_attacking) {
     if (vivian_attack_time &lt; post_attack_pause / 2) {
         obj_vivian.x += attack_dx;
     } else if (obj_vivian.x &gt; vivian_start_x) {
+        // Inflict damage
+        if (!damage_inflicted) {
+            monster_health -= 1;
+            damage_inflicted = true;
+        }
+        
         // Move back to start position
         obj_vivian.x -= attack_dx;
     }
@@ -123,6 +131,12 @@ if (monster_attacking) {
     if (monster_attack_time &lt; post_attack_pause / 2) {
         obj_sedian_battle.x -= attack_dx;
     } else if (obj_sedian_battle.x &lt; monster_start_x) {
+        // Inflict damage
+        if (!damage_inflicted) {
+            global.vivian_health -= 1;
+            damage_inflicted = true;
+        }
+        
         // Move back to start position
         obj_sedian_battle.x += attack_dx;
     }
@@ -133,13 +147,11 @@ if (alarm[0] &gt; 0) {
     // pass
 } else if (current_player == 0) {
     if (obj_button.clicked) {
-        monster_health -= 1;
         alarm[0] = post_attack_pause;
         vivian_attacking = true;
     }
 } else if (current_player == 1) {
     alarm[0] = post_attack_pause;
-    global.vivian_health -= 1;
     monster_attacking = true;
 }
 </string>
