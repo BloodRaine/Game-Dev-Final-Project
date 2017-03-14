@@ -85,6 +85,12 @@ image_yscale = (string_height(button_text) + 32) / sprite_height;
         clicked = true;
         visible = false;
         break;
+    case TEXT_SAVE_GAME:
+        show_debug_message(TEXT_SAVE_GAME);
+        break;
+    case TEXT_EXIT_GAME:
+        game_end();
+        break;
     default:
         break;
 }

@@ -107,6 +107,7 @@
     <object>objects\obj_dialogue</object>
     <object>objects\obj_rosalind</object>
     <object>objects\obj_vivian</object>
+    <object>objects\obj_slider</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
