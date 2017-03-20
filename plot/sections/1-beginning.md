@@ -141,9 +141,28 @@ destroy all of my parents' inventions!"
 
 *Vivian quickly sifts through the inventions and grabs one*
 
-[TODO: Vivian somehow has to be told what happened. Maybe she is retelling the
-story to the policy or someone the next morning, and a (holo)message comes for
-her from her parents through the company?]
+Vivian: "This is a good one. I should go check for my parents in the house one
+more time."
+
+*Vivian exits the shed and looks toward the house*
+
+Vivian: "Is that...oh no, the house is on fire too!"
+
+*A man walks up behind Vivian. He startles her, and she jumps and turns around*
+
+Vivian: "Ah!!"
+
+Knotts: "Hey, Vivian, it's okay. It's me, Deputy Knotts."
+
+*Knotts is an android, and the deputy of the town*
+
+Griffith: "Knotts, come'ere! We've got a squirmer hear!"
+
+Knotts: "Vivian, go over to my car, we'll be there in a second."
+
+[TODO: Cut to sheriff's office. Need to motivate man telling them that he was
+hired by EvilCorp to help kidnap parents and destroy their work. Maybe
+something like "damn it all, I didn't know there was a kid involved...".]
 
 [After the above TODO, Vivian goes on journey]
 
