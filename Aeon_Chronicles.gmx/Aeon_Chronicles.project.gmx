@@ -62,7 +62,9 @@
       <background>background\bk_forest</background>
     </backgrounds>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path0</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\array.gml</script>
     <script>scripts\base_convert.gml</script>
@@ -91,7 +93,7 @@
     <objects name="Creatures">
       <object>objects\obj_desert_sedian</object>
       <object>objects\obj_sedian</object>
-      <object>objects\obj_unnamed</object>
+      <object>objects\obj_groot</object>
     </objects>
     <objects name="Forest">
       <object>objects\obj_forest_boulder</object>
