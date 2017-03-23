@@ -38,6 +38,8 @@ x_lower_bound = x - 100;
 x_upper_bound = x + 100;
 y_lower_bound = y - 100;
 y_upper_bound = y + 100;
+
+image_speed = 0.1
 </string>
           </argument>
         </arguments>
