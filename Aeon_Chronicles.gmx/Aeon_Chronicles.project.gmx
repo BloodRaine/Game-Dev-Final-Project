@@ -117,6 +117,7 @@
     <rooms name="forest">
       <room>rooms\rm_forest</room>
       <room>rooms\rm_forest_two</room>
+      <room>rooms\rm_forest_three</room>
     </rooms>
   </rooms>
   <help>
