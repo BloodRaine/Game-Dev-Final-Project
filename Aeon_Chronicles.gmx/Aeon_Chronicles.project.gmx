@@ -11,6 +11,7 @@
     </sprites>
     <sprites name="Cards">
       <sprite>sprites\spr_basic_card</sprite>
+      <sprite>sprites\spr_card_two</sprite>
       <sprite>sprites\spr_deck</sprite>
     </sprites>
     <sprites name="Forest">
@@ -61,7 +62,9 @@
       <background>background\bk_forest</background>
     </backgrounds>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path0</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\array.gml</script>
     <script>scripts\base_convert.gml</script>
@@ -90,7 +93,7 @@
     <objects name="Creatures">
       <object>objects\obj_desert_sedian</object>
       <object>objects\obj_sedian</object>
-      <object>objects\obj_unnamed</object>
+      <object>objects\obj_groot</object>
     </objects>
     <objects name="Forest">
       <object>objects\obj_forest_boulder</object>
@@ -116,6 +119,7 @@
     <rooms name="forest">
       <room>rooms\rm_forest</room>
       <room>rooms\rm_forest_two</room>
+      <room>rooms\rm_forest_three</room>
     </rooms>
   </rooms>
   <help>
