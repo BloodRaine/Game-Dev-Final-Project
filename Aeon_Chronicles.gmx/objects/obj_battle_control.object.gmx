@@ -119,6 +119,8 @@ if (vivian_attacking) {
         if (!damage_inflicted) {
             monster_health -= 1;
             damage_inflicted = true;
+            audio_play_sound(global.vivian_atk_sfx, 10, false);
+            audio_play_sound(sfx_ow_sedian, 9, false);
         }
         
         // Move back to start position
@@ -135,6 +137,8 @@ if (monster_attacking) {
         if (!damage_inflicted) {
             global.vivian_health -= 1;
             damage_inflicted = true;
+            audio_play_sound(sfx_attack_sedian, 10, false);
+            audio_play_sound(sfx_ow_vivian, 9, false);
         }
         
         // Move back to start position
