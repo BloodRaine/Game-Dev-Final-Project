@@ -10,7 +10,9 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>global.menu_tabs = array("Manage Decks", "Card Collection", "Quest Journal", "System");
+  <code>audio_play_sound(bgm_title, 100, true);
+
+global.menu_tabs = array("Manage Decks", "Card Collection", "Quest Journal", "System");
 global.current_menu_tab = 0;
 global.vivian_health = 10;
 global.vivian_atk_sfx = sfx_attack_1;</code>

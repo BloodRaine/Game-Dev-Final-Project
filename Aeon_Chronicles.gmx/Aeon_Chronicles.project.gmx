@@ -5,12 +5,15 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\sfx_door</sound>
-    <sound>sound\sfx_ow_vivian</sound>
-    <sound>sound\sfx_ow_sedian</sound>
-    <sound>sound\sfx_walking</sound>
+    <sound>sound\bgm_combat</sound>
+    <sound>sound\bgm_forest</sound>
+    <sound>sound\bgm_title</sound>
     <sound>sound\sfx_attack_1</sound>
     <sound>sound\sfx_attack_sedian</sound>
+    <sound>sound\sfx_door</sound>
+    <sound>sound\sfx_ow_sedian</sound>
+    <sound>sound\sfx_ow_vivian</sound>
+    <sound>sound\sfx_walking</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Buttons">
@@ -42,13 +45,13 @@
     </sprites>
     <sprite>sprites\spr_blank_1x1</sprite>
     <sprite>sprites\spr_boss</sprite>
+    <sprite>sprites\spr_boundary</sprite>
     <sprite>sprites\spr_monster_ref</sprite>
     <sprite>sprites\spr_old_crazy_guy</sprite>
     <sprite>sprites\spr_reference</sprite>
     <sprite>sprites\spr_reference_2</sprite>
     <sprite>sprites\spr_rosalind</sprite>
     <sprite>sprites\spr_vivian</sprite>
-    <sprite>sprites\spr_boundary</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_dark_dirt_patch</background>
@@ -114,12 +117,12 @@
       <object>objects\obj_menu_tab</object>
     </objects>
     <object>objects\obj_boulder</object>
+    <object>objects\obj_boundary</object>
     <object>objects\obj_button</object>
     <object>objects\obj_dialogue</object>
     <object>objects\obj_rosalind</object>
-    <object>objects\obj_vivian</object>
     <object>objects\obj_slider</object>
-    <object>objects\obj_bounday</object>
+    <object>objects\obj_vivian</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>

@@ -95,7 +95,7 @@ if (not talking)
     }
 }
 
-if (!walking &amp;&amp; sound_isplaying(sfx_walking))
+if (!walking &amp;&amp; audio_is_playing(sfx_walking))
 {
     audio_stop_sound(sfx_walking);
 }
