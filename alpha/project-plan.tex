@@ -36,8 +36,12 @@
 \usepackage{enumitem,amssymb}
 \newlist{todolist}{itemize}{2}
 \setlist[todolist]{label=$\square$}
-\setlength\parindent{0em}
 
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+\hspace{-2.5pt}}
 
 \newcommand\tab[1][.5in]{\hspace*{#1}}
 \newcommand\gametitle{\textit{\AE on Chronicles}\xspace}
@@ -68,46 +72,46 @@ development of \gametitle is successful.
 
 \subsection{Milestone Deliveries}
 \begin{todolist}
-    \item \textbf{Milestone I:} Overworld
-        \begin{todolist}
-            \item Character Movement
-            \item NPC interaction
-            \item Combat Hooks
-            \item Menu UI Systems
-        \end{todolist}
+\item[\done] \textbf{Milestone I:} Overworld
+    \begin{todolist}
+    \item[\done] Character Movement
+    \item[\done] NPC interaction
+    \item[\done] Combat Hooks
+    \item[\done] Menu UI Systems
+    \end{todolist}
 
-    \item \textbf{Milestone II:} Combat System
-        \begin{todolist}
-            \item Deck Randomization
-            \item Turn Based System
-            \item Combat Animations
-            \item End of combat (apply damage)
-        \end{todolist}
+\item[\done] \textbf{Milestone II:} Combat System
+    \begin{todolist}
+    \item[\done] Deck Randomization
+    \item[\done] Turn Based System
+    \item[\done] Combat Animations
+    \item[\done] End of combat (apply damage)
+    \end{todolist}
 
-    \item \textbf{Milestone III:} Alpha Release
-        \begin{todolist}
-            \item Integrate Overworld and combat
-            \item Story flushed out
-            \item A working location
-            \item Sound Assets
-        \end{todolist}
+\item[\done] \textbf{Milestone III:} Alpha Release
+    \begin{todolist}
+    \item[\done] Integrate Overworld and combat
+    \item[\done] Story flushed out
+    \item[\done] A working location
+    \item[\done] Sound Assets
+    \end{todolist}
 
-    \item \textbf{Milestone IV:} Beta Release
-        \begin{todolist}
-            \item All regions of world
-            \item Asset Integration
-            \item Pool of approximately 30 cards per character
-            \item 30 non-character specific cards
-            \item Minimum of 4 elemental status types
-            \item Card Crafting
-            \item Music
-        \end{todolist}
+\item \textbf{Milestone IV:} Beta Release
+    \begin{todolist}
+    \item All regions of world
+    \item Asset Integration
+    \item Pool of approximately 30 cards per character
+    \item 30 non-character specific cards
+    \item Minimum of 4 elemental status types
+    \item Card Crafting
+    \item Music
+    \end{todolist}
 
-    \item \textbf{Milestone V:} Final Release
-        \begin{todolist}
-            \item bug fixes
-            \item stretch goals
-        \end{todolist}
+\item \textbf{Milestone V:} Final Release
+    \begin{todolist}
+    \item bug fixes
+    \item stretch goals
+    \end{todolist}
 \end{todolist}
 
 \subsection{Dependencies \& Resources}
@@ -185,23 +189,23 @@ their individual tasks, all team members will contribute to the coding effort.
 Table~\ref{tab:dev_docs} is a list of documents relevant to maintaining the project.
 
 \begin{table}[H]
-\centering
-\caption{Development Documents}
-\label{tab:dev_docs}
-\begin{tabularx}{\linewidth}{|l|X|}
-\hline
-{\bf Document}         & {\bf Purpose} \\ \hline
-{\it Design Document}  & The design document is a detailed blueprint on every
-                         aspect of the game. \\ \hline
-{\it Bugs \& Features} & Documents all upcoming and completed features, as well
-                         as descriptions and discovery-dates of all bugs for a
-                         particular feature. A status is provided for each
-                         feature which indicates whether the feature has been
-                         tested by the Test Lead for further bugs. Each bug
-                         includes a Resolution field that indicates whether the
-                         bug has been resolved, as well as a description as to
-                         how the bug was resolved. \\ \hline
-\end{tabularx}
+    \centering
+    \caption{Development Documents}
+    \label{tab:dev_docs}
+    \begin{tabularx}{\linewidth}{|l|X|}
+        \hline
+        {\bf Document}         & {\bf Purpose} \\ \hline
+        {\it Design Document}  & The design document is a detailed blueprint on every
+        aspect of the game. \\ \hline
+        {\it Bugs \& Features} & Documents all upcoming and completed features, as well
+        as descriptions and discovery-dates of all bugs for a
+        particular feature. A status is provided for each
+        feature which indicates whether the feature has been
+        tested by the Test Lead for further bugs. Each bug
+        includes a Resolution field that indicates whether the
+        bug has been resolved, as well as a description as to
+        how the bug was resolved. \\ \hline
+    \end{tabularx}
 \end{table}
 
 
@@ -220,33 +224,33 @@ it occurs.
         \textbf{Possible Risk} & \textbf{Contingency Plan} \\
         \hline
         Non-competitive enemy AI & If it proves too difficult to create
-		different AIs for various enemies and bosses, we can opt to create
-		only one enemy AI to use with every combat encounter. We can also
-		make this more simple than we'd like to save time. \\
+        different AIs for various enemies and bosses, we can opt to create only
+        one enemy AI to use with every combat encounter. We can also make this
+        more simple than we'd like to save time. \\
         \hline
         Overambitious project scope & We believe that we have allocated our
-		milestone goals in a way that we will be able to implement the core
-		gameplay and assets that are necessary for the game to function;
-		however, it is possible that we have been overambitious in our
-		allocations. If that is the case we will have to cut back on
-		functionalities and assets starting with in depth art and music assets
-		followed by unique cards and encounters in tandem with overworld
-		locations and interactions. This could also limit story development.  \\
+        milestone goals in a way that we will be able to implement the core
+        gameplay and assets that are necessary for the game to function;
+        however, it is possible that we have been overambitious in our
+        allocations. If that is the case we will have to cut back on
+        functionalities and assets starting with in depth art and music assets
+        followed by unique cards and encounters in tandem with overworld
+        locations and interactions. This could also limit story development.  \\
         \hline
         Meeting deadlines & This risk has many similarities to the risk of an
-		overambitious project scope. If we are unable to integrate a desired
-		functionality before a milestone delivery, we will table the
-		functionality until we have extra time to complete it in addition to
-		all other parts of the next delivery. This could result in it being
-		tabled indefinitely in which case we will refer to the order of
-		functionalities to drop described above. \\
+        overambitious project scope. If we are unable to integrate a desired
+        functionality before a milestone delivery, we will table the
+        functionality until we have extra time to complete it in addition to all
+        other parts of the next delivery. This could result in it being tabled
+        indefinitely in which case we will refer to the order of functionalities
+        to drop described above. \\
         \hline
         Large number of dependencies between tasks & We believe we have
-		allocated our milestone goals in a way that we will be able to
-		implement the necessary functionalities prior to when we plan to
-		implement the functionalities that depend on them. If that is not the
-		case, similarly to the case of not meeting deadlines, we will drop
-		functinalities in the order described above. \\
+        allocated our milestone goals in a way that we will be able to implement
+        the necessary functionalities prior to when we plan to implement the
+        functionalities that depend on them. If that is not the case, similarly
+        to the case of not meeting deadlines, we will drop functinalities in the
+        order described above. \\
         \hline
     \end{tabularx}
 \end{table}
@@ -264,22 +268,22 @@ game make this an infeasible testing strategy. Therefore, the team will rely on
 a system of collaborative manual testing that works as follows:
 
 \begin{enumerate}
-\item When adding a new feature to the game, the developer(s) adding the feature
-      will test it and ensure that all directly affected aspects of the game
-      perform in the expected manner. The feature will then be documented in the
-      {\it Bugs \& Features} document. Any remaining bugs that the developer is
-      unable to resolve should also be documented in the {\it Bugs \& Fixtures}
-      document.
-\item It is then up to the Test Lead to monitor the {\it Bugs \& Features}
-      document for new features that they should test for completeness and bugs.
-      If the Test Lead is unable to resolve all bugs for any reason, they may
-      delegate specific bug resolutions to other members of the team.
+    \item When adding a new feature to the game, the developer(s) adding the
+        feature will test it and ensure that all directly affected aspects of
+        the game perform in the expected manner. The feature will then be
+        documented in the {\it Bugs \& Features} document. Any remaining bugs
+        that the developer is unable to resolve should also be documented in the
+        {\it Bugs \& Fixtures} document.
+    \item It is then up to the Test Lead to monitor the {\it Bugs \& Features}
+        document for new features that they should test for completeness and
+        bugs.  If the Test Lead is unable to resolve all bugs for any reason,
+        they may delegate specific bug resolutions to other members of the team.
 
-      {\it Caveat}: In the case that the Test Lead has added a particular
-      feature themselves, they must act in accordance with step 1. The task of
-      further testing (step 2) then falls on the Team Leader by default, though
-      the Test Lead may assign this to another team member at their own
-      discretion on a case-by-case basis.
+        {\it Caveat}: In the case that the Test Lead has added a particular
+        feature themselves, they must act in accordance with step 1. The task of
+        further testing (step 2) then falls on the Team Leader by default,
+        though the Test Lead may assign this to another team member at their own
+        discretion on a case-by-case basis.
 \end{enumerate}
 
 \subsection{Configuration Management}
