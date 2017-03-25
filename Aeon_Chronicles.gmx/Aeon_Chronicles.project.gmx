@@ -28,6 +28,7 @@
       <sprite>sprites\spr_sedian_battle</sprite>
       <sprite>sprites\spr_spider_mech</sprite>
       <sprite>sprites\spr_groot</sprite>
+      <sprite>sprites\spr_groot_battle</sprite>
     </sprites>
     <sprites name="NPC">
       <sprite>sprites\spr_npc_villager1</sprite>
@@ -86,6 +87,7 @@
     <objects name="Battle">
       <object>objects\obj_sedian_battle</object>
       <object>objects\obj_battle_control</object>
+      <object>objects\obj_groot_battle</object>
     </objects>
     <objects name="Cards">
       <object>objects\obj_basic_card</object>

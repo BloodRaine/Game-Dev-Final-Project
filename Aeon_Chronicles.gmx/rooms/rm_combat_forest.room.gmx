@@ -59,6 +59,7 @@
     <instance objName="obj_basic_card" x="544" y="640" name="inst_E14FEB25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_deck" x="832" y="624" name="inst_6511EE0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button" x="192" y="720" name="inst_50FC2516" locked="0" code="button_text = TEXT_ATTACK;&#xA;button_font = font_battle;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_groot_battle" x="512" y="416" name="inst_BDF648BA" locked="0" code="" scaleX="1.53191494941711" scaleY="1.44680845737457" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

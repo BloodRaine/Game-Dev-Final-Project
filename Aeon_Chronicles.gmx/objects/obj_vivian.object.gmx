@@ -248,7 +248,8 @@ if (key_interact)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_combat_forest)
+            <string>global.monster_to_fight = "groot";
+room_goto(rm_combat_forest);
 
 </string>
           </argument>
@@ -272,7 +273,8 @@ if (key_interact)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_combat_forest)
+            <string>global.monster_to_fight = "sedian";
+room_goto(rm_combat_forest);
 </string>
           </argument>
         </arguments>
@@ -295,7 +297,8 @@ if (key_interact)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_combat_forest)
+            <string>global.monster_to_fight = "desert_sedian";
+room_goto(rm_combat_forest);
 </string>
           </argument>
         </arguments>
