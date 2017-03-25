@@ -11,21 +11,20 @@
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code>global.room_before_battle = room;
-if (global.monster_defeated)
+
+if (ds_list_find_index(global.defeated_monsters, "sedian") &gt;= 0)
 {
-    if (global.monster_to_fight == "sedian")
+    with (obj_sedian)
     {
-        with (obj_sedian)
-        {
-            instance_destroy();
-        }
+        instance_destroy();
     }
-    else if (global.monster_to_fight == "groot")
+}
+
+if (ds_list_find_index(global.defeated_monsters, "groot") &gt;= 0)
+{
+    with (obj_groot)
     {
-        with (obj_groot)
-        {
-            instance_destroy();
-        }
+        instance_destroy();
     }
 }</code>
   <enableViews>-1</enableViews>

@@ -123,7 +123,7 @@ if (current_player == 0) {
             <kind>1</kind>
             <string>// Exit if someone dies
 if (monster_health &lt;= 0) {
-    global.monster_defeated = true;
+    ds_list_add(global.defeated_monsters, global.monster_to_fight);
     room_goto(global.room_before_battle);
 } else if (global.vivian_health &lt;= 0) {
     global.vivian_defeated = true;
