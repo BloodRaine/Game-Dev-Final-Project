@@ -10,7 +10,15 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>global.room_before_battle = room;</code>
+  <code>audio_stop_sound(bgm_title);
+audio_stop_sound(bgm_combat);
+
+if (!audio_is_playing(bgm_forest))
+{
+    audio_play_sound(bgm_forest, 100, true);
+}
+
+global.room_before_battle = room;</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
