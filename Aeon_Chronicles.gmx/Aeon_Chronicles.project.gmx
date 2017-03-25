@@ -4,7 +4,14 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sfx_door</sound>
+    <sound>sound\sfx_ow_vivian</sound>
+    <sound>sound\sfx_ow_sedian</sound>
+    <sound>sound\sfx_walking</sound>
+    <sound>sound\sfx_attack_1</sound>
+    <sound>sound\sfx_attack_sedian</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Buttons">
       <sprite>sprites\spr_button_default</sprite>

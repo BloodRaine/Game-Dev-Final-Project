@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>talking = false;
+walking = false;
+sound_stop(sfx_walking);
+
 </string>
           </argument>
         </arguments>
@@ -48,7 +51,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room == rm_combat_forest) { exit; }
+            <string>if (room == rm_combat_forest)
+{
+    audio_stop_sound(sfx_walking);
+    exit;
+}
+
+walking = false;
 
 /* keys */
 key_up = keyboard_check(OPTION_KEYBIND_UP);
@@ -62,19 +71,33 @@ if (not talking)
     if (key_up)
     {
         y -= 5;
+        walking = true;
     }
     if (key_left)
     {
         x -= 5;
+        walking = true;
     }
     if (key_right)
     {
         x += 5;
+        walking = true;
     }
     if (key_down)
     {
         y += 5;
+        walking = true;
     }
+    
+    if (walking &amp;&amp; !audio_is_playing(sfx_walking))
+    {
+        audio_play_sound(sfx_walking, 1, true);
+    }
+}
+
+if (!walking &amp;&amp; sound_isplaying(sfx_walking))
+{
+    audio_stop_sound(sfx_walking);
 }
 
 if (key_interact)
