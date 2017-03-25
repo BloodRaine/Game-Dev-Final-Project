@@ -25,7 +25,25 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>monster_health = 10;
+            <string>// Get what we ran into
+if (global.monster_to_fight == "sedian")
+{
+    combat_opponent = obj_sedian_battle;
+    obj_sedian_battle.visible = true;
+    obj_groot_battle.visible = false;
+}
+else if (global.monster_to_fight == "groot")
+{
+    combat_opponent = obj_groot_battle;
+    obj_groot_battle.visible = true;
+    obj_sedian_battle.visible = false;
+}
+
+// Reset
+global.monster_defeated = false;
+global.vivian_defeated = false;
+
+monster_health = 10;
 
 current_player = 0; // Start with Vivian
 
@@ -38,7 +56,7 @@ damage_inflicted = false;
 
 // Store initial positions
 vivian_start_x = obj_vivian.x;
-monster_start_x = obj_sedian_battle.x;
+monster_start_x = combat_opponent.x;
 
 /* time to pause after attack */
 post_attack_pause = 60;
@@ -105,9 +123,11 @@ if (current_player == 0) {
             <kind>1</kind>
             <string>// Exit if someone dies
 if (monster_health &lt;= 0) {
-    room_goto(rm_forest);
+    ds_list_add(global.defeated_monsters, global.monster_to_fight);
+    room_goto(global.room_before_battle);
 } else if (global.vivian_health &lt;= 0) {
-    room_goto(rm_forest);
+    global.vivian_defeated = true;
+    room_goto(global.room_before_battle);
 }
 
 // Animate the attack
@@ -120,7 +140,7 @@ if (vivian_attacking) {
             monster_health -= 1;
             damage_inflicted = true;
             audio_play_sound(global.vivian_atk_sfx, 10, false);
-            audio_play_sound(sfx_ow_sedian, 9, false);
+            audio_play_sound(sfx_ow_sedian, 10, false);
         }
         
         // Move back to start position
@@ -131,18 +151,18 @@ if (vivian_attacking) {
 
 if (monster_attacking) {
     if (monster_attack_time &lt; post_attack_pause / 2) {
-        obj_sedian_battle.x -= attack_dx;
-    } else if (obj_sedian_battle.x &lt; monster_start_x) {
+        combat_opponent.x -= attack_dx;
+    } else if (combat_opponent.x &lt; monster_start_x) {
         // Inflict damage
         if (!damage_inflicted) {
             global.vivian_health -= 1;
             damage_inflicted = true;
             audio_play_sound(sfx_attack_sedian, 10, false);
-            audio_play_sound(sfx_ow_vivian, 9, false);
+            audio_play_sound(sfx_ow_vivian, 10, false);
         }
         
         // Move back to start position
-        obj_sedian_battle.x += attack_dx;
+        combat_opponent.x += attack_dx;
     }
     monster_attack_time++;
 }
@@ -180,7 +200,7 @@ if (alarm[0] &gt; 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_forest);
+            <string>room_goto(global.room_before_battle);
 </string>
           </argument>
         </arguments>

@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>talking = false;
 walking = false;
-sound_stop(sfx_walking);
+audio_stop_sound(sfx_walking);
 
 </string>
           </argument>
@@ -51,11 +51,7 @@ sound_stop(sfx_walking);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room == rm_combat_forest)
-{
-    audio_stop_sound(sfx_walking);
-    exit;
-}
+            <string>if (room == rm_combat_forest) { exit; }
 
 walking = false;
 
@@ -271,7 +267,8 @@ if (key_interact)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_combat_forest)
+            <string>global.monster_to_fight = "groot";
+room_goto(rm_combat_forest);
 
 </string>
           </argument>
@@ -295,7 +292,8 @@ if (key_interact)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_combat_forest)
+            <string>global.monster_to_fight = "sedian";
+room_goto(rm_combat_forest);
 </string>
           </argument>
         </arguments>
@@ -318,7 +316,8 @@ if (key_interact)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_combat_forest)
+            <string>global.monster_to_fight = "desert_sedian";
+room_goto(rm_combat_forest);
 </string>
           </argument>
         </arguments>
