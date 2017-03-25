@@ -41,6 +41,8 @@
     <sprite>sprites\spr_reference_2</sprite>
     <sprite>sprites\spr_rosalind</sprite>
     <sprite>sprites\spr_vivian</sprite>
+    <sprite>sprites\sprite25</sprite>
+    <sprite>sprites\spr_boundary</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_dark_dirt_patch</background>
@@ -111,6 +113,7 @@
     <object>objects\obj_rosalind</object>
     <object>objects\obj_vivian</object>
     <object>objects\obj_slider</object>
+    <object>objects\obj_bounday</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
