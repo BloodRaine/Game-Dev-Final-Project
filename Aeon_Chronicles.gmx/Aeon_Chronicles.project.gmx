@@ -42,6 +42,10 @@
     <sprite>sprites\spr_rosalind</sprite>
     <sprite>sprites\spr_vivian</sprite>
     <sprite>sprites\spr_boundary</sprite>
+    <sprite>sprites\spr_room_transition_above</sprite>
+    <sprite>sprites\spr_room_transition_below</sprite>
+    <sprite>sprites\spr_room_transition_left</sprite>
+    <sprite>sprites\spr_room_transition_right</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_dark_dirt_patch</background>
@@ -113,6 +117,10 @@
     <object>objects\obj_vivian</object>
     <object>objects\obj_slider</object>
     <object>objects\obj_bounday</object>
+    <object>objects\obj_room_transition_above</object>
+    <object>objects\obj_room_transition_below</object>
+    <object>objects\obj_room_transition_right</object>
+    <object>objects\obj_room_transition_left</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
