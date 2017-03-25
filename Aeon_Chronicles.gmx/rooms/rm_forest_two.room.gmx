@@ -51,13 +51,13 @@ global.room_before_battle = room;</code>
   </backgrounds>
   <views>
     <view visible="-1" objName="obj_vivian" xview="200" yview="200" wview="600" hview="600" xport="0" yport="0" wport="1024" hport="1024" hborder="200" vborder="200" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="obj_boundary" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="obj_boundary" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="obj_boundary" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="obj_boundary" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="obj_boundary" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="obj_boundary" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="obj_boundary" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
     <instance objName="obj_menu_main" x="0" y="0" name="inst_1764560F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -80,10 +80,10 @@ global.room_before_battle = room;</code>
     <instance objName="obj_forest_boulder" x="564" y="52" name="inst_34427609" locked="0" code="" scaleX="0.730000019073486" scaleY="0.74316942691803" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_one" x="488" y="4" name="inst_75E267DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_one" x="592" y="20" name="inst_10C2BA5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bounday" x="0" y="0" name="inst_3241B0E7" locked="0" code="" scaleX="32" scaleY="0.75" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bounday" x="-4" y="0" name="inst_D5FA6753" locked="0" code="" scaleX="0.625" scaleY="24" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bounday" x="1008" y="0" name="inst_AF192C56" locked="0" code="" scaleX="0.612903237342834" scaleY="24.3870964050293" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bounday" x="880" y="748" name="inst_A8D2AF75" locked="0" code="" scaleX="6.125" scaleY="0.629999995231628" colour="4294967295" rotation="0"/>
+    <instance objName="obj_boundary" x="0" y="0" name="inst_3241B0E7" locked="0" code="" scaleX="32" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_boundary" x="-4" y="0" name="inst_D5FA6753" locked="0" code="" scaleX="0.625" scaleY="24" colour="4294967295" rotation="0"/>
+    <instance objName="obj_boundary" x="1008" y="0" name="inst_AF192C56" locked="0" code="" scaleX="0.612903237342834" scaleY="24.3870964050293" colour="4294967295" rotation="0"/>
+    <instance objName="obj_boundary" x="880" y="748" name="inst_A8D2AF75" locked="0" code="" scaleX="6.125" scaleY="0.629999995231628" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_transition_below" x="16" y="744" name="inst_73193A3D" locked="0" code="" scaleX="27" scaleY="0.75" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
