@@ -4,7 +4,17 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\bgm_combat</sound>
+    <sound>sound\bgm_forest</sound>
+    <sound>sound\bgm_title</sound>
+    <sound>sound\sfx_attack_1</sound>
+    <sound>sound\sfx_attack_sedian</sound>
+    <sound>sound\sfx_door</sound>
+    <sound>sound\sfx_ow_sedian</sound>
+    <sound>sound\sfx_ow_vivian</sound>
+    <sound>sound\sfx_walking</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Buttons">
       <sprite>sprites\spr_button_default</sprite>
@@ -28,6 +38,7 @@
       <sprite>sprites\spr_sedian_battle</sprite>
       <sprite>sprites\spr_spider_mech</sprite>
       <sprite>sprites\spr_groot</sprite>
+      <sprite>sprites\spr_groot_battle</sprite>
     </sprites>
     <sprites name="NPC">
       <sprite>sprites\spr_npc_villager1</sprite>
@@ -35,6 +46,7 @@
     </sprites>
     <sprite>sprites\spr_blank_1x1</sprite>
     <sprite>sprites\spr_boss</sprite>
+    <sprite>sprites\spr_boundary</sprite>
     <sprite>sprites\spr_monster_ref</sprite>
     <sprite>sprites\spr_old_crazy_guy</sprite>
     <sprite>sprites\spr_reference</sprite>
@@ -62,7 +74,9 @@
       <background>background\bk_forest</background>
     </backgrounds>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path0</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\array.gml</script>
     <script>scripts\base_convert.gml</script>
@@ -83,6 +97,7 @@
     <objects name="Battle">
       <object>objects\obj_sedian_battle</object>
       <object>objects\obj_battle_control</object>
+      <object>objects\obj_groot_battle</object>
     </objects>
     <objects name="Cards">
       <object>objects\obj_basic_card</object>
@@ -91,7 +106,7 @@
     <objects name="Creatures">
       <object>objects\obj_desert_sedian</object>
       <object>objects\obj_sedian</object>
-      <object>objects\obj_unnamed</object>
+      <object>objects\obj_groot</object>
     </objects>
     <objects name="Forest">
       <object>objects\obj_forest_boulder</object>
@@ -104,11 +119,12 @@
       <object>objects\obj_menu_tab</object>
     </objects>
     <object>objects\obj_boulder</object>
+    <object>objects\obj_boundary</object>
     <object>objects\obj_button</object>
     <object>objects\obj_dialogue</object>
     <object>objects\obj_rosalind</object>
-    <object>objects\obj_vivian</object>
     <object>objects\obj_slider</object>
+    <object>objects\obj_vivian</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
@@ -117,6 +133,7 @@
     <rooms name="forest">
       <room>rooms\rm_forest</room>
       <room>rooms\rm_forest_two</room>
+      <room>rooms\rm_forest_three</room>
     </rooms>
   </rooms>
   <help>

@@ -1,0 +1,80 @@
+
+%Generally, the cover letter should include the following:
+% - Introduction
+% - Description of work done since last delivery (i.e. progress report).
+% - List of items in current delivery.
+% - Standard business letter format
+%   (https://owl.english.purdue.edu/owl/resource/653/01/
+
+\documentclass[12pt]{article}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{graphicx}
+\usepackage[pdftex]{hyperref}
+\usepackage[english]{babel}
+\usepackage{parskip}
+\usepackage{xspace}
+
+\newcommand\aeon{\textit{\AE on Chronicles}\xspace}
+\newcommand\tab[1][.5in]{\hspace*{#1}}
+\newcommand\releasename{Alpha Release\xspace}
+\newcommand\te{Team Epsilon\xspace}
+
+\begin{document}
+
+\hfill\includegraphics[width=4cm]{../graphics/logo/team-epsilon-light-cropped}
+
+\hfill \releasename
+
+\hfill \today
+
+Mark Baldwin,
+
+\te has made significant progress on \aeon since our Phase VI delivery. We have
+continued our rapid development and are on schedule to achieve our ambitions
+milestone schedule.
+
+In the \releasename we have implemented many crucial gameplay mechanics, fleshed
+out the game story and narrative, and improved the overall game functionality.
+At a high level, the three major improvements are an expanded world, a completed
+story, and additional battles. The following list outlines the major changes
+made in each of the above categories.
+
+\begin{itemize}
+    \item \textbf{Expanded World}
+        \begin{itemize}
+            \item you can go up to a new forest room from the main forest room
+            \item you can go right to a new forest room from the main forest
+                room
+                %TODO check
+        \end{itemize}
+
+    \item \textbf{Completed Story}
+        \begin{itemize}
+            \item the story (as detailed in BLAH has been fleshed out) %TODO
+                %check
+        \end{itemize}
+
+    \item \textbf{Additional Battles}
+        \begin{itemize}
+            \item running into the different monsters takes the player to
+                different battles
+            \item if the player wins the battle (by attacking the monster until
+                their health goes down to 0), the monster is removed from the
+                game
+        \end{itemize}
+\end{itemize}
+
+The above list is not comprehensive. We have worked very hard to improve the
+overall look and feel of \aeon in the \releasename and we look forward to
+continuing our swift development of our game.
+
+Sincerely,
+
+\tab Jacob Davis \\
+\tab Caleb Jhones \\
+\tab Robbie Merillat \\
+\tab Jonathan Sumner Evans \\
+\tab David Grisham \\
+
+\end{document}
+

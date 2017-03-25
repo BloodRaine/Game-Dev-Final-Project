@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>talking = false;
+walking = false;
+audio_stop_sound(sfx_walking);
+
 </string>
           </argument>
         </arguments>
@@ -50,6 +53,8 @@
             <kind>1</kind>
             <string>if (room == rm_combat_forest) { exit; }
 
+walking = false;
+
 /* keys */
 key_up = keyboard_check(OPTION_KEYBIND_UP);
 key_left = keyboard_check(OPTION_KEYBIND_LEFT);
@@ -62,19 +67,33 @@ if (not talking)
     if (key_up)
     {
         y -= 5;
+        walking = true;
     }
     if (key_left)
     {
         x -= 5;
+        walking = true;
     }
     if (key_right)
     {
         x += 5;
+        walking = true;
     }
     if (key_down)
     {
         y += 5;
+        walking = true;
     }
+    
+    if (walking &amp;&amp; !audio_is_playing(sfx_walking))
+    {
+        audio_play_sound(sfx_walking, 1, true);
+    }
+}
+
+if (!walking &amp;&amp; audio_is_playing(sfx_walking))
+{
+    audio_stop_sound(sfx_walking);
 }
 
 if (key_interact)
@@ -231,7 +250,7 @@ if (key_interact)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_unnamed">
+    <event eventtype="4" ename="obj_groot">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -248,7 +267,8 @@ if (key_interact)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_combat_forest)
+            <string>global.monster_to_fight = "groot";
+room_goto(rm_combat_forest);
 
 </string>
           </argument>
@@ -272,7 +292,8 @@ if (key_interact)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_combat_forest)
+            <string>global.monster_to_fight = "sedian";
+room_goto(rm_combat_forest);
 </string>
           </argument>
         </arguments>
@@ -295,7 +316,8 @@ if (key_interact)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_combat_forest)
+            <string>global.monster_to_fight = "desert_sedian";
+room_goto(rm_combat_forest);
 </string>
           </argument>
         </arguments>
@@ -323,6 +345,28 @@ if (key_interact)
           <argument>
             <kind>4</kind>
             <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
