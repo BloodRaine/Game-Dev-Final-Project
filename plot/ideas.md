@@ -57,6 +57,7 @@ desolate wasteland
 -   physical (and metaphorical) separation of classes
 -   many die trying to get to city #3
 -   quirky character #3
+-   
     -   Vivian passes out trying to get through. she wakes up in quirky
         character #3's safehaven (robot? human? mutant?), which is just inside
         the city
