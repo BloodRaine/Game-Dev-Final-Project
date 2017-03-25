@@ -15,8 +15,15 @@
 global.menu_tabs = array("Manage Decks", "Card Collection", "Quest Journal", "System");
 global.current_menu_tab = 0;
 global.vivian_health = 10;
+
 global.vivian_atk_sfx = sfx_attack_1;
-global.defeated_monsters = ds_list_create();</code>
+global.defeated_monsters = ds_list_create();
+
+/* variables for room transitions; defaults unimportant*/
+global.rm_above = rm_forest;
+global.rm_below = rm_forest;
+global.rm_left = rm_forest;
+global.rm_right = rm_forest;</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
