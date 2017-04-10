@@ -39,6 +39,9 @@
       <sprite>sprites\spr_spider_mech</sprite>
       <sprite>sprites\spr_groot</sprite>
       <sprite>sprites\spr_groot_battle</sprite>
+      <sprite>sprites\spr_hopper</sprite>
+      <sprite>sprites\spr_brute_battle</sprite>
+      <sprite>sprites\spr_wolf</sprite>
     </sprites>
     <sprites name="NPC">
       <sprite>sprites\spr_npc_villager1</sprite>
@@ -47,10 +50,12 @@
     <sprite>sprites\spr_blank_1x1</sprite>
     <sprite>sprites\spr_boss</sprite>
     <sprite>sprites\spr_boundary</sprite>
+    <sprite>sprites\spr_monster_ref_2</sprite>
     <sprite>sprites\spr_monster_ref</sprite>
     <sprite>sprites\spr_old_crazy_guy</sprite>
     <sprite>sprites\spr_reference</sprite>
     <sprite>sprites\spr_reference_2</sprite>
+    <sprite>sprites\spr_reference_3</sprite>
     <sprite>sprites\spr_rosalind</sprite>
     <sprite>sprites\spr_vivian</sprite>
     <sprite>sprites\spr_room_transition_above</sprite>
@@ -66,6 +71,7 @@
     <backgrounds name="CombatBackgrounds">
       <background>background\bk_forest_combat</background>
       <background>background\bk_ruin_city</background>
+      <background>background\bk_desert_combat</background>
     </backgrounds>
     <backgrounds name="Forest">
       <background>background\bk_dark_grass</background>
@@ -76,6 +82,7 @@
       <background>background\bk_light_green_patch</background>
       <background>background\bk_dark_grass_patch</background>
       <background>background\bk_forest</background>
+      <background>background\bk_stick</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
