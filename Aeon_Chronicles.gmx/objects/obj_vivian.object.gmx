@@ -4,7 +4,7 @@
   <solid>-1</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -27,8 +27,13 @@
             <kind>1</kind>
             <string>talking = false;
 walking = false;
+moving_rooms = false;
+in_battle = false;
 audio_stop_sound(sfx_walking);
 
+battle_entry_immunity = 0;
+prev_room_x = 0;
+prev_room_y = 0;
 </string>
           </argument>
         </arguments>
@@ -51,9 +56,39 @@ audio_stop_sound(sfx_walking);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room == rm_combat_forest) { exit; }
+            <string>/*
+ * room doesn't update until step function completes, so this logic runs *after* the 
+ * 'room transitions' code block further done
+ */
+if (moving_rooms)
+{
+    switch(coming_from)
+    {
+        case "below":
+            x = global.rm_entry_below_x;
+            y = global.rm_entry_below_y;
+            break;
+        case "above":
+            x = global.rm_entry_above_x;
+            y = global.rm_entry_above_y;
+            break;
+        case "left":
+            x = global.rm_entry_left_x;
+            y = global.rm_entry_left_y;
+            break;
+        case "right":
+            x = global.rm_entry_right_x;
+            y = global.rm_entry_right_y;
+            break;
+        default:
+            break;
+    }
+    moving_rooms = false;
+}
 
 walking = false;
+
+if (room == rm_combat_forest) { exit; }
 
 /* keys */
 key_up = keyboard_check(OPTION_KEYBIND_UP);
@@ -68,27 +103,57 @@ if (not talking)
     {
         y -= 5;
         walking = true;
+        battle_entry_immunity--;
     }
     if (key_left)
     {
         x -= 5;
         walking = true;
+        battle_entry_immunity--;
     }
     if (key_right)
     {
         x += 5;
         walking = true;
+        battle_entry_immunity--;
     }
     if (key_down)
     {
         y += 5;
         walking = true;
+        battle_entry_immunity--;
     }
     
     if (walking &amp;&amp; !audio_is_playing(sfx_walking))
     {
         audio_play_sound(sfx_walking, 1, true);
     }
+}
+
+/* room transitions */
+if (y &lt; 0)
+{
+    room_goto(global.rm_above);
+    moving_rooms = true;
+    coming_from = "below";
+}
+else if (y &gt; room_height)
+{
+    room_goto(global.rm_below);
+    moving_rooms = true;
+    coming_from = "above";
+}
+else if (x &lt; 0)
+{
+    room_goto(global.rm_left);
+    moving_rooms = true;
+    coming_from = "right";
+}
+else if (x &gt; room_width)
+{
+    room_goto(global.rm_right);
+    moving_rooms = true;
+    coming_from = "left";
 }
 
 if (!walking &amp;&amp; audio_is_playing(sfx_walking))
@@ -115,98 +180,6 @@ if (key_interact)
         }
     }
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_room_transition_left">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>room_goto(global.rm_left);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_room_transition_right">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>room_goto(global.rm_right);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_room_transition_below">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>room_goto(global.rm_below);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_room_transition_above">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>room_goto(global.rm_above);
 </string>
           </argument>
         </arguments>
@@ -359,7 +332,8 @@ if (key_interact)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.monster_to_fight = "groot";
+            <string>if (battle_entry_immunity) {exit;}
+global.monster_to_fight = "groot";
 room_goto(rm_combat_forest);
 
 </string>
@@ -384,7 +358,8 @@ room_goto(rm_combat_forest);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.monster_to_fight = "sedian";
+            <string>if (battle_entry_immunity) {exit;}
+global.monster_to_fight = "sedian";
 room_goto(rm_combat_forest);
 </string>
           </argument>
@@ -408,8 +383,61 @@ room_goto(rm_combat_forest);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.monster_to_fight = "desert_sedian";
+            <string>if (battle_entry_immunity) {exit;}
+global.monster_to_fight = "desert_sedian";
 room_goto(rm_combat_forest);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (ds_list_find_index(global.combat_rooms, room) &gt;= 0) {
+    // TODO: Switch to the combat sprite
+    image_xscale = 6.0;
+    image_yscale = 7.0;
+    
+    in_battle = true;
+    prev_room_x = x;
+    prev_room_y = y;
+    
+    x = 300;
+    y = 475;
+    
+    obj_battle_control.vivian_start_x = x;
+    
+    walking = false;
+} else {
+    // TODO: Switch to the overhead sprite
+    image_xscale = 1.0;
+    image_yscale = 1.0;
+    
+    if (in_battle) {
+        x = prev_room_x;
+        y = prev_room_y;
+        in_battle = false;
+        battle_entry_immunity = 4;
+    } else {
+        x = 200;
+        y = 200;
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -437,28 +465,6 @@ room_goto(rm_combat_forest);
           <argument>
             <kind>4</kind>
             <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string></string>
           </argument>
         </arguments>
       </action>

@@ -10,8 +10,18 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>global.rm_above = rm_forest_two;
+  <code>/* room above */
+global.rm_above = rm_forest_two;
+/* where to place player when coming *from* above */
+global.rm_entry_above_x = 440;
+global.rm_entry_above_y = 40;
+
+/* room to the right */
 global.rm_right = rm_forest_three;
+/* where to place player when coming *from* right */
+global.rm_entry_right_x = 980;
+global.rm_entry_right_y = 300;
+
 audio_stop_sound(bgm_title);
 audio_stop_sound(bgm_combat);
 

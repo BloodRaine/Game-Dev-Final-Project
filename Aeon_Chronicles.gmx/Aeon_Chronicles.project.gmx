@@ -136,10 +136,6 @@
     <object>objects\obj_rosalind</object>
     <object>objects\obj_slider</object>
     <object>objects\obj_vivian</object>
-    <object>objects\obj_room_transition_above</object>
-    <object>objects\obj_room_transition_below</object>
-    <object>objects\obj_room_transition_right</object>
-    <object>objects\obj_room_transition_left</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
