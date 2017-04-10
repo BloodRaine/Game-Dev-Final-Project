@@ -28,7 +28,12 @@
             <string>talking = false;
 walking = false;
 moving_rooms = false;
+in_battle = false;
 audio_stop_sound(sfx_walking);
+
+battle_entry_immunity = 0;
+prev_room_x = 0;
+prev_room_y = 0;
 </string>
           </argument>
         </arguments>
@@ -98,21 +103,25 @@ if (not talking)
     {
         y -= 5;
         walking = true;
+        battle_entry_immunity--;
     }
     if (key_left)
     {
         x -= 5;
         walking = true;
+        battle_entry_immunity--;
     }
     if (key_right)
     {
         x += 5;
         walking = true;
+        battle_entry_immunity--;
     }
     if (key_down)
     {
         y += 5;
         walking = true;
+        battle_entry_immunity--;
     }
     
     if (walking &amp;&amp; !audio_is_playing(sfx_walking))
@@ -323,7 +332,8 @@ if (key_interact)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.monster_to_fight = "groot";
+            <string>if (battle_entry_immunity) {exit;}
+global.monster_to_fight = "groot";
 room_goto(rm_combat_forest);
 
 </string>
@@ -348,7 +358,8 @@ room_goto(rm_combat_forest);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.monster_to_fight = "sedian";
+            <string>if (battle_entry_immunity) {exit;}
+global.monster_to_fight = "sedian";
 room_goto(rm_combat_forest);
 </string>
           </argument>
@@ -372,7 +383,8 @@ room_goto(rm_combat_forest);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.monster_to_fight = "desert_sedian";
+            <string>if (battle_entry_immunity) {exit;}
+global.monster_to_fight = "desert_sedian";
 room_goto(rm_combat_forest);
 </string>
           </argument>
@@ -401,6 +413,10 @@ room_goto(rm_combat_forest);
     image_xscale = 6.0;
     image_yscale = 7.0;
     
+    in_battle = true;
+    prev_room_x = x;
+    prev_room_y = y;
+    
     x = 300;
     y = 475;
     
@@ -412,9 +428,15 @@ room_goto(rm_combat_forest);
     image_xscale = 1.0;
     image_yscale = 1.0;
     
-    
-    x = 200;
-    y = 200;
+    if (in_battle) {
+        x = prev_room_x;
+        y = prev_room_y;
+        in_battle = false;
+        battle_entry_immunity = 4;
+    } else {
+        x = 200;
+        y = 200;
+    }
 }
 </string>
           </argument>
