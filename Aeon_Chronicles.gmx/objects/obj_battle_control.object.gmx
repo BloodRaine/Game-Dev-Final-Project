@@ -55,7 +55,7 @@ attack_dx = 5;
 damage_inflicted = false;
 
 // Store initial positions
-vivian_start_x = obj_vivian.x;
+vivian_start_x = 0;
 monster_start_x = combat_opponent.x;
 
 /* time to pause after attack */
