@@ -89,6 +89,7 @@
     <instance objName="obj_desert_sedian" x="328" y="68" name="inst_DE5D2575" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_desert_sedian" x="836" y="368" name="inst_A02D2088" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_desert_sedian" x="220" y="580" name="inst_DD515554" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_groot" x="392" y="208" name="inst_D5891496" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bk_sand_dunes" x="192" y="336" w="16" h="16" xo="0" yo="0" id="10001452" name="inst_999328F7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
