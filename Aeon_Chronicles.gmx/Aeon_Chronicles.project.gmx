@@ -42,6 +42,7 @@
       <sprite>sprites\spr_hopper</sprite>
       <sprite>sprites\spr_brute_battle</sprite>
       <sprite>sprites\spr_wolf</sprite>
+      <sprite>sprites\spr_dragon</sprite>
     </sprites>
     <sprites name="NPC">
       <sprite>sprites\spr_npc_villager1</sprite>
@@ -83,6 +84,9 @@
       <background>background\bk_dark_grass_patch</background>
       <background>background\bk_forest</background>
       <background>background\bk_stick</background>
+    </backgrounds>
+    <backgrounds name="Desert">
+      <background>background\bk_desert</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
