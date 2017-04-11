@@ -16,6 +16,12 @@
     <sound>sound\sfx_walking</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="Desert">
+      <sprite>sprites\spr_skull</sprite>
+      <sprite>sprites\spr_deser_rock_med</sprite>
+      <sprite>sprites\spr_ribs</sprite>
+      <sprite>sprites\spr_rock_jagged</sprite>
+    </sprites>
     <sprites name="Buttons">
       <sprite>sprites\spr_button_default</sprite>
     </sprites>
@@ -86,7 +92,10 @@
       <background>background\bk_stick</background>
     </backgrounds>
     <backgrounds name="Desert">
-      <background>background\bk_desert</background>
+      <background>background\bk_desert_patch</background>
+      <background>background\bk_desert_inspiration</background>
+      <background>background\bk_sand_dunes</background>
+      <background>background\bk_desert_inspiration_2</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
@@ -122,6 +131,7 @@
       <object>objects\obj_desert_sedian</object>
       <object>objects\obj_sedian</object>
       <object>objects\obj_groot</object>
+      <object>objects\obj_hopper</object>
     </objects>
     <objects name="Forest">
       <object>objects\obj_forest_boulder</object>
@@ -140,6 +150,12 @@
     <object>objects\obj_rosalind</object>
     <object>objects\obj_slider</object>
     <object>objects\obj_vivian</object>
+    <objects name="Desert">
+      <object>objects\obj_skull</object>
+      <object>objects\obj_desert_rock_med</object>
+      <object>objects\obj_ribs</object>
+      <object>objects\obj_rock_jagged</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
@@ -149,6 +165,9 @@
       <room>rooms\rm_forest</room>
       <room>rooms\rm_forest_two</room>
       <room>rooms\rm_forest_three</room>
+    </rooms>
+    <rooms name="desert">
+      <room>rooms\rm_desert</room>
     </rooms>
   </rooms>
   <help>
