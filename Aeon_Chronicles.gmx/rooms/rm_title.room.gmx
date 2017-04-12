@@ -25,7 +25,15 @@ global.rm_below = rm_forest;
 global.rm_left = rm_forest;
 global.rm_right = rm_forest;
 
-global.combat_rooms = ds_list_create();</code>
+global.combat_rooms = ds_list_create();
+
+/* Inventory */
+global.economy = ds_map_create();
+global.economy[? "aether_flask"] = 100; // 10 aether_flasks in the game
+global.economy[? "really_rare_thing"] = 1; // sample of how to make something that only exists once in the game
+
+global.vivian_posessions = ds_map_create();
+global.vivian_posessions[? "knife"] = 1;</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
