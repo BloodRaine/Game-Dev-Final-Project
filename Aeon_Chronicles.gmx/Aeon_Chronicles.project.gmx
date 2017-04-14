@@ -152,6 +152,7 @@
     <object>objects\obj_button</object>
     <object>objects\obj_dialogue</object>
     <object>objects\obj_rosalind</object>
+    <object>objects\obj_globals</object>
     <object>objects\obj_slider</object>
     <object>objects\obj_vivian</object>
     <objects name="Desert">
@@ -160,6 +161,7 @@
       <object>objects\obj_ribs</object>
       <object>objects\obj_rock_jagged</object>
     </objects>
+    <object>objects\obj_stats</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
