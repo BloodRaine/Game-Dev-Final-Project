@@ -21,6 +21,8 @@
       <sprite>sprites\spr_deser_rock_med</sprite>
       <sprite>sprites\spr_ribs</sprite>
       <sprite>sprites\spr_rock_jagged</sprite>
+      <sprite>sprites\spr_cactus</sprite>
+      <sprite>sprites\spr_cactus_2</sprite>
     </sprites>
     <sprites name="Buttons">
       <sprite>sprites\spr_button_default</sprite>
