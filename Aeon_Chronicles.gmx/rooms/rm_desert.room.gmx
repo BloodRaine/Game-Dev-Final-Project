@@ -90,6 +90,17 @@
     <instance objName="obj_desert_sedian" x="836" y="368" name="inst_A02D2088" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_desert_sedian" x="220" y="580" name="inst_DD515554" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_groot" x="392" y="208" name="inst_D5891496" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cactus" x="160" y="500" name="inst_3B5F797B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cactus" x="524" y="664" name="inst_D4CF7F5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cactus" x="708" y="296" name="inst_21F15092" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cactus" x="448" y="128" name="inst_CA436DA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cactus" x="516" y="692" name="inst_72BFAA9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cactus" x="536" y="692" name="inst_C6BCFA84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cactus" x="544" y="676" name="inst_207F3124" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cactus" x="672" y="760" name="inst_F97846B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cactus_2" x="488" y="636" name="inst_E28191E8" locked="0" code="" scaleX="2" scaleY="1.83333337306976" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cactus_2" x="460" y="664" name="inst_5FB8E565" locked="0" code="" scaleX="2.375" scaleY="1.83333337306976" colour="4294967295" rotation="0"/>
+    <instance objName="obj_yucca" x="440" y="352" name="inst_DD681746" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bk_sand_dunes" x="192" y="336" w="16" h="16" xo="0" yo="0" id="10001452" name="inst_999328F7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
