@@ -30,7 +30,16 @@
     </sprites>
     <sprites name="Cards">
       <sprite>sprites\spr_basic_card</sprite>
-      <sprite>sprites\spr_card_two</sprite>
+      <sprite>sprites\spr_card_0</sprite>
+      <sprite>sprites\spr_card_1</sprite>
+      <sprite>sprites\spr_card_2</sprite>
+      <sprite>sprites\spr_card_3</sprite>
+      <sprite>sprites\spr_card_4</sprite>
+      <sprite>sprites\spr_card_5</sprite>
+      <sprite>sprites\spr_card_6</sprite>
+      <sprite>sprites\spr_card_7</sprite>
+      <sprite>sprites\spr_card_8</sprite>
+      <sprite>sprites\spr_card_9</sprite>
       <sprite>sprites\spr_deck</sprite>
     </sprites>
     <sprites name="Forest">
@@ -52,6 +61,7 @@
       <sprite>sprites\spr_brute_battle</sprite>
       <sprite>sprites\spr_wolf</sprite>
       <sprite>sprites\spr_dragon</sprite>
+      <sprite>sprites\spr_servo</sprite>
     </sprites>
     <sprites name="NPC">
       <sprite>sprites\spr_npc_villager1</sprite>
