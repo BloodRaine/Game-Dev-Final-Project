@@ -23,6 +23,7 @@
       <sprite>sprites\spr_rock_jagged</sprite>
       <sprite>sprites\spr_cactus</sprite>
       <sprite>sprites\spr_cactus_2</sprite>
+      <sprite>sprites\spr_yucca</sprite>
     </sprites>
     <sprites name="Buttons">
       <sprite>sprites\spr_button_default</sprite>
@@ -159,6 +160,9 @@
       <object>objects\obj_desert_rock_med</object>
       <object>objects\obj_ribs</object>
       <object>objects\obj_rock_jagged</object>
+      <object>objects\obj_cactus</object>
+      <object>objects\obj_cactus_2</object>
+      <object>objects\obj_yucca</object>
     </objects>
   </objects>
   <rooms name="rooms">
