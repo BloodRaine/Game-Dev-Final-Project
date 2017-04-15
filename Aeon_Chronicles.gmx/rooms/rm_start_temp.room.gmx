@@ -125,6 +125,8 @@ if (ds_list_find_index(global.defeated_monsters, "groot") &gt;= 0)
     <instance objName="obj_globals" x="32" y="32" name="inst_DA23406B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_main" x="32" y="64" name="inst_EA3C5A9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_vivian" x="448" y="352" name="inst_5D8E66DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_save_point" x="352" y="256" name="inst_98126E1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sedian" x="544" y="352" name="inst_2F69DF78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

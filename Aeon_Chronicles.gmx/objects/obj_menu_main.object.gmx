@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>visible = false;
+save_point = false
 
 // init menu background in room
 background_index[7] = bk_menu;

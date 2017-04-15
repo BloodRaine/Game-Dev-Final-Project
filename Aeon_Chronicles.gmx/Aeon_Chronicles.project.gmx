@@ -82,6 +82,7 @@
     <sprite>sprites\spr_room_transition_below</sprite>
     <sprite>sprites\spr_room_transition_left</sprite>
     <sprite>sprites\spr_room_transition_right</sprite>
+    <sprite>sprites\spr_save_point</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_dark_dirt_patch</background>
@@ -113,6 +114,7 @@
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
+    <path>paths\path1</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\array.gml</script>
@@ -159,6 +161,7 @@
       <object>objects\obj_sedian</object>
       <object>objects\obj_groot</object>
       <object>objects\obj_hopper</object>
+      <object>objects\obj_wolf</object>
     </objects>
     <objects name="Forest">
       <object>objects\obj_forest_boulder</object>
@@ -188,6 +191,7 @@
       <object>objects\obj_cactus_2</object>
       <object>objects\obj_yucca</object>
     </objects>
+    <object>objects\obj_save_point</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
