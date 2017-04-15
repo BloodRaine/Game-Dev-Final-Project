@@ -391,7 +391,7 @@ room_goto(rm_combat_forest);
             <kind>1</kind>
             <string>if (battle_entry_immunity) {exit;}
 global.monster_to_fight = "desert_sedian";
-room_goto(rm_combat_forest);
+room_goto(rm_combat_desert);
 </string>
           </argument>
         </arguments>
@@ -423,8 +423,8 @@ room_goto(rm_combat_forest);
     prev_room_x = x;
     prev_room_y = y;
     
-    x = 300;
-    y = 475;
+    x = 512;
+    y = 384;
     
     obj_battle_control.vivian_start_x = x;
     
@@ -440,8 +440,8 @@ room_goto(rm_combat_forest);
         in_battle = false;
         battle_entry_immunity = 4;
     } else {
-        x = 200;
-        y = 200;
+        x = 450;
+        y = 350;
     }
 }
 </string>

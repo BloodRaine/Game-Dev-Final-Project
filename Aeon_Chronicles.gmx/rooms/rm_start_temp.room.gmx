@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1024</width>
   <height>768</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>4</vsnap>
+  <hsnap>4</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -41,7 +41,7 @@ if (ds_list_find_index(global.defeated_monsters, "groot") &gt;= 0)
         instance_destroy();
     }
 }</code>
-  <enableViews>0</enableViews>
+  <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
@@ -71,7 +71,7 @@ if (ds_list_find_index(global.defeated_monsters, "groot") &gt;= 0)
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="600" hview="450" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="obj_vivian" xview="75" yview="75" wview="600" hview="450" xport="0" yport="0" wport="1024" hport="768" hborder="200" vborder="200" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -105,7 +105,7 @@ if (ds_list_find_index(global.defeated_monsters, "groot") &gt;= 0)
     <instance objName="obj_tree_two" x="96" y="352" name="inst_130AB416" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_two" x="32" y="256" name="inst_65AE05F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_two" x="96" y="128" name="inst_4FB2D78C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tree_two" x="0" y="192" name="inst_4447F693" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_two" x="8" y="104" name="inst_4447F693" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_two" x="64" y="192" name="inst_19AA55BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_boundary" x="320" y="128" name="inst_7C2347CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_boundary" x="480" y="160" name="inst_C3C1FBF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -126,9 +126,50 @@ if (ds_list_find_index(global.defeated_monsters, "groot") &gt;= 0)
     <instance objName="obj_menu_main" x="32" y="64" name="inst_EA3C5A9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_vivian" x="448" y="352" name="inst_5D8E66DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_save_point" x="352" y="256" name="inst_98126E1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sedian" x="544" y="352" name="inst_2F69DF78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_two" x="96" y="64" name="inst_C0E13D55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_two" x="128" y="0" name="inst_48B02BB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_boulder" x="804" y="308" name="inst_9741E69A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_boulder" x="172" y="136" name="inst_B6C8062A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_boulder" x="156" y="568" name="inst_C685BA01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forest_boulder" x="840" y="660" name="inst_76790896" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_one" x="240" y="140" name="inst_B09E8797" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_one" x="152" y="364" name="inst_68377E86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_one" x="204" y="544" name="inst_2F7EB954" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_one" x="344" y="560" name="inst_FA2F1E12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_one" x="428" y="572" name="inst_E0C61DD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_one" x="660" y="592" name="inst_9B8F406D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_two" x="332" y="488" name="inst_314916E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_two" x="504" y="480" name="inst_BCC6B6D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_two" x="700" y="540" name="inst_35FAF905" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_two" x="676" y="92" name="inst_6E3C1721" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_two" x="868" y="144" name="inst_AC9EB7E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_two" x="804" y="120" name="inst_650DE3C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_two" x="28" y="200" name="inst_99490712" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_two" x="16" y="352" name="inst_42D36D4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_two" x="16" y="432" name="inst_94358F7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_two" x="204" y="504" name="inst_366831AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="bk_stick" x="280" y="420" w="64" h="48" xo="0" yo="0" id="10001483" name="inst_56CD602C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_stick" x="660" y="332" w="64" h="48" xo="0" yo="0" id="10001484" name="inst_821BBB7A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_stick" x="212" y="196" w="64" h="48" xo="0" yo="0" id="10001485" name="inst_2EE4504D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_stick" x="476" y="632" w="64" h="48" xo="0" yo="0" id="10001486" name="inst_C925645C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_stick" x="684" y="680" w="64" h="48" xo="0" yo="0" id="10001487" name="inst_D3E1CF80" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_stick" x="404" y="200" w="64" h="48" xo="0" yo="0" id="10001488" name="inst_03D6BECA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_dirt_patch" x="280" y="300" w="16" h="16" xo="0" yo="0" id="10001489" name="inst_CB8E5455" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_dirt_patch" x="260" y="72" w="128" h="128" xo="0" yo="0" id="10001490" name="inst_49727386" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_dirt_patch" x="344" y="100" w="128" h="128" xo="0" yo="0" id="10001491" name="inst_8F81F427" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_dirt_patch" x="444" y="104" w="128" h="128" xo="0" yo="0" id="10001492" name="inst_413C62E0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_dirt_patch" x="516" y="136" w="128" h="128" xo="0" yo="0" id="10001493" name="inst_E8D42CF6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_dirt_patch" x="112" y="180" w="128" h="128" xo="0" yo="0" id="10001494" name="inst_A7548324" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_dirt_patch" x="576" y="160" w="128" h="128" xo="0" yo="0" id="10001495" name="inst_4BB7781E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_dirt_patch" x="788" y="392" w="128" h="128" xo="0" yo="0" id="10001496" name="inst_0010132C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_dirt_patch" x="828" y="392" w="128" h="128" xo="0" yo="0" id="10001497" name="inst_E569A149" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_dirt_patch" x="848" y="444" w="128" h="128" xo="0" yo="0" id="10001498" name="inst_D06CC74F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_dirt_patch" x="920" y="416" w="128" h="128" xo="0" yo="0" id="10001499" name="inst_263344AE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_dirt_patch" x="952" y="388" w="128" h="128" xo="0" yo="0" id="10001500" name="inst_12673750" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_dirt_patch" x="940" y="452" w="128" h="128" xo="0" yo="0" id="10001501" name="inst_657730F6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>
