@@ -25,9 +25,24 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>talking = false;
-stop_talking = false;
+            <string>start_talking = false;
+/* 'talking' should always have the same value as dbox.show */
+talking = false;
 dbox = instance_create(x, y + sprite_height / 2, obj_dialogue);
+
+/* load relevant conversation */
+switch (room) {
+    case rm_forest:
+        dialogue_text[0] = "Hey Vivian :)";
+        dialogue_text[1] = "How goes it?";
+        break;
+    case rm_forest_two:
+        dialogue_text[0] = "Vivian! Your parents have been taken!";
+        break;
+    default:
+        dialogue_text[0] = "";
+        break;
+}
 </string>
           </argument>
         </arguments>
@@ -50,13 +65,34 @@ dbox = instance_create(x, y + sprite_height / 2, obj_dialogue);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (talking) {
-    dbox.text = "hi!!!!";
+            <string>if (start_talking) {
+    dbox.text_array = dialogue_text;
     dbox.show = true;
+    talking = true;
+    start_talking = false;
+}
+
+if (!dbox.show) {
     talking = false;
-} else if (dbox.show &amp;&amp; stop_talking) {
-    stop_talking = false;
-    dbox.show = false;
+}
+
+if (not talking) {
+    with (obj_vivian) {
+        if (busy) {
+            busy = false;
+        }
+    }
+}
+
+key_interact = keyboard_check_pressed(OPTION_KEYBIND_INTERACT);
+if (key_interact) {
+    if (collision_circle(x, y, 50, obj_vivian, false, true))
+    {
+        if (not talking) {
+            start_talking = true;
+            with (obj_vivian) busy = true;
+        }
+    }
 }
 </string>
           </argument>
