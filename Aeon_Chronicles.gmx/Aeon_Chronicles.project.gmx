@@ -7,6 +7,7 @@
   <sounds name="sound">
     <sound>sound\bgm_combat</sound>
     <sound>sound\bgm_forest</sound>
+    <sound>sound\bgm_forge</sound>
     <sound>sound\bgm_title</sound>
     <sound>sound\sfx_attack_1</sound>
     <sound>sound\sfx_attack_sedian</sound>
