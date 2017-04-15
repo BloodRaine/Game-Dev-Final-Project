@@ -8,6 +8,7 @@
         } else {
             aggro = false
             motion_add(point_direction(x,y,self.loc_x,self.loc_y),1)
+            //path_start(path1, 0.5, path_action_continue,true)
             if (speed >= 2) speed = 2
         }
     }
