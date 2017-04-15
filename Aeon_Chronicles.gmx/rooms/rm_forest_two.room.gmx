@@ -85,6 +85,7 @@ global.room_before_battle = room;</code>
     <instance objName="obj_boundary" x="-4" y="0" name="inst_D5FA6753" locked="0" code="" scaleX="0.625" scaleY="24" colour="4294967295" rotation="0"/>
     <instance objName="obj_boundary" x="1008" y="0" name="inst_AF192C56" locked="0" code="" scaleX="0.612903237342834" scaleY="24.3870964050293" colour="4294967295" rotation="0"/>
     <instance objName="obj_boundary" x="880" y="748" name="inst_A8D2AF75" locked="0" code="" scaleX="6.125" scaleY="0.629999995231628" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rosalind" x="252" y="496" name="inst_6A310F87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bk_dark_green_patch" x="-16" y="132" w="128" h="144" xo="0" yo="0" id="10001363" name="inst_224DD4B1" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

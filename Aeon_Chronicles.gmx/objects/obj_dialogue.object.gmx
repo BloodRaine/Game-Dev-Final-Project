@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>text = "";
+            <string>text_array[0] = "";
 show = false;
+current_line = 0;
 </string>
           </argument>
         </arguments>
@@ -50,19 +51,31 @@ show = false;
           <argument>
             <kind>1</kind>
             <string>if (show) {
-    horMiddle = view_xview[0] + (view_wview[0] / 2);
-    vertMiddle = view_yview[0] + (view_hview[0] / 2);
-    draw_set_color(c_black);
-    //draw_set_font(font_dialogue);
-    textWidth = string_width(text);
-    textHeight = string_height(text);
-    draw_rectangle(x, y, x + textWidth, y + textHeight, false);
-    //draw_rectangle(horMiddle -  (textWidth / 2), vertMiddle - (textHeight / 2), horMiddle + (textWidth / 2), vertMiddle + (textHeight / 2), false);
-    draw_set_color(c_white);
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_center);
-    draw_text(x + textWidth / 2, y + textHeight / 2, text);
-    //draw_text(horMiddle,vertMiddle,text);
+    var num_lines = array_length_1d(text_array);
+    if (current_line &lt; num_lines) {
+    //for (var i = array_length_1d(text_array) - 1; i &gt;= 0; --i;) {
+        text = text_array[current_line];
+        horMiddle = view_xview[0] + (view_wview[0] / 2);
+        vertMiddle = view_yview[0] + (view_hview[0] / 2);
+        draw_set_color(c_black);
+        //draw_set_font(font_dialogue);
+        textWidth = string_width(text);
+        textHeight = string_height(text);
+        draw_rectangle(x, y, x + textWidth, y + textHeight, false);
+        //draw_rectangle(horMiddle -  (textWidth / 2), vertMiddle - (textHeight / 2), horMiddle + (textWidth / 2), vertMiddle + (textHeight / 2), false);
+        draw_set_color(c_white);
+        draw_set_halign(fa_center);
+        draw_set_valign(fa_center);
+        draw_text(x + textWidth / 2, y + textHeight / 2, text);
+        //draw_text(horMiddle,vertMiddle,text);
+        //i = num_lines;
+        if (keyboard_check_pressed(vk_enter)) {
+            current_line += 1;
+        }
+    } else {
+        current_line = 0;
+        show = false;
+    }
 }
 </string>
           </argument>

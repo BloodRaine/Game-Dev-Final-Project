@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>talking = false;
+            <string>busy = false;
 walking = false;
 moving_rooms = false;
 in_battle = false;
@@ -97,7 +97,7 @@ key_right = keyboard_check(OPTION_KEYBIND_RIGHT);
 key_down = keyboard_check(OPTION_KEYBIND_DOWN);
 key_interact = keyboard_check_pressed(OPTION_KEYBIND_INTERACT);
 
-if (not talking)
+if (not busy)
 {
     if (key_up)
     {
@@ -159,26 +159,6 @@ else if (x &gt; room_width)
 if (!walking &amp;&amp; audio_is_playing(sfx_walking))
 {
     audio_stop_sound(sfx_walking);
-}
-
-if (key_interact)
-{
-    if (collision_circle(x, y, 50, obj_rosalind, false, true))
-    {
-        with (obj_rosalind)
-        {
-            if (not other.talking)
-            {
-                talking = true;
-                other.talking = true;
-            }
-            else
-            {
-                other.talking = false;
-                stop_talking = true;
-            }
-        }
-    }
 }
 </string>
           </argument>
