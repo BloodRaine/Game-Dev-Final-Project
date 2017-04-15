@@ -25,68 +25,35 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Vivian Variables
-global.vivian_level = 1;
-global.vivian_hp = 10;
-global.vivian_maxhp = 10;
-global.vivian_experience = 0;
-global.vivian_maxexp = 10;
-global.vivian_shield_resistance = 0;
-global.vivian_shield_up = false;
-global.vivian_atk_sfx = sfx_attack_1;
-
-// Menu Tabs
-global.menu_tabs = array("Manage Decks", "Card Collection", "Quest Journal", "System");
-global.current_menu_tab = 0;
-
-// Combat
-global.defeated_monsters = ds_list_create();
-global.combat_rooms = ds_list_create();
-
-// Inventory
-global.cards = ds_map_create();
-global.cards[? "obj_card_hp_up"] = 10; // 10 hp up cards
-global.cards[? "obj_card_green_dust"] = 1;
-
-global.player_cards = ds_map_create();
-global.player_cards[? "knife"] = 1;
-
-// Variables for room transitions; defaults unimportant
-global.rm_above = rm_start_temp;
-global.rm_below = rm_start_temp;
-global.rm_left = rm_start_temp;
-global.rm_right = rm_start_temp;
+            <string>// Card sprite size is 90 tall by 56 wide
+image_speed=0.3;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="6" enumb="7">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_set_alarm</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>{
-    if (global.vivian_experience &gt;= global.vivian_maxexp) {
-        global.vivian_level += 1
-        global.vivian_maxhp += 5
-        global.vivian_experience = global.vivian_experience - global.vivian_maxexp
-        global.vivian_maxexp *= 2
-    }
-}
-</string>
+            <kind>0</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>

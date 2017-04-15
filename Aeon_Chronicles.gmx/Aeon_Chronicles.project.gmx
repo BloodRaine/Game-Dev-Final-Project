@@ -29,18 +29,18 @@
       <sprite>sprites\spr_button_default</sprite>
     </sprites>
     <sprites name="Cards">
-      <sprite>sprites\spr_basic_card</sprite>
-      <sprite>sprites\spr_card_0</sprite>
-      <sprite>sprites\spr_card_1</sprite>
-      <sprite>sprites\spr_card_2</sprite>
-      <sprite>sprites\spr_card_3</sprite>
-      <sprite>sprites\spr_card_4</sprite>
-      <sprite>sprites\spr_card_5</sprite>
-      <sprite>sprites\spr_card_6</sprite>
-      <sprite>sprites\spr_card_7</sprite>
-      <sprite>sprites\spr_card_8</sprite>
-      <sprite>sprites\spr_card_9</sprite>
-      <sprite>sprites\spr_deck</sprite>
+      <sprite>sprites\spr_card_basic</sprite>
+      <sprite>sprites\spr_card_hp_up</sprite>
+      <sprite>sprites\spr_card_armor_up</sprite>
+      <sprite>sprites\spr_card_sword_2</sprite>
+      <sprite>sprites\spr_card_dagger_1</sprite>
+      <sprite>sprites\spr_card_shield_2</sprite>
+      <sprite>sprites\spr_card_health_potion</sprite>
+      <sprite>sprites\spr_card_red_dust</sprite>
+      <sprite>sprites\spr_card_blue_dust</sprite>
+      <sprite>sprites\spr_card_green_dust</sprite>
+      <sprite>sprites\spr_card_magic_item</sprite>
+      <sprite>sprites\spr_card_deck</sprite>
     </sprites>
     <sprites name="Forest">
       <sprite>sprites\spr_boulder</sprite>
@@ -140,8 +140,19 @@
       <object>objects\obj_brute_battle</object>
     </objects>
     <objects name="Cards">
-      <object>objects\obj_basic_card</object>
-      <object>objects\obj_deck</object>
+      <object>objects\obj_card_base</object>
+      <object>objects\obj_card_basic</object>
+      <object>objects\obj_card_deck</object>
+      <object>objects\obj_card_hp_up</object>
+      <object>objects\obj_card_armor_up</object>
+      <object>objects\obj_card_sword_2</object>
+      <object>objects\obj_card_dagger_1</object>
+      <object>objects\obj_card_sheild_2</object>
+      <object>objects\obj_card_health_potion</object>
+      <object>objects\obj_card_red_dust</object>
+      <object>objects\obj_card_blue_dust</object>
+      <object>objects\obj_card_green_dust</object>
+      <object>objects\obj_card_magic_item</object>
     </objects>
     <objects name="Creatures">
       <object>objects\obj_desert_sedian</object>

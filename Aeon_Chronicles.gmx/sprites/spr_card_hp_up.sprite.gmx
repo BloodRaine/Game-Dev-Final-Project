@@ -20,6 +20,6 @@
   <width>64</width>
   <height>128</height>
   <frames>
-    <frame index="0">images\spr_card_9_0.png</frame>
+    <frame index="0">images\spr_card_hp_up_0.png</frame>
   </frames>
 </sprite>
