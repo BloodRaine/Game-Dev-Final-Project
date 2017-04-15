@@ -28,6 +28,8 @@
             <string>wait_time = 60;
 walk_time = 30;
 
+aggro = false
+
 //save starting x and y
 loc_x = x
 loc_y = y
@@ -162,8 +164,13 @@ image_speed = 0.1
           <argument>
             <kind>1</kind>
             <string>/* constrain the movement to a bounded box */
-//x=clamp(x, x_lower_bound, x_upper_bound);
-//y=clamp(y, y_lower_bound, y_upper_bound);
+if (aggro = false) {
+    x=clamp(x, x_lower_bound, x_upper_bound);
+    y=clamp(y, y_lower_bound, y_upper_bound);
+} else {
+    x = clamp(x, 0, room_width)
+    y = clamp(y, 0, room_height)
+}
 </string>
           </argument>
         </arguments>
