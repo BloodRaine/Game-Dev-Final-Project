@@ -135,8 +135,8 @@
   </fonts>
   <objects name="objects">
     <objects name="Battle">
-      <object>objects\obj_sedian_battle</object>
       <object>objects\obj_battle_control</object>
+      <object>objects\obj_sedian_battle</object>
       <object>objects\obj_groot_battle</object>
       <object>objects\obj_brown_dragon_battle</object>
       <object>objects\obj_brute_battle</object>
@@ -195,7 +195,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
-    <room>rooms\rm_combat_ruin_city</room>
     <rooms name="forest">
       <room>rooms\rm_start_temp</room>
       <room>rooms\rm_forest</room>
@@ -208,6 +207,7 @@
     <rooms name="combat_rooms">
       <room>rooms\rm_combat_forest</room>
       <room>rooms\rm_combat_desert</room>
+      <room>rooms\rm_combat_ruin_city</room>
     </rooms>
   </rooms>
   <help>

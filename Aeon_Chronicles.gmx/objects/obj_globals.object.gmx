@@ -43,19 +43,97 @@ global.current_menu_tab = 0;
 global.defeated_monsters = ds_list_create();
 global.combat_rooms = ds_list_create();
 
-// Inventory
-global.cards = ds_map_create();
-global.cards[? "obj_card_hp_up"] = 10; // 10 hp up cards
-global.cards[? "obj_card_green_dust"] = 1;
-
+// Inventory (Populated in other Create script)
+global.cards = ds_list_create();
+global.used_cards = ds_list_create();
 global.player_cards = ds_map_create();
-global.player_cards[? "knife"] = 1;
 
 // Variables for room transitions; defaults unimportant
 global.rm_above = rm_start_temp;
 global.rm_below = rm_start_temp;
 global.rm_left = rm_start_temp;
 global.rm_right = rm_start_temp;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Set up Card Inventory
+for (var i = 0; i &lt; 10; i++) {
+    ds_list_add(global.cards, "hp_up");
+}
+
+for (var i = 0; i &lt; 10; i++) {
+    ds_list_add(global.cards, "armor_up");
+}
+
+for (var i = 0; i &lt; 6; i++) {
+    ds_list_add(global.cards, "sword_2");
+}
+
+for (var i = 0; i &lt; 7; i++) {
+    ds_list_add(global.cards, "shield_2");
+}
+
+for (var i = 0; i &lt; 10; i++) {
+    ds_list_add(global.cards, "health_potion");
+}
+
+for (var i = 0; i &lt; 5; i++) {
+    ds_list_add(global.cards, "dagger_1");
+}
+
+for (var i = 0; i &lt; 10; i++) {
+    ds_list_add(global.cards, "red_dust");
+}
+
+for (var i = 0; i &lt; 5; i++) {
+    ds_list_add(global.cards, "blue_dust");
+}
+
+for (var i = 0; i &lt; 1; i++) {
+    ds_list_add(global.cards, "green_dust");
+}
+
+for (var i = 0; i &lt; 10; i++) {
+    ds_list_add(global.cards, "magic_item");
+}
+
+// Initialize the used_cards array to all false
+for (var i = 0; i &lt; ds_list_size(global.cards); i++) {
+    ds_list_add(global.used_cards, false);
+}
+
+// Randomly choose first 5 player's cards
+while (ds_list_size(global.player_cards) &lt; 5) {
+    randomize();
+    
+    // Find another card in the deck
+    var card_idx = -1;
+    do {
+        card_idx = floor(random(ds_list_size(global.cards)));
+    } until (ds_list_find_index(global.player_cards, card_idx) &lt; 0);
+    
+    // Add it to the player's card list
+    // Note, these are the indexes of the cards, rather than
+    // the cards themselves
+    ds_list_add(global.player_cards, card_idx);
+}
 </string>
           </argument>
         </arguments>
