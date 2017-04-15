@@ -40,7 +40,7 @@ global.menu_tabs = array("Manage Decks", "Card Collection", "Quest Journal", "Sy
 global.current_menu_tab = 0;
 
 // Combat
-global.defeated_monsters = ds_list_create();
+global.defeated_monsters = ds_map_create(); // Map room-&gt;list of defeated monsters, populated in other create script
 global.combat_rooms = ds_list_create();
 
 // Inventory (Populated in other Create script)
@@ -73,7 +73,8 @@ global.rm_right = rm_start_temp;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Set up Card Inventory
+            <string>// ===== Inventory Init =====
+// Set up Card Inventory
 for (var i = 0; i &lt; 10; i++) {
     ds_list_add(global.cards, "hp_up");
 }
@@ -133,6 +134,33 @@ while (ds_list_size(global.player_cards) &lt; 5) {
     // Note, these are the indexes of the cards, rather than
     // the cards themselves
     ds_list_add(global.player_cards, card_idx);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// ===== Defeated Monster Init =====
+current_room = room_first;
+while current_room != -1
+{
+    global.defeated_monsters[? current_room] = ds_list_create();
+    current_room = room_next(current_room);
 }
 </string>
           </argument>
