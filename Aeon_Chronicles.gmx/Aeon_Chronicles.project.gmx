@@ -55,6 +55,7 @@
       <sprite>sprites\spr_iskandar_unit_1</sprite>
       <sprite>sprites\spr_sedian</sprite>
       <sprite>sprites\spr_sedian_battle</sprite>
+      <sprite>sprites\spr_desert_sedian_battle</sprite>
       <sprite>sprites\spr_spider_mech</sprite>
       <sprite>sprites\spr_groot</sprite>
       <sprite>sprites\spr_groot_battle</sprite>
@@ -138,6 +139,7 @@
     <objects name="Battle">
       <object>objects\obj_battle_control</object>
       <object>objects\obj_sedian_battle</object>
+      <object>objects\obj_desert_sedian_battle</object>
       <object>objects\obj_groot_battle</object>
       <object>objects\obj_brown_dragon_battle</object>
       <object>objects\obj_brute_battle</object>
@@ -179,6 +181,7 @@
     <object>objects\obj_button</object>
     <object>objects\obj_dialogue</object>
     <object>objects\obj_stats</object>
+    <object>objects\obj_save_point</object>
     <object>objects\obj_rosalind</object>
     <object>objects\obj_old_crazy_guy</object>
     <object>objects\obj_globals</object>
@@ -192,7 +195,6 @@
       <object>objects\obj_cactus_2</object>
       <object>objects\obj_yucca</object>
     </objects>
-    <object>objects\obj_save_point</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>

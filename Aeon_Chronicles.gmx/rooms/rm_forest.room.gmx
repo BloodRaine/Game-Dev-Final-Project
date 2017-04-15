@@ -28,6 +28,10 @@ global.rm_left = rm_start_temp;
 global.rm_entry_left_x = 20;
 global.rm_entry_left_y = 388;
 
+global.rm_below = rm_desert
+global.rm_entry_below_x = 480;
+global.rm_entry_below_y = 700;
+
 audio_stop_sound(bgm_title);
 audio_stop_sound(bgm_combat);
 
@@ -160,16 +164,15 @@ if (ds_list_find_index(defeated_monsters_for_room, "groot") &gt;= 0)
     <instance objName="obj_boundary" x="12" y="504" name="inst_B9BEADB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_boundary" x="0" y="228" name="inst_5EBBF393" locked="0" code="" scaleX="0.75" scaleY="1.38709676265717" colour="4294967295" rotation="0"/>
     <instance objName="obj_boundary" x="-20" y="212" name="inst_5049E670" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_boundary" x="-12" y="744" name="inst_57B7C61A" locked="0" code="" scaleX="34.322582244873" scaleY="0.903225779533386" colour="4294967295" rotation="0"/>
     <instance objName="obj_boulder" x="104" y="140" name="inst_EDF7C954" locked="0" code="" scaleX="0.851063847541809" scaleY="0.829787254333496" colour="4294967295" rotation="0"/>
     <instance objName="obj_boulder" x="1024" y="-4" name="inst_D5A313B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_one" x="792" y="-16" name="inst_A105E01E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_boulder" x="952" y="604" name="inst_9D678F17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_boulder" x="868" y="740" name="inst_7FDCA6B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stats" x="208" y="236" name="inst_B4880FB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_forest_boulder" x="112" y="36" name="inst_BF8D758A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_two" x="-60" y="-80" name="inst_DE4D5E2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_boundary" x="28" y="28" name="inst_AB56113E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_boundary" x="292" y="752" name="inst_D516BD97" locked="0" code="" scaleX="13.5483875274658" scaleY="0.875" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bk_dark_green_patch" x="-16" y="132" w="128" h="144" xo="0" yo="0" id="10001363" name="inst_224DD4B1" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

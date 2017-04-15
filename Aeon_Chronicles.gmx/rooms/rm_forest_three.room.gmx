@@ -10,9 +10,16 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>global.rm_left = rm_forest;
+  <code>/* room to the right */
+global.rm_right = rm_desert;
+/* where to place player when coming *from* right */
+global.rm_entry_right_x = 990;
+global.rm_entry_right_y = 370;
+
+global.rm_left = rm_forest;
 global.rm_entry_left_x = 70;
 global.rm_entry_left_y = 490;
+
   audio_stop_sound(bgm_title);
 audio_stop_sound(bgm_combat);
 
@@ -23,9 +30,7 @@ if (!audio_is_playing(bgm_forest))
 
 global.room_before_battle = room;
 
-var defeated_monsters_for_room = global.defeated_monsters[? global.room_before_battle];
-
-if (ds_list_find_index(defeated_monsters_for_room, "sedian") &gt;= 0)
+if (ds_list_find_index(global.defeated_monsters, "sedian") &gt;= 0)
 {
     with (obj_sedian)
     {
@@ -33,7 +38,7 @@ if (ds_list_find_index(defeated_monsters_for_room, "sedian") &gt;= 0)
     }
 }
 
-if (ds_list_find_index(defeated_monsters_for_room, "groot") &gt;= 0)
+if (ds_list_find_index(global.defeated_monsters, "groot") &gt;= 0)
 {
     with (obj_groot)
     {
@@ -82,7 +87,7 @@ if (ds_list_find_index(defeated_monsters_for_room, "groot") &gt;= 0)
   <instances>
     <instance objName="obj_menu_main" x="0" y="0" name="inst_1764560F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sedian" x="252" y="596" name="inst_F476A01F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_groot" x="836" y="312" name="inst_C48D249E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_groot" x="620" y="256" name="inst_C48D249E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sedian" x="736" y="592" name="inst_C0D76571" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sedian" x="260" y="84" name="inst_9A649712" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_two" x="-64" y="68" name="inst_12F7482B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -164,7 +169,6 @@ if (ds_list_find_index(defeated_monsters_for_room, "groot") &gt;= 0)
     <instance objName="obj_tree_one" x="232" y="196" name="inst_202824D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_one" x="256" y="176" name="inst_FF2119E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_boundary" x="392" y="-8" name="inst_AE120329" locked="0" code="" scaleX="-8.51612949371338" scaleY="0.75" colour="4294967295" rotation="0"/>
-    <instance objName="obj_boundary" x="1008" y="208" name="inst_B70EC5BA" locked="0" code="" scaleX="0.5" scaleY="9.875" colour="4294967295" rotation="0"/>
     <instance objName="obj_boundary" x="568" y="-16" name="inst_22B7DDB0" locked="0" code="" scaleX="7.875" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_old_crazy_guy" x="152" y="376" name="inst_7F291750" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
