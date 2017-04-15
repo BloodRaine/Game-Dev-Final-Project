@@ -1,0 +1,87 @@
+
+%Generally, the cover letter should include the following:
+% - Introduction
+% - Description of work done since last delivery (i.e. progress report).
+% - List of items in current delivery.
+% - Standard business letter format
+%   (https://owl.english.purdue.edu/owl/resource/653/01/
+
+\documentclass[12pt]{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{graphicx}
+\usepackage[pdftex]{hyperref}
+\usepackage[english]{babel}
+\usepackage{parskip}
+\usepackage{xspace}
+\usepackage{enumitem}
+
+\pagenumbering{gobble}
+\newcommand\aeon{\textit{\AE on Chronicles}\xspace}
+\newcommand\tab[1][.5in]{\hspace*{#1}}
+\newcommand\releasename{Beta Release\xspace}
+\newcommand\te{Team Epsilon\xspace}
+
+\begin{document}
+
+\hfill\includegraphics[width=4cm]{../graphics/logo/team-epsilon-light-cropped}
+
+\hfill \releasename
+
+\hfill \today
+
+Mark Baldwin,
+
+\te has made significant progress on \aeon since our Alpha delivery. We have
+continued our rapid development and are on schedule to achieve our ambitions
+milestone schedule.
+
+In the \releasename we have finished all of the regions of our game world,
+completed all of the assets, created a number of unique cards, implemented
+elemental status types, finished adding music, and implemented a game
+economy/inventory system.
+
+Overall, the three main categories of improvements are Game world, Music, and
+Assets. The following list outlines the major changes made in each of the above
+categories.
+
+\begin{itemize}
+    \item \textbf{Game World}
+        \begin{itemize}[noitemsep]
+            \item all forest rooms are complete
+            \item concept art for other rooms is complete
+            \item world keeps track of defeated enemies
+            \item all assets created and ready for integration into the broader
+                game world
+            \item framework of game economy/inventory system implemented
+        \end{itemize}
+
+    \item \textbf{Music}
+        \begin{itemize}[noitemsep]
+            \item revised the title music
+            \item made music for in the city and desert for future use
+            \item some sound effects for combat
+        \end{itemize}
+
+    \item \textbf{Assets} a variety of assets were created including, but not
+        limited to:
+        \begin{itemize}[noitemsep]
+            \item 13 additional cards and associated actions
+            \item new dragon, wolf, brute, and hopper enemies
+            \item desert assets
+        \end{itemize}
+\end{itemize}
+
+The above list is not comprehensive. We have worked very hard to improve the
+overall quality of \aeon in the \releasename and we look forward to continuing
+our rapid development of our game.
+
+Sincerely,
+
+\tab Jacob Davis \\
+\tab Caleb Jhones \\
+\tab Robbie Merillat \\
+\tab Jonathan Sumner Evans \\
+\tab David Grisham \\
+
+\end{document}
+
