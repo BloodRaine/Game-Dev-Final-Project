@@ -165,6 +165,7 @@
     <object>objects\obj_dialogue</object>
     <object>objects\obj_stats</object>
     <object>objects\obj_rosalind</object>
+    <object>objects\obj_old_crazy_guy</object>
     <object>objects\obj_globals</object>
     <object>objects\obj_vivian</object>
     <objects name="Desert">
