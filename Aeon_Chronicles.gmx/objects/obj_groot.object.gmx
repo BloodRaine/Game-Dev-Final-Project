@@ -51,7 +51,7 @@ alarm[1] = 0;
         <arguments>
           <argument>
             <kind>8</kind>
-            <path>path0</path>
+            <path>-1</path>
           </argument>
           <argument>
             <kind>0</kind>

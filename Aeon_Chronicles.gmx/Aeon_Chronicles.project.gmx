@@ -30,7 +30,16 @@
     </sprites>
     <sprites name="Cards">
       <sprite>sprites\spr_basic_card</sprite>
-      <sprite>sprites\spr_card_two</sprite>
+      <sprite>sprites\spr_card_0</sprite>
+      <sprite>sprites\spr_card_1</sprite>
+      <sprite>sprites\spr_card_2</sprite>
+      <sprite>sprites\spr_card_3</sprite>
+      <sprite>sprites\spr_card_4</sprite>
+      <sprite>sprites\spr_card_5</sprite>
+      <sprite>sprites\spr_card_6</sprite>
+      <sprite>sprites\spr_card_7</sprite>
+      <sprite>sprites\spr_card_8</sprite>
+      <sprite>sprites\spr_card_9</sprite>
       <sprite>sprites\spr_deck</sprite>
     </sprites>
     <sprites name="Forest">
@@ -52,6 +61,7 @@
       <sprite>sprites\spr_brute_battle</sprite>
       <sprite>sprites\spr_wolf</sprite>
       <sprite>sprites\spr_dragon</sprite>
+      <sprite>sprites\spr_servo</sprite>
     </sprites>
     <sprites name="NPC">
       <sprite>sprites\spr_npc_villager1</sprite>
@@ -108,6 +118,7 @@
     <script>scripts\array.gml</script>
     <script>scripts\base_convert.gml</script>
     <script>scripts\veneer_script.gml</script>
+    <script>scripts\scr_ai.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_dialogue_1</font>
@@ -152,8 +163,9 @@
     <object>objects\obj_boundary</object>
     <object>objects\obj_button</object>
     <object>objects\obj_dialogue</object>
+    <object>objects\obj_stats</object>
     <object>objects\obj_rosalind</object>
-    <object>objects\obj_slider</object>
+    <object>objects\obj_globals</object>
     <object>objects\obj_vivian</object>
     <objects name="Desert">
       <object>objects\obj_skull</object>
@@ -169,6 +181,7 @@
     <room>rooms\rm_title</room>
     <room>rooms\rm_combat_ruin_city</room>
     <rooms name="forest">
+      <room>rooms\rm_start_temp</room>
       <room>rooms\rm_forest</room>
       <room>rooms\rm_forest_two</room>
       <room>rooms\rm_forest_three</room>

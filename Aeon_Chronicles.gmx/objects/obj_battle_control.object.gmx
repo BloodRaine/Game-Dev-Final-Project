@@ -43,7 +43,7 @@ else if (global.monster_to_fight == "groot")
 global.monster_defeated = false;
 global.vivian_defeated = false;
 
-monster_health = 10;
+monster_health = combat_opponent.hp;
 
 current_player = 0; // Start with Vivian
 
@@ -124,8 +124,9 @@ if (current_player == 0) {
             <string>// Exit if someone dies
 if (monster_health &lt;= 0) {
     ds_list_add(global.defeated_monsters, global.monster_to_fight);
+    global.vivian_experience += combat_opponent.exp_reward
     room_goto(global.room_before_battle);
-} else if (global.vivian_health &lt;= 0) {
+} else if (global.vivian_hp &lt;= 0) {
     global.vivian_defeated = true;
     room_goto(global.room_before_battle);
 }
@@ -137,7 +138,7 @@ if (vivian_attacking) {
     } else if (obj_vivian.x &gt; vivian_start_x) {
         // Inflict damage
         if (!damage_inflicted) {
-            monster_health -= 1;
+            monster_health -= 5;
             damage_inflicted = true;
             audio_play_sound(global.vivian_atk_sfx, 10, false);
             audio_play_sound(sfx_ow_sedian, 10, false);
@@ -155,7 +156,7 @@ if (monster_attacking) {
     } else if (combat_opponent.x &lt; monster_start_x) {
         // Inflict damage
         if (!damage_inflicted) {
-            global.vivian_health -= 1;
+            global.vivian_hp -= 1;
             damage_inflicted = true;
             audio_play_sound(sfx_attack_sedian, 10, false);
             audio_play_sound(sfx_ow_vivian, 10, false);
@@ -231,7 +232,7 @@ dy = 40;
 // Vivian
 draw_set_halign(fa_left);
 draw_text(x, y, "Vivian");
-draw_text(x, y + dy, "Health: " + string(global.vivian_health));
+draw_text(x, y + dy, "Health: " + string(global.vivian_hp));
 
 // Monster
 x = room_width - x;
