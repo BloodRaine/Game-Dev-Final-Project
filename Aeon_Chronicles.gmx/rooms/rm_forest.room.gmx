@@ -37,8 +37,9 @@ if (!audio_is_playing(bgm_forest))
 }
 
 global.room_before_battle = room;
+var defeated_monsters_for_room = global.defeated_monsters[? global.room_before_battle];
 
-if (ds_list_find_index(global.defeated_monsters, "sedian") &gt;= 0)
+if (ds_list_find_index(defeated_monsters_for_room, "sedian") &gt;= 0)
 {
     with (obj_sedian)
     {
@@ -46,7 +47,7 @@ if (ds_list_find_index(global.defeated_monsters, "sedian") &gt;= 0)
     }
 }
 
-if (ds_list_find_index(global.defeated_monsters, "groot") &gt;= 0)
+if (ds_list_find_index(defeated_monsters_for_room, "groot") &gt;= 0)
 {
     with (obj_groot)
     {
