@@ -108,6 +108,7 @@
     <script>scripts\array.gml</script>
     <script>scripts\base_convert.gml</script>
     <script>scripts\veneer_script.gml</script>
+    <script>scripts\scr_ai.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_dialogue_1</font>
@@ -152,9 +153,9 @@
     <object>objects\obj_boundary</object>
     <object>objects\obj_button</object>
     <object>objects\obj_dialogue</object>
+    <object>objects\obj_stats</object>
     <object>objects\obj_rosalind</object>
     <object>objects\obj_globals</object>
-    <object>objects\obj_slider</object>
     <object>objects\obj_vivian</object>
     <objects name="Desert">
       <object>objects\obj_skull</object>
@@ -165,12 +166,12 @@
       <object>objects\obj_cactus_2</object>
       <object>objects\obj_yucca</object>
     </objects>
-    <object>objects\obj_stats</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
     <room>rooms\rm_combat_ruin_city</room>
     <rooms name="forest">
+      <room>rooms\rm_start_temp</room>
       <room>rooms\rm_forest</room>
       <room>rooms\rm_forest_two</room>
       <room>rooms\rm_forest_three</room>

@@ -26,9 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>{
-     draw_text(x,y, "Level : " + string(global.level))
-     draw_text(x,y+32, "HP : " + string(global.hp) + "/" + string(global.maxhp))
-     draw_text(x,y+64, "EXP : " + string(global.experience) + "/" + string(global.maxexp))
+     draw_text(x,y, "Level : " + string(global.vivian_level))
+     draw_text(x,y+32, "HP : " + string(global.vivian_hp) + "/" + string(global.vivian_maxhp))
+     draw_text(x,y+64, "EXP : " + string(global.vivian_experience) + "/" + string(global.vivian_maxexp))
 }
 </string>
           </argument>

@@ -79,7 +79,7 @@ image_yscale = (string_height(button_text) + 32) / sprite_height;
             <string>switch (button_text)
 {
     case TEXT_PLAY_GAME:
-        room_goto(rm_forest);
+        room_goto(rm_start_temp);
         break;
     case TEXT_ATTACK:
         clicked = true;
