@@ -173,6 +173,12 @@ if (ds_list_find_index(defeated_monsters_for_room, "groot") &gt;= 0)
     <instance objName="obj_tree_two" x="-60" y="-80" name="inst_DE4D5E2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_boundary" x="28" y="28" name="inst_AB56113E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_boundary" x="292" y="752" name="inst_D516BD97" locked="0" code="" scaleX="13.5483875274658" scaleY="0.875" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mushroom" x="928" y="760" name="inst_B859EEA7" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mushroom" x="932" y="764" name="inst_30084EB5" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mushroom" x="928" y="764" name="inst_ABF527FE" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mushroom" x="924" y="756" name="inst_1BDC8F2A" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mushroom" x="936" y="756" name="inst_D88F6098" locked="0" code="" scaleX="0.1875" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mushroom" x="936" y="760" name="inst_0157FC29" locked="0" code="" scaleX="0.375" scaleY="0.375" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bk_dark_green_patch" x="-16" y="132" w="128" h="144" xo="0" yo="0" id="10001363" name="inst_224DD4B1" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

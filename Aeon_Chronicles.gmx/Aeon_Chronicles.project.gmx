@@ -49,6 +49,11 @@
       <sprite>sprites\spr_large_rock_1</sprite>
       <sprite>sprites\spr_tree_one</sprite>
       <sprite>sprites\spr_tree_two</sprite>
+      <sprite>sprites\spr_log</sprite>
+      <sprite>sprites\spr_mushrooms</sprite>
+      <sprite>sprites\spr_r_flower</sprite>
+      <sprite>sprites\spr_u_flower</sprite>
+      <sprite>sprites\spr_y_flower</sprite>
     </sprites>
     <sprites name="Monsters">
       <sprite>sprites\spr_desert_sedian</sprite>
@@ -170,6 +175,8 @@
       <object>objects\obj_forest_boulder</object>
       <object>objects\obj_tree_one</object>
       <object>objects\obj_tree_two</object>
+      <object>objects\obj_log</object>
+      <object>objects\obj_mushroom</object>
     </objects>
     <objects name="Menu">
       <object>objects\obj_menu_keybinds</object>
