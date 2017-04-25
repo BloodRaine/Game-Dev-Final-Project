@@ -11,6 +11,7 @@
 \ifxetex\RequirePackage{fontspec}\fi
 
 \RequirePackage{minted}
+\RequirePackage{xspace}
 \RequirePackage{xcolor}
 \RequirePackage{hyperref}
 \RequirePackage[overlay,absolute]{textpos}
