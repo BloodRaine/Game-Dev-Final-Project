@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>key_interact = keyboard_check_pressed(OPTION_KEYBIND_INTERACT);
 if (key_interact) {
-    if (collision_circle(x, y, 25, obj_vivian, false, true)){
+    if (collision_circle(x, y, 100, obj_vivian, false, true)){
         global.vivian_hp = global.vivian_maxhp
         if (instance_exists(obj_menu_main)) {
             obj_menu_main.save_point = true

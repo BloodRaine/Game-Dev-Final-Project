@@ -88,7 +88,8 @@ if (moving_rooms)
 
 walking = false;
 
-if (room == rm_combat_forest) { exit; }
+// Don't continue if we are in a combat room
+if (ds_list_find_index(global.combat_rooms, room) &gt;= 0) { exit; }
 
 /* keys */
 key_up = keyboard_check(OPTION_KEYBIND_UP);
@@ -160,6 +161,32 @@ if (!walking &amp;&amp; audio_is_playing(sfx_walking))
 {
     audio_stop_sound(sfx_walking);
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_dragon">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (battle_entry_immunity) {exit;}
+global.monster_to_fight = "dragon";
+global.instance_to_fight = other.id;
+room_goto(rm_combat_desert);
 </string>
           </argument>
         </arguments>
@@ -426,8 +453,8 @@ room_goto(rm_combat_desert);
     prev_room_x = x;
     prev_room_y = y;
     
-    x = 512;
-    y = 384;
+    x = 300;
+    y = 500;
     
     obj_battle_control.vivian_start_x = x;
     

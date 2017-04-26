@@ -171,6 +171,7 @@
       <object>objects\obj_groot</object>
       <object>objects\obj_hopper</object>
       <object>objects\obj_wolf</object>
+      <object>objects\obj_dragon</object>
     </objects>
     <objects name="Forest">
       <object>objects\obj_forest_boulder</object>

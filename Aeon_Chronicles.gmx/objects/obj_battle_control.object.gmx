@@ -43,7 +43,11 @@ else if (global.monster_to_fight == "desert_sedian") {
     obj_desert_sedian_battle.visible = true
     obj_brown_dragon_battle.visible = false
 }
-    
+else if (global.monster_to_fight == "dragon") {
+    combat_opponent = obj_brown_dragon_battle
+    obj_desert_sedian_battle.visible = false
+    obj_brown_dragon_battle.visible = true
+}
 
 // Reset
 global.monster_defeated = false;
