@@ -130,7 +130,7 @@ if (current_player == 0) {
             <string>// Exit if someone dies
 if (monster_health &lt;= 0) {
     var defeated_monsters_for_room = global.defeated_monsters[? global.room_before_battle];
-    ds_list_add(defeated_monsters_for_room, global.monster_to_fight);
+    ds_list_add(defeated_monsters_for_room, global.instance_to_fight);
     global.vivian_experience += combat_opponent.exp_reward
     room_goto(global.room_before_battle);
 } else if (global.vivian_hp &lt;= 0) {

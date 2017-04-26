@@ -340,6 +340,7 @@ if (!walking &amp;&amp; audio_is_playing(sfx_walking))
             <kind>1</kind>
             <string>if (battle_entry_immunity) {exit;}
 global.monster_to_fight = "groot";
+global.instance_to_fight = other.id;
 room_goto(rm_combat_forest);
 
 </string>
@@ -366,6 +367,7 @@ room_goto(rm_combat_forest);
             <kind>1</kind>
             <string>if (battle_entry_immunity) {exit;}
 global.monster_to_fight = "sedian";
+global.instance_to_fight = other.id;
 room_goto(rm_combat_forest);
 </string>
           </argument>
@@ -391,6 +393,7 @@ room_goto(rm_combat_forest);
             <kind>1</kind>
             <string>if (battle_entry_immunity) {exit;}
 global.monster_to_fight = "desert_sedian";
+global.instance_to_fight = other.id;
 room_goto(rm_combat_desert);
 </string>
           </argument>

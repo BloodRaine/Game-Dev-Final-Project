@@ -42,6 +42,8 @@ global.current_menu_tab = 0;
 // Combat
 global.defeated_monsters = ds_map_create(); // Map room-&gt;list of defeated monsters, populated in other create script
 global.combat_rooms = ds_list_create();
+global.room_before_battle = -1;
+global.instance_to_fight = -1;
 
 // Inventory (Populated in other Create script)
 global.cards = ds_list_create();

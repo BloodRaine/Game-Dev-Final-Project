@@ -148,6 +148,7 @@
       <object>objects\obj_groot_battle</object>
       <object>objects\obj_brown_dragon_battle</object>
       <object>objects\obj_brute_battle</object>
+      <object>objects\rm_monster_tracker</object>
     </objects>
     <objects name="Cards">
       <object>objects\obj_card_base</object>

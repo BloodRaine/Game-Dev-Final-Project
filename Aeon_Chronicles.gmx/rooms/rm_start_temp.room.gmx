@@ -22,17 +22,6 @@ audio_stop_sound(bgm_combat);
 if (!audio_is_playing(bgm_forest))
 {
     audio_play_sound(bgm_forest, 100, true);
-}
-
-global.room_before_battle = room;
-
-var defeated_monsters_for_room = global.defeated_monsters[? global.room_before_battle];
-if (ds_list_find_index(defeated_monsters_for_room, "sedian") &gt;= 0)
-{
-    with (obj_sedian)
-    {
-        instance_destroy();
-    }
 }</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
