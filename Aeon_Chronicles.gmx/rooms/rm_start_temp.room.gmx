@@ -106,8 +106,6 @@ if (!audio_is_playing(bgm_forest))
     <instance objName="obj_boundary" x="992" y="640" name="inst_310D631C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_globals" x="32" y="32" name="inst_DA23406B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_main" x="32" y="64" name="inst_EA3C5A9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_vivian" x="448" y="352" name="inst_5D8E66DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_save_point" x="352" y="256" name="inst_98126E1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_two" x="96" y="64" name="inst_C0E13D55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_two" x="128" y="0" name="inst_48B02BB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_forest_boulder" x="804" y="308" name="inst_9741E69A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -130,6 +128,7 @@ if (!audio_is_playing(bgm_forest))
     <instance objName="obj_tree_two" x="16" y="352" name="inst_42D36D4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_two" x="16" y="432" name="inst_94358F7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_two" x="204" y="504" name="inst_366831AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_vivian" x="420" y="340" name="inst_CDA1AA16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bk_stick" x="280" y="420" w="64" h="48" xo="0" yo="0" id="10001483" name="inst_56CD602C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

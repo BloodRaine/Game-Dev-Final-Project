@@ -190,11 +190,9 @@
     <object>objects\obj_button</object>
     <object>objects\obj_dialogue</object>
     <object>objects\obj_stats</object>
-    <object>objects\obj_save_point</object>
-    <object>objects\obj_rosalind</object>
-    <object>objects\obj_old_crazy_guy</object>
-    <object>objects\obj_globals</object>
     <object>objects\obj_vivian</object>
+    <object>objects\obj_rosalind</object>
+    <object>objects\obj_globals</object>
     <objects name="Desert">
       <object>objects\obj_skull</object>
       <object>objects\obj_desert_rock_med</object>
