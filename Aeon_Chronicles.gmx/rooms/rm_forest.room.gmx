@@ -23,7 +23,7 @@ global.rm_entry_right_x = 980;
 global.rm_entry_right_y = 300;
 
 /* room to the left */
-global.rm_left = rm_start_temp;
+global.rm_left = rm_forest_path;
 /* where to place player when coming *from* right */
 global.rm_entry_left_x = 20;
 global.rm_entry_left_y = 388;

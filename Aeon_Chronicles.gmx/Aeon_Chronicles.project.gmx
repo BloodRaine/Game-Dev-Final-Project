@@ -109,6 +109,12 @@
       <sprite>sprites\spr_rosalind_left</sprite>
     </sprites>
     <sprite>sprites\reference_rocks</sprite>
+    <sprites name="startsville">
+      <sprite>sprites\spr_hut</sprite>
+      <sprite>sprites\spr_hut_two</sprite>
+      <sprite>sprites\spr_stone_hut</sprite>
+      <sprite>sprites\spr_wood_house</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_dark_dirt_patch</background>
@@ -228,11 +234,17 @@
       <object>objects\obj_desert_rock_large</object>
     </objects>
     <object>objects\obj_save</object>
+    <objects name="startsville">
+      <object>objects\obj_hut_one</object>
+      <object>objects\obj_hut_two</object>
+      <object>objects\obj_stone_hut</object>
+      <object>objects\obj_wood_house</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
     <rooms name="forest">
-      <room>rooms\rm_start_temp</room>
+      <room>rooms\rm_forest_path</room>
       <room>rooms\rm_forest</room>
       <room>rooms\rm_forest_two</room>
       <room>rooms\rm_forest_three</room>
@@ -244,6 +256,12 @@
       <room>rooms\rm_combat_forest</room>
       <room>rooms\rm_combat_desert</room>
       <room>rooms\rm_combat_ruin_city</room>
+    </rooms>
+    <rooms name="startsville">
+      <room>rooms\rm_town_center</room>
+      <room>rooms\rm_town_down</room>
+      <room>rooms\rm_town_left</room>
+      <room>rooms\rm_town_edge</room>
     </rooms>
   </rooms>
   <help>

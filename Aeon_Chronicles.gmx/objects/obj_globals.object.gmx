@@ -51,10 +51,10 @@ global.used_cards = ds_list_create();
 global.player_cards = ds_map_create();
 
 // Variables for room transitions; defaults unimportant
-global.rm_above = rm_start_temp;
-global.rm_below = rm_start_temp;
-global.rm_left = rm_start_temp;
-global.rm_right = rm_start_temp;
+global.rm_above = rm_town_center;
+global.rm_below = rm_town_center;
+global.rm_left = rm_town_center;
+global.rm_right = rm_town_center;
 </string>
           </argument>
         </arguments>
