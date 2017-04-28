@@ -212,6 +212,26 @@ global.room_before_battle = room;</code>
     <tile bgName="bk_dirt_patch" x="856" y="620" w="144" h="128" xo="0" yo="0" id="10001449" name="inst_FF23BC50" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bk_dirt_patch" x="872" y="264" w="144" h="128" xo="0" yo="0" id="10001450" name="inst_4D2F8998" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bk_dirt_patch" x="836" y="312" w="144" h="128" xo="0" yo="0" id="10001451" name="inst_ADD3CE56" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="1008" y="412" w="32" h="32" xo="0" yo="0" id="10001565" name="inst_173EC6D4" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="1004" y="308" w="32" h="32" xo="0" yo="0" id="10001566" name="inst_F0B0CE3B" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="1000" y="260" w="32" h="32" xo="0" yo="0" id="10001567" name="inst_A1327735" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="980" y="452" w="32" h="32" xo="0" yo="0" id="10001568" name="inst_840A7462" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="1016" y="240" w="32" h="32" xo="0" yo="0" id="10001569" name="inst_9E1A669F" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="1008" y="444" w="32" h="32" xo="0" yo="0" id="10001570" name="inst_146F4DC6" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="936" y="300" w="32" h="32" xo="0" yo="0" id="10001571" name="inst_B7839CB9" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="1004" y="468" w="32" h="32" xo="0" yo="0" id="10001572" name="inst_D351E73F" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="1016" y="276" w="32" h="32" xo="0" yo="0" id="10001573" name="inst_272E81B6" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="1020" y="492" w="32" h="32" xo="0" yo="0" id="10001574" name="inst_4AA0FC07" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="992" y="496" w="32" h="32" xo="0" yo="0" id="10001575" name="inst_73E4F5E9" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="1016" y="460" w="32" h="32" xo="0" yo="0" id="10001576" name="inst_B4639EAF" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="1016" y="472" w="32" h="32" xo="0" yo="0" id="10001577" name="inst_86556970" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="1012" y="464" w="32" h="32" xo="0" yo="0" id="10001578" name="inst_FB7A15A2" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="1016" y="444" w="32" h="32" xo="0" yo="0" id="10001579" name="inst_EE9CBF6F" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="1020" y="420" w="32" h="32" xo="0" yo="0" id="10001580" name="inst_B8D5FEF3" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="1012" y="304" w="32" h="32" xo="0" yo="0" id="10001581" name="inst_B231C06A" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="1008" y="272" w="32" h="32" xo="0" yo="0" id="10001582" name="inst_83AF3B49" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="1016" y="264" w="32" h="32" xo="0" yo="0" id="10001583" name="inst_E0BB6223" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bk_desert_grass" x="1008" y="252" w="32" h="32" xo="0" yo="0" id="10001584" name="inst_F4D4D8E9" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bk_dirt_patch" x="160" y="304" w="16" h="16" xo="0" yo="0" id="10001248" name="inst_9473808B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bk_dirt_patch" x="200" y="324" w="16" h="16" xo="0" yo="0" id="10001249" name="inst_643A3151" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bk_dark_grass" x="80" y="392" w="16" h="16" xo="0" yo="0" id="10001271" name="inst_65130EB6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
