@@ -83,13 +83,27 @@
     <sprite>sprites\spr_reference</sprite>
     <sprite>sprites\spr_reference_2</sprite>
     <sprite>sprites\spr_reference_3</sprite>
-    <sprite>sprites\spr_rosalind</sprite>
-    <sprite>sprites\spr_vivian</sprite>
     <sprite>sprites\spr_room_transition_above</sprite>
     <sprite>sprites\spr_room_transition_below</sprite>
     <sprite>sprites\spr_room_transition_left</sprite>
     <sprite>sprites\spr_room_transition_right</sprite>
     <sprite>sprites\spr_save_point</sprite>
+    <sprites name="vivian">
+      <sprite>sprites\spr_vivian_down</sprite>
+      <sprite>sprites\spr_vivian_up</sprite>
+      <sprite>sprites\spr_vivian_right</sprite>
+      <sprite>sprites\spr_vivian_down_right</sprite>
+      <sprite>sprites\spr_vivian_up_right</sprite>
+      <sprite>sprites\spr_vivian_left</sprite>
+      <sprite>sprites\spr_vivian_down_left</sprite>
+      <sprite>sprites\spr_vivian_up_left</sprite>
+    </sprites>
+    <sprites name="rosalind">
+      <sprite>sprites\spr_rosalind_up</sprite>
+      <sprite>sprites\spr_rosalind_down</sprite>
+      <sprite>sprites\spr_rosalind_right</sprite>
+      <sprite>sprites\spr_rosalind_left</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_dark_dirt_patch</background>
@@ -202,6 +216,7 @@
       <object>objects\obj_cactus_2</object>
       <object>objects\obj_yucca</object>
     </objects>
+    <object>objects\obj_save</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
