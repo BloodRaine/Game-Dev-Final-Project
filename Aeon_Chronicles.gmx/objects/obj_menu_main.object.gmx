@@ -59,20 +59,20 @@ system_instances = array(0);
 draw_set_font(font_menu_med);
 dx = right_page_width / 2 + left_page_width;
 dy = 256;
-system_instances[0] = instance_create(dx, dy, obj_button);
+//system_instances[0] = instance_create(dx, dy, obj_button);
 with (system_instances[0])
 {
-    button_text = TEXT_SAVE_GAME;
-    button_font = font_menu_med;
-    other.dy += string_height(button_text) + 48;
-    instance_deactivate_object(self);
+    //button_text = TEXT_SAVE_GAME;
+    //button_font = font_menu_med;
+    //other.dy += string_height(button_text) + 48;
+    //instance_deactivate_object(self);
 }
-system_instances[1] = instance_create(dx, dy, obj_button);
-with (system_instances[1])
+//system_instances[1] = instance_create(dx, dy, obj_button);
+with (system_instances[0])
 {
-    button_text = TEXT_EXIT_GAME;
-    button_font = font_menu_med;
-    instance_deactivate_object(self);
+    //button_text = TEXT_EXIT_GAME;
+    //button_font = font_menu_med;
+    //instance_deactivate_object(self);
 }
 </string>
           </argument>
@@ -161,6 +161,14 @@ dy = 32;
 //drawtext = global.menu_tabs[global.current_menu_tab];
 drawtext = "Menu"
 draw_text(dx, dy, drawtext);
+
+//// Status
+
+//draw_sprite (sprStatus, ..., view_xview[0]+2, view_yview[0]+2)
+
+draw_text_transformed(dx,view_yview[0]+ 150, "Level : " + string(global.vivian_level), 0.5, 0.5, 1)
+draw_text_transformed(dx,view_yview[0]+170, "HP : " + string(global.vivian_hp) + "/" + string(global.vivian_maxhp), 0.5, 0.5, 1)
+draw_text_transformed(dx,view_yview[0]+190, "EXP : " + string(global.vivian_experience) + "/" + string(global.vivian_maxexp), 0.5, 0.5, 1)
 
 </string>
           </argument>

@@ -25,6 +25,8 @@
       <sprite>sprites\spr_cactus</sprite>
       <sprite>sprites\spr_cactus_2</sprite>
       <sprite>sprites\spr_yucca</sprite>
+      <sprite>sprites\spr_desert_big_rock</sprite>
+      <sprite>sprites\spr_desert_rock_medium</sprite>
     </sprites>
     <sprites name="Buttons">
       <sprite>sprites\spr_button_default</sprite>
@@ -104,6 +106,7 @@
       <sprite>sprites\spr_rosalind_right</sprite>
       <sprite>sprites\spr_rosalind_left</sprite>
     </sprites>
+    <sprite>sprites\reference_rocks</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_dark_dirt_patch</background>
@@ -215,6 +218,8 @@
       <object>objects\obj_cactus</object>
       <object>objects\obj_cactus_2</object>
       <object>objects\obj_yucca</object>
+      <object>objects\obj_desert_rock_medium</object>
+      <object>objects\obj_desert_rock_large</object>
     </objects>
     <object>objects\obj_save</object>
   </objects>

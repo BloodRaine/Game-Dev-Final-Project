@@ -222,36 +222,6 @@ ds_list_add(global.combat_rooms, rm_combat_ruin_city);
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//// Status
-
-//draw_sprite (sprStatus, ..., view_xview[0]+2, view_yview[0]+2)
-
-draw_text_transformed(view_xview[0]+40,view_yview[0]+ 20, "Level : " + string(global.vivian_level), 0.5, 0.5, 1)
-draw_text_transformed(view_xview[0]+50,view_yview[0]+40, "HP : " + string(global.vivian_hp) + "/" + string(global.vivian_maxhp), 0.5, 0.5, 1)
-draw_text_transformed(view_xview[0]+45,view_yview[0]+60, "EXP : " + string(global.vivian_experience) + "/" + string(global.vivian_maxexp), 0.5, 0.5, 1)
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
