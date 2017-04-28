@@ -57,6 +57,7 @@
       <sprite>sprites\spr_u_flower</sprite>
       <sprite>sprites\spr_y_flower</sprite>
       <sprite>sprites\spr_jungle_rock</sprite>
+      <sprite>sprites\spr_fireflies</sprite>
     </sprites>
     <sprites name="Monsters">
       <sprite>sprites\spr_desert_sedian</sprite>
@@ -198,6 +199,9 @@
       <object>objects\obj_log</object>
       <object>objects\obj_mushroom</object>
       <object>objects\obj_jungle_rock</object>
+      <object>objects\obj_flowers_b</object>
+      <object>objects\obj_flowers_r</object>
+      <object>objects\obj_fireflies</object>
     </objects>
     <objects name="Menu">
       <object>objects\obj_menu_keybinds</object>

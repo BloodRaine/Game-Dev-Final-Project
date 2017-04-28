@@ -130,6 +130,26 @@ if (!audio_is_playing(bgm_forest))
     <instance objName="obj_tree_two" x="204" y="504" name="inst_366831AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_vivian" x="420" y="340" name="inst_CDA1AA16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_save" x="356" y="244" name="inst_E9EAFFDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mushroom" x="676" y="276" name="inst_94C862A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mushroom" x="952" y="336" name="inst_B301A7C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mushroom" x="940" y="348" name="inst_5056C2F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_flowers_b" x="216" y="168" name="inst_81FCA5C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_flowers_b" x="156" y="324" name="inst_F1413B9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_flowers_b" x="468" y="632" name="inst_7D7D9ACB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_flowers_b" x="488" y="604" name="inst_BD2237DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_flowers_r" x="416" y="376" name="inst_F2BAE75E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_flowers_r" x="432" y="372" name="inst_4338CD1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_flowers_r" x="564" y="244" name="inst_EDE12445" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_flowers_r" x="372" y="176" name="inst_D743AE27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_flowers_r" x="144" y="568" name="inst_8F297A15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_flowers_r" x="196" y="512" name="inst_69427D11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fireflies" x="372" y="216" name="inst_996DD651" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fireflies" x="836" y="280" name="inst_2D97C0FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fireflies" x="652" y="232" name="inst_B7EB7A76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fireflies" x="464" y="576" name="inst_F52A5E20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fireflies" x="196" y="524" name="inst_2B7FA6D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fireflies" x="132" y="380" name="inst_8284353B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fireflies" x="92" y="124" name="inst_DAE4B81F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bk_stick" x="280" y="420" w="64" h="48" xo="0" yo="0" id="10001483" name="inst_56CD602C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
