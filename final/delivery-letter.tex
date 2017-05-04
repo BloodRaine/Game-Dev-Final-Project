@@ -1,0 +1,76 @@
+
+%Generally, the cover letter should include the following:
+% - Introduction
+% - Description of work done since last delivery (i.e. progress report).
+% - List of items in current delivery.
+% - Standard business letter format
+%   (https://owl.english.purdue.edu/owl/resource/653/01/
+
+\documentclass[12pt]{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{graphicx}
+\usepackage[pdftex]{hyperref}
+\usepackage[english]{babel}
+\usepackage{parskip}
+\usepackage{xspace}
+\usepackage{enumitem}
+
+\pagenumbering{gobble}
+\newcommand\aeon{\textit{\AE on Chronicles}\xspace}
+\newcommand\tab[1][.5in]{\hspace*{#1}}
+\newcommand\releasename{Final Release\xspace}
+\newcommand\te{Team Epsilon\xspace}
+
+\begin{document}
+
+\hfill\includegraphics[width=4cm]{../graphics/logo/team-epsilon-light-cropped}
+
+\hfill \releasename
+
+\hfill \today
+
+Mark Baldwin,
+
+Since the Beta Release, \te has made incremental improvements to prepare for our
+final presentation of \aeon. We have continued our rapid development and have
+achieved the majority of our goals.
+
+In the \releasename we fleshed out a few locations in the game world which were
+not up to our quality standards. This included adding a few more assets and
+making numerous bugfixes.
+
+The following list outlines the major changes made in each of the above
+categories.
+
+\begin{itemize}
+    \item \textbf{Improved Assets}
+        \begin{itemize}[noitemsep]
+            \item town assets added
+            \item improved character sprites
+            \item dragon added
+            \item a few extra improvements to the graphics
+        \end{itemize}
+
+    \item \textbf{Bugfixes}
+        \begin{itemize}[noitemsep]
+            \item fixed the room transitions
+            \item fixed the menu system
+            \item fixed the health recovery logic
+        \end{itemize}
+\end{itemize}
+
+The above list is not comprehensive and does not include the work we did to
+prepare for the final demo and presentation. We have worked very hard to improve
+the overall quality of \aeon in the \releasename and we are excited about our
+finished project.
+
+Sincerely,
+
+\tab Jacob Davis \\
+\tab Caleb Jhones \\
+\tab Robbie Merillat \\
+\tab Jonathan Sumner Evans \\
+\tab David Grisham \\
+
+\end{document}
+
