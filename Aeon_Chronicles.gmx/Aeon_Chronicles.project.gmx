@@ -21,17 +21,6 @@
     <sound>sound\sfx_walking</sound>
   </sounds>
   <sprites name="sprites">
-    <sprites name="Desert">
-      <sprite>sprites\spr_skull</sprite>
-      <sprite>sprites\spr_deser_rock_med</sprite>
-      <sprite>sprites\spr_ribs</sprite>
-      <sprite>sprites\spr_rock_jagged</sprite>
-      <sprite>sprites\spr_cactus</sprite>
-      <sprite>sprites\spr_cactus_2</sprite>
-      <sprite>sprites\spr_yucca</sprite>
-      <sprite>sprites\spr_desert_big_rock</sprite>
-      <sprite>sprites\spr_desert_rock_medium</sprite>
-    </sprites>
     <sprites name="Buttons">
       <sprite>sprites\spr_button_default</sprite>
     </sprites>
@@ -48,6 +37,17 @@
       <sprite>sprites\spr_card_green_dust</sprite>
       <sprite>sprites\spr_card_magic_item</sprite>
       <sprite>sprites\spr_card_deck</sprite>
+    </sprites>
+    <sprites name="Desert">
+      <sprite>sprites\spr_skull</sprite>
+      <sprite>sprites\spr_deser_rock_med</sprite>
+      <sprite>sprites\spr_ribs</sprite>
+      <sprite>sprites\spr_rock_jagged</sprite>
+      <sprite>sprites\spr_cactus</sprite>
+      <sprite>sprites\spr_cactus_2</sprite>
+      <sprite>sprites\spr_yucca</sprite>
+      <sprite>sprites\spr_desert_big_rock</sprite>
+      <sprite>sprites\spr_desert_rock_medium</sprite>
     </sprites>
     <sprites name="Forest">
       <sprite>sprites\spr_boulder</sprite>
@@ -82,11 +82,19 @@
       <sprite>sprites\spr_npc_villager1</sprite>
       <sprite>sprites\spr_npc_villager2</sprite>
     </sprites>
+    <sprite>sprites\reference_rocks</sprite>
+    <sprites name="rosalind">
+      <sprite>sprites\spr_rosalind_up</sprite>
+      <sprite>sprites\spr_rosalind_down</sprite>
+      <sprite>sprites\spr_rosalind_right</sprite>
+      <sprite>sprites\spr_rosalind_left</sprite>
+    </sprites>
     <sprite>sprites\spr_blank_1x1</sprite>
     <sprite>sprites\spr_boss</sprite>
     <sprite>sprites\spr_boundary</sprite>
-    <sprite>sprites\spr_monster_ref_2</sprite>
+    <sprite>sprites\spr_menu</sprite>
     <sprite>sprites\spr_monster_ref</sprite>
+    <sprite>sprites\spr_monster_ref_2</sprite>
     <sprite>sprites\spr_old_crazy_guy</sprite>
     <sprite>sprites\spr_reference</sprite>
     <sprite>sprites\spr_reference_2</sprite>
@@ -96,6 +104,12 @@
     <sprite>sprites\spr_room_transition_left</sprite>
     <sprite>sprites\spr_room_transition_right</sprite>
     <sprite>sprites\spr_save_point</sprite>
+    <sprites name="startsville">
+      <sprite>sprites\spr_hut</sprite>
+      <sprite>sprites\spr_hut_two</sprite>
+      <sprite>sprites\spr_stone_hut</sprite>
+      <sprite>sprites\spr_wood_house</sprite>
+    </sprites>
     <sprites name="vivian">
       <sprite>sprites\spr_vivian_down</sprite>
       <sprite>sprites\spr_vivian_up</sprite>
@@ -105,19 +119,6 @@
       <sprite>sprites\spr_vivian_left</sprite>
       <sprite>sprites\spr_vivian_down_left</sprite>
       <sprite>sprites\spr_vivian_up_left</sprite>
-    </sprites>
-    <sprites name="rosalind">
-      <sprite>sprites\spr_rosalind_up</sprite>
-      <sprite>sprites\spr_rosalind_down</sprite>
-      <sprite>sprites\spr_rosalind_right</sprite>
-      <sprite>sprites\spr_rosalind_left</sprite>
-    </sprites>
-    <sprite>sprites\reference_rocks</sprite>
-    <sprites name="startsville">
-      <sprite>sprites\spr_hut</sprite>
-      <sprite>sprites\spr_hut_two</sprite>
-      <sprite>sprites\spr_stone_hut</sprite>
-      <sprite>sprites\spr_wood_house</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">

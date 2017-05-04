@@ -27,11 +27,12 @@
             <kind>1</kind>
             <string>visible = false;
 save_point = false
+depth = 1000;
 
 // init menu background in room
-background_index[7] = bk_menu;
-background_visible[7] = false;
-background_foreground[7] = true;
+//background_index[7] = bk_menu;
+//background_visible[7] = false;
+//background_foreground[7] = true;
 
 left_page_width = 320;
 right_page_width = room_width - left_page_width;
@@ -113,7 +114,7 @@ if (invoke_menu)
         {
             instance_activate_object(system_instances[i]);
         }
-        background_visible[7] = true;
+        //background_visible[7] = true;
     }
     else
     {
@@ -126,7 +127,7 @@ if (invoke_menu)
         {
             instance_deactivate_object(system_instances[i]);
         }
-        background_visible[7] = false;
+        //background_visible[7] = false;
     }
 }
 </string>
@@ -155,6 +156,8 @@ if (invoke_menu)
 draw_set_halign(fa_center);
 draw_set_valign(fa_center);
 draw_set_font(font_menu_big);
+
+draw_sprite(spr_menu, 1, 0, 0);
 
 dx = right_page_width / 2 + left_page_width;
 dy = 32;

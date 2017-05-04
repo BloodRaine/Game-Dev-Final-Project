@@ -543,7 +543,7 @@ else if (x &gt; xprevious) {
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_dragon">
+    <event eventtype="4" ename="obj_sedian">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -561,9 +561,9 @@ else if (x &gt; xprevious) {
           <argument>
             <kind>1</kind>
             <string>if (battle_entry_immunity) {exit;}
-global.monster_to_fight = "dragon";
+global.monster_to_fight = "sedian";
 global.instance_to_fight = other.id;
-room_goto(rm_combat_desert);
+room_goto(rm_combat_forest);
 </string>
           </argument>
         </arguments>
@@ -596,7 +596,7 @@ room_goto(rm_combat_forest);
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_sedian">
+    <event eventtype="4" ename="obj_dragon">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -614,9 +614,9 @@ room_goto(rm_combat_forest);
           <argument>
             <kind>1</kind>
             <string>if (battle_entry_immunity) {exit;}
-global.monster_to_fight = "sedian";
+global.monster_to_fight = "dragon";
 global.instance_to_fight = other.id;
-room_goto(rm_combat_forest);
+room_goto(rm_combat_desert);
 </string>
           </argument>
         </arguments>
