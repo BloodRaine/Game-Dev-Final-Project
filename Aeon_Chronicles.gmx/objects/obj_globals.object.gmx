@@ -36,7 +36,7 @@ global.vivian_shield_up = false;
 global.vivian_atk_sfx = sfx_attack_1;
 
 // Menu Tabs
-global.menu_tabs = array("Manage Decks", "Card Collection", "Quest Journal", "System");
+global.menu_tabs = array("Character Stats", "Manage Decks", "Card Collection", "Quest Journal", "System");
 global.current_menu_tab = 0;
 
 // Combat

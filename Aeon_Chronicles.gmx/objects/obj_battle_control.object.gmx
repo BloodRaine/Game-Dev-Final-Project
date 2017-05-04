@@ -136,6 +136,8 @@ if (monster_health &lt;= 0) {
     var defeated_monsters_for_room = global.defeated_monsters[? global.room_before_battle];
     ds_list_add(defeated_monsters_for_room, global.instance_to_fight);
     global.vivian_experience += combat_opponent.exp_reward
+    if (combat_opponent == obj_brown_dragon_battle)
+        audio_play_sound(sfx_boss_victory, 1000, false);
     room_goto(global.room_before_battle);
 } else if (global.vivian_hp &lt;= 0) {
     global.vivian_defeated = true;

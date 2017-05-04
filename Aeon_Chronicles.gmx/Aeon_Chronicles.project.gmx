@@ -5,29 +5,22 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\bgm_combat</sound>
+    <sound>sound\bgm_desert</sound>
+    <sound>sound\bgm_desert_combat</sound>
     <sound>sound\bgm_forest</sound>
+    <sound>sound\bgm_forest_combat</sound>
     <sound>sound\bgm_forge</sound>
     <sound>sound\bgm_title</sound>
+    <sound>sound\bgm_town</sound>
     <sound>sound\sfx_attack_1</sound>
     <sound>sound\sfx_attack_sedian</sound>
+    <sound>sound\sfx_boss_victory</sound>
     <sound>sound\sfx_door</sound>
     <sound>sound\sfx_ow_sedian</sound>
     <sound>sound\sfx_ow_vivian</sound>
     <sound>sound\sfx_walking</sound>
   </sounds>
   <sprites name="sprites">
-    <sprites name="Desert">
-      <sprite>sprites\spr_skull</sprite>
-      <sprite>sprites\spr_deser_rock_med</sprite>
-      <sprite>sprites\spr_ribs</sprite>
-      <sprite>sprites\spr_rock_jagged</sprite>
-      <sprite>sprites\spr_cactus</sprite>
-      <sprite>sprites\spr_cactus_2</sprite>
-      <sprite>sprites\spr_yucca</sprite>
-      <sprite>sprites\spr_desert_big_rock</sprite>
-      <sprite>sprites\spr_desert_rock_medium</sprite>
-    </sprites>
     <sprites name="Buttons">
       <sprite>sprites\spr_button_default</sprite>
     </sprites>
@@ -44,6 +37,17 @@
       <sprite>sprites\spr_card_green_dust</sprite>
       <sprite>sprites\spr_card_magic_item</sprite>
       <sprite>sprites\spr_card_deck</sprite>
+    </sprites>
+    <sprites name="Desert">
+      <sprite>sprites\spr_skull</sprite>
+      <sprite>sprites\spr_deser_rock_med</sprite>
+      <sprite>sprites\spr_ribs</sprite>
+      <sprite>sprites\spr_rock_jagged</sprite>
+      <sprite>sprites\spr_cactus</sprite>
+      <sprite>sprites\spr_cactus_2</sprite>
+      <sprite>sprites\spr_yucca</sprite>
+      <sprite>sprites\spr_desert_big_rock</sprite>
+      <sprite>sprites\spr_desert_rock_medium</sprite>
     </sprites>
     <sprites name="Forest">
       <sprite>sprites\spr_boulder</sprite>
@@ -78,11 +82,19 @@
       <sprite>sprites\spr_npc_villager1</sprite>
       <sprite>sprites\spr_npc_villager2</sprite>
     </sprites>
+    <sprite>sprites\reference_rocks</sprite>
+    <sprites name="rosalind">
+      <sprite>sprites\spr_rosalind_up</sprite>
+      <sprite>sprites\spr_rosalind_down</sprite>
+      <sprite>sprites\spr_rosalind_right</sprite>
+      <sprite>sprites\spr_rosalind_left</sprite>
+    </sprites>
     <sprite>sprites\spr_blank_1x1</sprite>
     <sprite>sprites\spr_boss</sprite>
     <sprite>sprites\spr_boundary</sprite>
-    <sprite>sprites\spr_monster_ref_2</sprite>
+    <sprite>sprites\spr_menu</sprite>
     <sprite>sprites\spr_monster_ref</sprite>
+    <sprite>sprites\spr_monster_ref_2</sprite>
     <sprite>sprites\spr_old_crazy_guy</sprite>
     <sprite>sprites\spr_reference</sprite>
     <sprite>sprites\spr_reference_2</sprite>
@@ -92,6 +104,12 @@
     <sprite>sprites\spr_room_transition_left</sprite>
     <sprite>sprites\spr_room_transition_right</sprite>
     <sprite>sprites\spr_save_point</sprite>
+    <sprites name="startsville">
+      <sprite>sprites\spr_hut</sprite>
+      <sprite>sprites\spr_hut_two</sprite>
+      <sprite>sprites\spr_stone_hut</sprite>
+      <sprite>sprites\spr_wood_house</sprite>
+    </sprites>
     <sprites name="vivian">
       <sprite>sprites\spr_vivian_down</sprite>
       <sprite>sprites\spr_vivian_up</sprite>
@@ -102,19 +120,6 @@
       <sprite>sprites\spr_vivian_down_left</sprite>
       <sprite>sprites\spr_vivian_up_left</sprite>
     </sprites>
-    <sprites name="rosalind">
-      <sprite>sprites\spr_rosalind_up</sprite>
-      <sprite>sprites\spr_rosalind_down</sprite>
-      <sprite>sprites\spr_rosalind_right</sprite>
-      <sprite>sprites\spr_rosalind_left</sprite>
-    </sprites>
-    <sprite>sprites\reference_rocks</sprite>
-    <sprites name="startsville">
-      <sprite>sprites\spr_hut</sprite>
-      <sprite>sprites\spr_hut_two</sprite>
-      <sprite>sprites\spr_stone_hut</sprite>
-      <sprite>sprites\spr_wood_house</sprite>
-    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_dark_dirt_patch</background>
@@ -122,26 +127,26 @@
     <background>background\bk_light_dirt_patch</background>
     <background>background\bk_menu</background>
     <backgrounds name="CombatBackgrounds">
+      <background>background\bk_desert_combat</background>
       <background>background\bk_forest_combat</background>
       <background>background\bk_ruin_city</background>
-      <background>background\bk_desert_combat</background>
+    </backgrounds>
+    <backgrounds name="Desert">
+      <background>background\bk_desert_inspiration</background>
+      <background>background\bk_desert_inspiration_2</background>
+      <background>background\bk_desert_patch</background>
+      <background>background\bk_sand_dunes</background>
     </backgrounds>
     <backgrounds name="Forest">
       <background>background\bk_dark_grass</background>
+      <background>background\bk_dark_grass_patch</background>
       <background>background\bk_dark_green_patch</background>
       <background>background\bk_dark_tall_graass</background>
       <background>background\bk_dirt_patch</background>
+      <background>background\bk_forest</background>
       <background>background\bk_grass</background>
       <background>background\bk_light_green_patch</background>
-      <background>background\bk_dark_grass_patch</background>
-      <background>background\bk_forest</background>
       <background>background\bk_stick</background>
-    </backgrounds>
-    <backgrounds name="Desert">
-      <background>background\bk_desert_patch</background>
-      <background>background\bk_desert_inspiration</background>
-      <background>background\bk_sand_dunes</background>
-      <background>background\bk_desert_inspiration_2</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
@@ -155,24 +160,24 @@
     <script>scripts\scr_ai.gml</script>
   </scripts>
   <fonts name="fonts">
+    <font>fonts\font_battle</font>
+    <font>fonts\font_default</font>
     <font>fonts\font_dialogue_1</font>
     <font>fonts\font_dialogue_2</font>
     <font>fonts\font_dialogue_3</font>
     <font>fonts\font_menu_big</font>
     <font>fonts\font_menu_med</font>
-    <font>fonts\font_battle</font>
-    <font>fonts\font_default</font>
     <font>fonts\font_menu_small</font>
     <font>fonts\font_title</font>
   </fonts>
   <objects name="objects">
     <objects name="Battle">
       <object>objects\obj_battle_control</object>
-      <object>objects\obj_sedian_battle</object>
-      <object>objects\obj_desert_sedian_battle</object>
-      <object>objects\obj_groot_battle</object>
       <object>objects\obj_brown_dragon_battle</object>
       <object>objects\obj_brute_battle</object>
+      <object>objects\obj_desert_sedian_battle</object>
+      <object>objects\obj_groot_battle</object>
+      <object>objects\obj_sedian_battle</object>
       <object>objects\rm_monster_tracker</object>
     </objects>
     <objects name="Cards">
@@ -192,11 +197,11 @@
     </objects>
     <objects name="Creatures">
       <object>objects\obj_desert_sedian</object>
-      <object>objects\obj_sedian</object>
+      <object>objects\obj_dragon</object>
       <object>objects\obj_groot</object>
       <object>objects\obj_hopper</object>
+      <object>objects\obj_sedian</object>
       <object>objects\obj_wolf</object>
-      <object>objects\obj_dragon</object>
     </objects>
     <objects name="Forest">
       <object>objects\obj_forest_boulder</object>
@@ -244,8 +249,8 @@
   <rooms name="rooms">
     <room>rooms\rm_title</room>
     <rooms name="forest">
-      <room>rooms\rm_forest_path</room>
       <room>rooms\rm_forest</room>
+      <room>rooms\rm_forest_path</room>
       <room>rooms\rm_forest_two</room>
       <room>rooms\rm_forest_three</room>
     </rooms>
@@ -253,15 +258,15 @@
       <room>rooms\rm_desert</room>
     </rooms>
     <rooms name="combat_rooms">
-      <room>rooms\rm_combat_forest</room>
       <room>rooms\rm_combat_desert</room>
+      <room>rooms\rm_combat_forest</room>
       <room>rooms\rm_combat_ruin_city</room>
     </rooms>
     <rooms name="startsville">
       <room>rooms\rm_town_center</room>
       <room>rooms\rm_town_down</room>
-      <room>rooms\rm_town_left</room>
       <room>rooms\rm_town_edge</room>
+      <room>rooms\rm_town_left</room>
     </rooms>
   </rooms>
   <help>
