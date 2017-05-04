@@ -14,7 +14,7 @@
 global.rm_above = rm_town_center;
 /* where to place player when coming *from* above */
 global.rm_entry_above_x = 880;
-global.rm_entry_above_y = 300;
+global.rm_entry_above_y = 20;
 
 /* stop any playing audio */
 audio_stop_sound(bgm_desert);
@@ -109,8 +109,7 @@ global.room_before_battle = room;</code>
     <instance objName="obj_menu_main" x="12" y="64" name="inst_98AB8306" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_boundary" x="-12" y="-12" name="inst_5D684954" locked="0" code="" scaleX="0.903225779533386" scaleY="24.3870964050293" colour="4294967295" rotation="0"/>
     <instance objName="obj_boundary" x="1000" y="-20" name="inst_3068829B" locked="0" code="" scaleX="1.375" scaleY="25.3799991607666" colour="4294967295" rotation="0"/>
-    <instance objName="obj_boundary" x="180" y="732" name="inst_4292B543" locked="0" code="" scaleX="-26.1000003814697" scaleY="0.903225779533386" colour="4294967295" rotation="0"/>
-    <instance objName="obj_boundary" x="12" y="744" name="inst_0737D881" locked="0" code="" scaleX="32" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_boundary" x="-8" y="740" name="inst_0737D881" locked="0" code="" scaleX="35.25" scaleY="1.41935479640961" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bk_dirt_patch" x="256" y="256" w="16" h="16" xo="0" yo="0" id="10001765" name="inst_D9BA90D3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

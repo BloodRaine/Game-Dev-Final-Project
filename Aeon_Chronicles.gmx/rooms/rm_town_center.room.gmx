@@ -161,10 +161,10 @@ global.room_before_battle = room;</code>
     <instance objName="obj_globals" x="40" y="8" name="inst_CF517A2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_main" x="20" y="56" name="inst_ADD1D03D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_vivian" x="576" y="256" name="inst_C617C7F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_boundary" x="-32" y="756" name="inst_4B1CC014" locked="0" code="" scaleX="22.1935482025146" scaleY="0.629999995231628" colour="4294967295" rotation="0"/>
     <instance objName="obj_boundary" x="1004" y="472" name="inst_BBFFDA39" locked="0" code="" scaleX="1.03225803375244" scaleY="9.28999996185303" colour="4294967295" rotation="0"/>
     <instance objName="obj_boundary" x="940" y="748" name="inst_5F4EA81B" locked="0" code="" scaleX="1.625" scaleY="1.375" colour="4294967295" rotation="0"/>
     <instance objName="obj_boundary" x="904" y="-4" name="inst_2FDE32B0" locked="0" code="" scaleX="5.13000011444092" scaleY="0.625" colour="4294967295" rotation="0"/>
+    <instance objName="obj_boundary" x="564" y="-16" name="inst_56E242A6" locked="0" code="" scaleX="14.75" scaleY="0.629999995231628" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bk_dirt_patch" x="256" y="256" w="16" h="16" xo="0" yo="0" id="10001765" name="inst_D9BA90D3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
