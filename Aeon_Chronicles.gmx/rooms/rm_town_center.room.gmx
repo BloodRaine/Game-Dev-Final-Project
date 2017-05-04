@@ -28,12 +28,18 @@ global.rm_below = rm_town_down
 global.rm_entry_below_x = 880;
 global.rm_entry_below_y = 700;
 
+/* stop any playing audio */
+audio_stop_sound(bgm_desert);
+audio_stop_sound(bgm_desert_combat);
+audio_stop_sound(bgm_forest);
+audio_stop_sound(bgm_forest_combat);
+audio_stop_sound(bgm_forge);
 audio_stop_sound(bgm_title);
-audio_stop_sound(bgm_combat);
-
-if (!audio_is_playing(bgm_forest))
+// audio_stop_sound(bgm_town);
+/* play correct audio if not playing */
+if (!audio_is_playing(bgm_town))
 {
-    audio_play_sound(bgm_forest, 100, true);
+    audio_play_sound(bgm_town, 100, true);
 }
 
 global.room_before_battle = room;</code>

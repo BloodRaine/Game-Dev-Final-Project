@@ -22,13 +22,21 @@ global.rm_left = rm_town_edge;
 global.rm_entry_left_x = 20;
 global.rm_entry_left_y = 250;
 
+/* stop any playing audio */
+audio_stop_sound(bgm_desert);
+audio_stop_sound(bgm_desert_combat);
+// audio_stop_sound(bgm_forest);
+audio_stop_sound(bgm_forest_combat);
+audio_stop_sound(bgm_forge);
 audio_stop_sound(bgm_title);
-audio_stop_sound(bgm_combat);
-
+audio_stop_sound(bgm_town);
+/* play correct audio if not playing */
 if (!audio_is_playing(bgm_forest))
 {
     audio_play_sound(bgm_forest, 100, true);
-}</code>
+}
+
+global.room_before_battle = room;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

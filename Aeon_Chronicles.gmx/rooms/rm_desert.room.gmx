@@ -30,6 +30,20 @@ if (ds_list_find_index(global.defeated_monsters, "groot") &gt;= 0)
     {
         instance_destroy();
     }
+}
+
+/* stop any playing audio */
+// audio_stop_sound(bgm_desert);
+audio_stop_sound(bgm_desert_combat);
+audio_stop_sound(bgm_forest);
+audio_stop_sound(bgm_forest_combat);
+audio_stop_sound(bgm_forge);
+audio_stop_sound(bgm_title);
+audio_stop_sound(bgm_town);
+/* play correct audio if not playing */
+if (!audio_is_playing(bgm_desert))
+{
+    audio_play_sound(bgm_desert, 100, true);
 }</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>

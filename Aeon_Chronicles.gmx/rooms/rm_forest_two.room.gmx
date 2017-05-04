@@ -13,9 +13,16 @@
   <code>global.rm_below = rm_forest;
 global.rm_entry_below_x = 488;
 global.rm_entry_below_y = 672;
-  audio_stop_sound(bgm_title);
-audio_stop_sound(bgm_combat);
 
+/* stop any playing audio */
+audio_stop_sound(bgm_desert);
+audio_stop_sound(bgm_desert_combat);
+// audio_stop_sound(bgm_forest);
+audio_stop_sound(bgm_forest_combat);
+audio_stop_sound(bgm_forge);
+audio_stop_sound(bgm_title);
+audio_stop_sound(bgm_town);
+/* play correct audio if not playing */
 if (!audio_is_playing(bgm_forest))
 {
     audio_play_sound(bgm_forest, 100, true);
